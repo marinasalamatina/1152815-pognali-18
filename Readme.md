@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Саламатина](https://up.htmlacademy.ru/adaptive/18/user/1152815).
-* Наставник: `Неизвестно`.
+* Наставник: `Анастасия Полозова`.
 
 ---
 
