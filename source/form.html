@@ -16,8 +16,132 @@
                 alt="Логотип сайта Погнали">
             </a>
         </header>
-        <h1 class="page-title">Направления</h1>
-        <main class="page-main">
+
+        <h1 class="form__title">Направления</h1>
+        <section class="profile">
+            <h2 class="visually-hidden">Профиль</h2>
+            <div class="profile__level">
+                <span class="profile__level--blue">80</span>
+                <p class="profile__level-paragraph">level</p>
+            </div>
+            <img class="profile__img"
+            src="img/png/demin--avatar.png"
+            width="70"
+            height="70"
+            alt="Парень на фоне снега">
+            <a class="profile__fotoswap">
+                Сменить фото
+            </a>
+        </section>
+        <section class="plans">
+            <ol class="plans__list">
+                <li class="plans__item">
+                    Франция, Италия
+                    <span class="plans__item--lighter">
+                        3 попутчика
+                        26 мар - 29 мар
+                    </span>
+                    <span class="plans__item--grey">
+                        Изменить
+                    </span>
+                </li>
+                <li class="plans__item">
+                    Таиланд, Индонезия
+                    <span class="plans__item--lighter">
+                        1 попутчик
+                        1 июл - 15 июл
+                    </span>
+                    <span class="plans__item--grey">
+                        Изменить
+                    </span>
+                </li>
+            </ol>
+        </section>
+        <main class="main">
+            <h2 class="main__title">Добавить план</h2>
+            <form class="planning" method="get" action="https://echo.htmlacademy.ru">
+                <section class="dates">
+                    <h3 class="dates__title">Шаг 1. Даты пребывания</h3>
+                    <p class="dates__paragraph">
+                            Укажите предпочтительное количество попутчиков, которых
+                            вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                    </p>
+                    <label class="dates__label">
+                        <h4 class="dates__title">Ищу попутчиков:</h4>
+                        <input class="dates__input" type="text" name="number-people" value="2">
+                    </label>
+                    <label class="dates__label">
+                        <h4 class="dates__title">Длительность:</h4>
+                        <input class="dates__input" type="text" name="period" value="2">
+                    </label>
+                    <input class="dates__input-checkbox" type="checkbox" id="dates-control" name="children" value="children-yes" checked>
+                    <label for="dates-control">Можно с детьми</label>
+                    <button class="dates__button button" value="next-step">
+                      Следующий шаг
+                    </button>
+                </section>
+                <section class="country">
+                    <h3 class="country__title">Шаг 2. Маршрут</h3>
+                    <p class="country__paragraph">
+                            Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+                    </p>
+                    <label class="country__detail--label">
+                        <input class="country__detail--input" type="text" name="country" value="Босния и Герцеговина">
+                    </label>
+                    <label class="country__detail--label">
+                        <input class="country__detail--input" type="text" name="country" value="Чехия">
+                    </label>
+                    <label class="country__detail--label">
+                        <input class="country__detail--input" type="text" name="country" value="Выберите страну">
+                    </label>
+
+                    <!--modal-->
+                    <div class="country__wrapper">
+                        <ul class="country__list">
+                            <li class="country__item">Афганистан</li>
+                            <li class="country__item">Албания</li>
+                            <li class="country__item">Алжир</li>
+                            <li class="country__item">Андорра</li>
+                            <li class="country__item">Аргентина</li>
+                            <li class="country__item">Армения</li>
+                            <li class="country__item">Австралия</li>
+                            <li class="country__item">Австрия</li>
+                            <li class="country__item">Азербайджан</li>
+                        </ul>
+                    </div>
+                    <!--model_END-->
+
+                    <label class="country__detail--label">
+                        <input class="country__detail--input" type="text" name="country" value="Добавить страну">
+                    </label>
+                    <button class="dates__button button" value="next-step">
+                      Следующий шаг
+                    </button>
+                    <button class="dates__button button" value="last-step">
+                      На шаг назад
+                    </button>
+                </section>
+                <section class="pastime">
+                    <h3 class="pastime__title">Шаг 3. Развлечения</h3>
+                    <p class="pastime__paragraph">
+                            Наконец, расскажите о своих планах времяпровождения.
+                            Можно писать в свободной форме и ставить тэги.
+                    </p>
+                    <label class="pastime__detail--label">
+                        <h4 class="pastime__detail--title">Босния и Герцеговина</h4>
+                        <textarea class="pastime__detail--input" rows="10" name="pastime-plan" placeholder="План действий"></textarea>
+                    </label>
+                    <label class="pastime__detail--label">
+                        <h4 class="pastime__detail--title">Чехия</h4>
+                        <textarea class="pastime__detail--input" rows="10" name="pastime-plan" placeholder="План действий">Пить пиво и лазить
+                                по старым замкам, наслаждаться архитектурой
+                                и вот это все.</textarea>
+                    </label>
+                    <button type="submit" alt="Показать">Отправить</button>
+                    <button class="pastime__button button" value="last-step">На шаг назад</button>
+                </section>
+            </form>
+
         </main>
         <footer class="footer">
             <img class="footer__logo-image"

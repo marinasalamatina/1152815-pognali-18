@@ -122,8 +122,9 @@
             </section>
         </article>
 
-        <main class="page-main">
-            <section class="page-main__direct">
+        <main class="main">
+            <section class="main__direct">
+
                 <h2 class="direct__title">Направления</h2>
                 <p class="direct__paragraph">
                   Мы не продаем туры
@@ -212,7 +213,9 @@
                       alt="Стрелка">
                 </a>
             </section>
-            <section class="page-main__companions">
+
+            <section class="main__companions">
+
                 <h2 class="companions__title">Попутчики</h2>
                 <p class="companions__paragraph text-desc">
                   Все мы индивидуальны и у каждого свой взгляд
@@ -368,6 +371,77 @@
 
             </article>
         </main>
+
+        <section class="feedback">
+            <h2 class="feedback__title">Заинтересовались?</h2>
+            <p class="feedback__paragraph">
+                Зарегистрируйтесь,
+                это быстро и бесплатно!
+                Уже зарегистрированы? Тогда скорее
+                <span class="feedback__paragraph--yellow">авторизуйтесь</span>.
+            </p>
+            <form class="login" action="#" method="get">
+                <div class="login__wrap">
+                     <input class="login__email" type="email" aria-label="Электронная почта" placeholder="E-mail">
+                     <button class="login_button" type="button" name="Продолжить регистрацию">
+                         <img class="direct__all--img"
+                         src="img/svg/#.svg"
+                         width="10"
+                         height="14"
+                         alt="Стрелка">
+                     </button>
+                </div>
+            </form>
+            <p class="feedback__paragraph">
+                Остались вопросы?
+                Мы с радостью на них ответим!
+            </p>
+            <a class="feedback__paragraph--yellow" href="tel:+7-800-555-86-28">8 800 555-86-28</a>
+            <p class="feedback__paragraph--yellow">mail@htmlacademy.ru</p>
+        </section>
+        <section class="address">
+            <h2 class="visually-hidden">Наш адрес</h2>
+            <p class="address-paragraph">
+                ул. Большая
+                Конюшенная, 19/8
+            </p>
+            <a class="address__way" href="#">
+                Проложить маршрут
+                <img class="address__way--img"
+                  src="img/svg/#.svg"
+                  width="10"
+                  height="14"
+                  alt="Стрелка">
+            </a>
+        </section>
+
+        <!--modal-->
+        <section class="biz">
+            <h2 class="biz__title">Бизнес-тарифы</h2>
+            <ul class="biz__list">
+                <li class="biz__item">
+                    Реклама у блоггера
+                    300 000 руб./пост
+                </li>
+                <li class="biz__item">
+                    Накрутка подписчиков
+                    от 1 руб./шт.
+                </li>
+                <li class="biz__item">
+                    Лайки от ботов
+                    от 20 коп./лайк
+                </li>
+                <li class="biz__item">
+                    Ваш продакт-плейсмент
+                    Индивидуально
+                </li>
+            </ul>
+            <button class="biz__button" type="button">
+              Закрыть окно
+            </button>
+        </section>
+        <!--modal__END-->
+
 
         <footer class="footer">
             <img class="footer__logo-image"

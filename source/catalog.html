@@ -16,10 +16,97 @@
                 alt="Логотип сайта Погнали">
             </a>
         </header>
-	      <main class="page-main">
-            <aside class="filter">
-                <h1 class="filter__title">Попутчики</h1>
-            </aside>
+
+        <h1 class="page__title">Попутчики</h1>
+
+        <section class="country">
+            <h2 class="country__title">Фильтрация по странам</h2>
+            <button class="country__toggle" type="button">Открыть меню</button>
+            <div class="country__wrapper">
+                <ul class="mainland__list">
+                    <li class="mainland__item">Европа</li>
+                    <li class="mainland__item">Азия</li>
+                    <li class="mainland__item">Америка</li>
+                    <li class="mainland__item">Острова</li>
+                </ul>
+                <ul class="country__list">
+                    <li class="country__item">Афганистан</li>
+                    <li class="country__item">Албания</li>
+                    <li class="country__item">Алжир</li>
+                    <li class="country__item">Андорра</li>
+                    <li class="country__item">Аргентина</li>
+                    <li class="country__item">Армения</li>
+                    <li class="country__item">Австралия</li>
+                    <li class="country__item">Австрия</li>
+                    <li class="country__item">Азербайджан</li>
+                </ul>
+            </div>
+            <button class="biz__button" type="button">
+              Свернуть
+            </button>
+        </section>
+
+        <section class="sidebar">
+            <h2 class="sidebar_title">Подберите идеального попутчика</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <div class="filter__item">
+                    <h3>Хобби</h3>
+                </div>
+                <div class="filter_item">
+                    <h3>Музыка</h3>
+                    <input type="checkbox" id="filter-check-1" name="music-1" value="Тяжелый рок" checked>
+                    <label for="filter-check-1">Тяжелый рок</label>
+                    <input type="checkbox" id="filter-check-2" name="music-2" value="Русский рэп">
+                    <label for="filter-check-2">Русский рэп</label>
+                    <input type="checkbox" id="filter-check-3" name="music-3" value="Евроденс">
+                    <label for="filter-check-3">Евроденс</label>
+                </div>
+                <div class="filter_item">
+                    <h3>Еда</h3>
+                </div>
+                <div class="filter_item">
+                    <h3>Транспорт</h3>
+                    <div class="filter__transport">
+                        <img class="companions-info__transport--img"
+                            src="img/svg/#.svg"
+                            width="19"
+                            height="21"
+                            alt="Самолет">
+                        <img class="companions-info__transport--img"
+                            src="img/svg/#.svg"
+                            width="17"
+                            height="21"
+                            alt="Автобус">
+                        <img class="companions-info__transport--img"
+                            src="img/svg/#.svg"
+                            width="24"
+                            height="21"
+                            alt="Велосипед">
+                        <img class="companions-info__transport--img"
+                            src="img/svg/#.svg"
+                            width="20"
+                            height="21"
+                            alt="Бегун">
+                    </div>
+                </div>
+                <div class="filter_item">
+                    <h3>Левел</h3>
+                    <div class="filter__range">
+                        <div class="filter__level">
+                            <label class="filter__level--label">
+                                <input class="filter_level--input" type="text" name="min-level" value="30">
+                            </label>
+                            <label class="filter_range_label filter_range_label_max">
+                                <input class="filter__level--input" type="text" name="max-level" value="100">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="filter__button" type="submit" value="Показать">Показать</button>
+            </form>
+        </section>
+        <main class="main">
+
             <section class="companions">
                 <h2 class="visually-hidden">Список попутчиков</h2>
                 <article class="companions__item">
@@ -87,6 +174,7 @@
                 </article>
 
                 <article class="companions__item">
+
                     <img class="companions__img"
                     src="img/png/companions__demin--avatar.png"
                     width="70"
@@ -145,6 +233,7 @@
                 </article>
 
                 <article class="companions__item">
+
                     <img class="companions__img"
                     src="img/png/companions__smolov--avatar.png"
                     width="70"
@@ -208,6 +297,7 @@
                     </a>
                 </article>
 
+
                 <article class="companions__item">
                     <img class="companions__img"
                     src="img/png/companions__rogovaya--avatar.png"
@@ -266,55 +356,56 @@
                     </a>
                 </article>
 
-              </section>
-          </main>
-          <footer class="footer">
-              <img class="footer__logo-image"
-              src="#"
-              width="100"
-              height="19"
-              alt="Логотип сайта Погнали">
-              <div class="footer__social social">
-                  <ul class="social__list">
-                      <li class="social__item">
-                          <a class="social__link social__link--facebook" href="#">
-                              <img class="develop__link--img"
-                              src="img/svg/#.svg"
-                              width="11"
-                              height="21"
-                              alt="Мы в Фейсбуке">
-                          </a>
-                      </li>
-                      <li class="social__item">
-                          <a class="social__link social__link--vkontakte" href="#">
-                              <img class="develop__link--img"
-                              src="img/svg/#.svg"
-                              width="23"
-                              height="12"
-                              alt="Мы в Вконтакте">
-                          </a>
-                      </li>
-                      <li class="social__item">
-                          <a class="social__link social__link--instagram" href="#">
-                              <img class="develop__link--img"
-                              src="img/svg/#.svg"
-                              width="11"
-                              height="21"
-                              alt="Мы в Инстаграме">
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer__develop">
-                  <span class="develop__text">Разработано</span>
-                  <a class="develop__link" href="#">
-                   <img class="develop__link--img"
-                   src="#"
-                   width="27"
-                   height="34"
-                   alt="Логотип HTML Academia">
-                  </a>
-              </div>
+            </section>
+        <main>
+        <footer class="footer">
+            <img class="footer__logo-image"
+            src="#"
+            width="100"
+            height="19"
+            alt="Логотип сайта Погнали">
+            <div class="footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="#">
+                            <img class="develop__link--img"
+                            src="img/svg/#.svg"
+                            width="11"
+                            height="21"
+                            alt="Мы в Фейсбуке">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--vkontakte" href="#">
+                            <img class="develop__link--img"
+                            src="img/svg/#.svg"
+                            width="23"
+                            height="12"
+                            alt="Мы в Вконтакте">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram" href="#">
+                            <img class="develop__link--img"
+                            src="img/svg/#.svg"
+                            width="11"
+                            height="21"
+                            alt="Мы в Инстаграме">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__develop">
+                <span class="develop__text">Разработано</span>
+                <a class="develop__link" href="#">
+                 <img class="develop__link--img"
+                 src="#"
+                 width="27"
+                 height="34"
+                 alt="Логотип HTML Academia">
+                </a>
+            </div>
+
         </footer>
     </body>
 </html>
