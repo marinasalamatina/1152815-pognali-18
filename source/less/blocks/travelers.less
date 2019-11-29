@@ -1,0 +1,128 @@
+.travelers {
+    width: 270px;
+    background-color: @color-blue;
+
+    border-radius: 0px 0px 25px 25px;
+
+    padding: 10px 25px;
+    padding-top: 40px;
+}
+
+
+.travelers__title {
+    .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal; @color-darkorange);
+
+    padding: 0px 25px;
+}
+
+
+.travelers__paragraph {
+    .ffbasic('bloggersans-light', sans-serif; 16px; 22px; 400; normal; @color-white);
+    padding: 0px 25px;
+
+
+    &--bold {
+        .ffbasic('bloggersans-bold', sans-serif; 16px; 22px; 700; normal; @color-white);
+
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+
+.travelers__item {
+    width: 270px;
+    background-color: @color-white;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+}
+
+
+.travelers__level {
+    text-align: center;
+
+    .boxset(60px; 60px);
+    background-color: @color-levelgrey;
+
+    border-radius: 50%;
+
+
+    &--whitebold {
+        .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal; @color-white);
+    }
+    &--whiteregular {
+        .ffbasic('bloggersans-light', sans-serif; 14px; 14px; 400; normal; @color-white);
+    }
+}
+
+
+.travelers__firsova-wrap {
+    width: 270px;
+    min-height: 270px;
+    background-image: url(../../img/traveller-firsova-index-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 270px 270px;
+}
+
+
+.travelers__demin-wrap {
+  width: 270px;
+  min-height: 270px;
+  background-image: url(../../img/traveller-demin-index-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 270px 270px;
+}
+
+
+.travelers__info {
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+.travelers-info__transport--img:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.travelers-info__transport--light {
+    opacity: 0.15;
+}
+
+
+.travelers-info__transport--blue {
+    color: @color-cyan;
+}
+
+
+.travelers__name {
+    .ffbasic('bloggersans-bold', sans-serif; 21px; 21px; 700; normal; @color-cyan);
+}
+
+
+.travelers__hashtag {
+    .ffbasic('bloggersans-medium', sans-serif; 16px; 18px; 500; normal; @color-darkgrey);
+}
+
+
+.travelers__wrapper {
+    text-align: left;
+
+    .boxsetcolor(220px, 20px, @color-yellow);
+    border-radius: 10px;
+
+    padding: 20px 25px;
+    margin: 25px 0px;
+}
+
+
+.travelers__link {
+    .ffbasic('bloggersans-bold', sans-serif; 18px; 18px; 700; normal;  @color-cyan);
+    .linkstyle();
+    text-transform: none;
+
+    background-color: @color-yellow;
+}
