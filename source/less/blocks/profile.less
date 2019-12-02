@@ -1,0 +1,95 @@
+.profile {
+    background-color: @color-grey;
+    width: 270px;
+
+    padding: 25px;
+}
+
+
+.profile__title {
+    .visuallyhidden();
+}
+
+
+.profile__level {
+    text-align: center;
+
+    .boxset(95px; 95px);
+
+    border-radius: 50%;
+
+    margin: 0px 20px;
+    padding: 0px;
+
+
+    &--blue {
+        .ffbasic('bloggersans-bold', sans-serif; 38px; 38px; 700; normal; @color-navy);
+    }
+}
+
+
+.profile__img {
+    border-radius: 50%;
+
+    margin: 0px 20px;
+}
+
+
+.profile__paragraph {
+    .ffbasic('bloggersans-medium', sans-serif; 18px; 22px; 500; normal; @color-darkgrey);
+}
+
+
+.profile__fotoswap {
+    .buttonstyle();
+    .ffbasic('bloggersans-bold', sans-serif; 17px; 30px; 700; normal; @color-navy);
+    text-transform: uppercase;
+    text-align: center;
+
+    cursor: pointer;
+
+    .boxsetcolor(270px, 30px, @color-middlegrey);
+
+    border-radius: 20px;
+
+    padding: 5px 25px;
+    margin: 10px 0px;
+    margin-top: 20px;
+}
+
+
+.profile-wrap {
+    border: 1px solid @color-borderbox;
+    border-radius: 10px;
+
+    padding-bottom: 20px;
+    margin: 30px 0px;
+}
+
+
+.profile__transport-wrap {
+    text-align: center;
+}
+
+
+.profile__transport--img:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.profile-name {
+    background-color: @color-grey;
+
+    .ffbasic('bloggersans-bold', sans-serif; 16px; 18px; 700; normal; @color-cyan);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 10px 60px;
+    margin-top: -10px;
+}
+
+
+.profile__hashtag {
+    .ffbasic('bloggersans-medium', sans-serif; 16px; 18px; 500; normal; @color-darkgrey);
+    margin: 0px 25px;
+}
