@@ -1,0 +1,336 @@
+@media (min-width: 318px) {
+    .direct {
+        width: 270px;
+        background-color: @color-grey;
+
+        border-radius: 0px 0px 25px 25px;
+
+        padding: 10px 25px;
+        padding-top: 40px;
+    }
+    .direct__title {
+        .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal; @color-darkorange);
+
+        padding: 0px 25px;
+    }
+    .direct__paragraph {
+        .ffbasic('bloggersans-light', sans-serif; 16px; 22px; 400; normal; @color-darkgrey);
+
+        padding: 25px;
+        padding-bottom: 50px;
+    }
+    .direct__item {
+        margin-top: 10px;
+    }
+    .direct__img-wrap {
+        position: relative;
+    }
+    .direct-info--img {
+        position: absolute;
+        bottom: -12px;
+        left: 25px;
+    }
+    .direct__img-thailand {
+        width: 270px;
+        min-height: 110px;
+        background-image: url(../../img/thailand-mobile@1x.jpg);
+        background-repeat: no-repeat;
+
+        border-radius: 25px 25px 0px 0px;
+    }
+    .direct__img-france {
+        width: 270px;
+        min-height: 110px;
+        background-image: url(../../img/france-mobile@1x.jpg);
+        background-repeat: no-repeat;
+
+        border-radius: 25px 25px 0px 0px;
+    }
+    .direct__img-czech {
+        width: 270px;
+        min-height: 110px;
+        background-image: url(../../img/czech-mobile@1x.jpg);
+        background-repeat: no-repeat;
+
+        border-radius: 25px 25px 0px 0px;
+    }
+    .direct-info {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+
+        width: 220px;
+        background-color: @color-white;
+
+        border-radius: 10px;
+
+        padding: 25px;
+        padding-top: 35px;
+        margin-top: -10px;
+    }
+    .direct-info__title {
+        .ffbasic('bloggersans-bold', sans-serif; 21px; 21px; 700; normal; @color-navy);
+
+        margin: 0px;
+    }
+    .direct-info__sum--img{
+        opacity: 0.1;
+    }
+    .direct-info__sum-wrap {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    .direct-info__sum {
+        .ffbasic('bloggersans-medium', sans-serif; 16px; 30px; 500; normal;  @color-lightgrey);
+    }
+    .direct-info__slogan {
+        .ffbasic('bloggersans-medium', sans-serif; 16px; 18px; 500; normal;  @color-lightgrey);
+
+        margin: 0px;
+    }
+    .direct-shadow--img {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .direct__wrapper {
+        .boxsetcolor(220px; 20px; @color-yellow);
+        text-align: left;
+
+        border-radius: 10px;
+
+        padding: 20px 25px;
+        margin: 25px 0px;
+  }
+    .direct__link {
+        .ffbasic('bloggersans-bold', sans-serif; 18px; 18px; 700; normal;  @color-cyan);
+        .linkstyle();
+        text-transform: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .direct {
+        width: 620px;
+        background-image: url(../../img/flags-back@1x.png), url(../../img/blue_back_direct.png);
+        background-repeat: no-repeat;
+        background-size: 289px 575px, 141px 141px;
+        background-position: top 80px right 40px, top 406px left 40px;
+
+        padding: 10px 75px;
+        padding-top: 50px;
+    }
+    .direct__title {
+        .ffbasic('bloggersans-bold', sans-serif; 45px; 45px; 700; normal; @color-darkorange);
+
+        padding: 0px;
+    }
+    .direct__paragraph {
+        .ffbasic('bloggersans-light', sans-serif; 28px; 33px; 400; normal; @color-darkgrey);
+
+        width: 355px;
+
+        padding: 0px;
+    }
+    .direct__item {
+        width: 620px;
+        height: 140px;
+
+        display: flex;
+
+        margin-top: 10px;
+    }
+    .direct__img-wrap {
+        display: none;
+    }
+    .direct__item--thailand {
+        position: relative;
+    }
+    .direct__item--thailand:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background-image: url(../../img/thailand-desktop@1x.jpg);
+        background-repeat: no-repeat;
+
+        width: 185px;
+        height: 140px;
+
+        border-radius: 0px 25px 25px 0px;
+    }
+    .direct__item--thailand:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: -400px;
+
+        background-image: url(../../img/Thailand.png);
+        background-repeat: no-repeat;
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 0px 25px 25px 0px;
+    }
+    .direct__item--france {
+        position: relative;
+    }
+    .direct__item--france:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        content: "";
+
+        background-image: url(../../img/france-desktop@1x.jpg);
+        background-repeat: no-repeat;
+
+        width: 185px;
+        height: 140px;
+
+        border-radius: 0px 25px 25px 0px;
+    }
+    .direct__item--france:after {
+        position: absolute;
+        top: 15px;
+        right: -400px;
+
+        content: "";
+
+        background-image: url(../../img/France.png);
+        background-repeat: no-repeat;
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 0px 25px 25px 0px;
+    }
+    .direct__item--czech {
+        position: relative;
+    }
+    .direct__item--czech:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        content: "";
+
+        background-image: url(../../img/czech-desktop@1x.jpg);
+        background-repeat: no-repeat;
+
+        width: 185px;
+        height: 140px;
+
+        border-radius: 0px 25px 25px 0px;
+    }
+    .direct__item--czech:after {
+        position: absolute;
+        top: 15px;
+        right: -400px;
+
+        content: "";
+
+        background-image: url(../../img/Czech.png);
+        background-repeat: no-repeat;
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 0px 25px 25px 0px;
+    }
+    .direct-info {
+        flex-direction: column;
+
+        width: 385px;
+
+        border-radius: 25px 0px 0px 25px;
+
+        margin: 0px;
+    }
+    .direct-shadow--img {
+        display: none;
+    }
+    .direct-info__title {
+        .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal; @color-navy);
+    }
+    .direct-info__sum--img{
+        width: 20px;
+        height: 20px;
+
+        margin-right: 10px;
+    }
+    .direct-info__sum {
+        .ffbasic('bloggersans-medium', sans-serif; 20px; 30px; 500; normal;  @color-lightgrey);
+    }
+    .direct-info__slogan {
+        .ffbasic('bloggersans-medium', sans-serif; 20px; 18px; 500; normal;  @color-lightgrey);
+    }
+    .direct__wrapper {
+        .boxsetcolor(570px; 20px; @color-yellow);
+
+        border-radius: 25px;
+
+        padding: 30px 25px;
+        margin: 75px auto;
+    }
+    .direct__link {
+        .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal;  @color-cyan);
+    }
+}
+
+@media (min-width: 1438px) {
+  .direct {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+        width: 1320px;
+        min-height: 470px;
+        background-position: top 90px right 60px, top 90px left 60px;
+
+        padding: 140px 60px;
+    }
+
+
+    .direct__text-wrap {
+        width: 515px;
+    }
+
+
+    .direct__paragraph {
+        width: 360px;
+    }
+
+
+    .direct__item-wrap {
+        position: absolute;
+        top: 160px;
+        left: 130px;
+    }
+
+
+    .direct__link {
+        margin-top: 30px;
+        margin-right: 252px;
+    }
+
+
+    .direct__wrapper {
+        .boxsetcolor(213px; 30px; @color-yellow);
+
+        border-radius: 25px;
+
+        margin: 0px;
+    }
+}
