@@ -5,195 +5,247 @@
 	      <meta name="viewport" content="width=pognali-width, initial-scale=1">
 	      <meta name="description" content="Анкеты людей для совместного путешествия">
         <title>Погнали: выбор попутчиков</title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
+
+
     <body>
         <header class="header">
-            <a href="index.html" class="header__logo">
-                <img class="header__logo-image"
-                src="img/svg/#.svg"
-                width="100"
-                height="19"
-                alt="Логотип сайта Погнали">
+            <a class="header__link" href="index.html">
+              <img class="header__logo-image"
+              src="img/logo-mobile-white@1x.png"
+              width="100"
+              height="19"
+              alt="Логотип сайта Погнали">
             </a>
         </header>
 
-        <h1 class="page__title">Попутчики</h1>
+        <main class="main">
+            <div class="main__title-wrap">
+                <h1 class="main__title">Попутчики</h1>
+            </div>
 
-        <section class="country">
-            <h2 class="country__title">Фильтрация по странам</h2>
-            <button class="country__toggle" type="button">Открыть меню</button>
-            <div class="country__wrapper">
+            <div class="filter">
+                <button class="filter__toggle" type="button">Открыть фильтр</button>
+                <h2 class="filter__title">Фильтрация по странам</h2>
+                <button class="filter__toggle" type="button">Закрыть</button>
+            </div>
+
+            <section class="nation">
+                <h2 class="nation__title">Фильтрация по странам</h2>
+                <button class="nation__toggle" type="button">Открыть меню</button>
                 <ul class="mainland__list">
                     <li class="mainland__item">Европа</li>
                     <li class="mainland__item">Азия</li>
                     <li class="mainland__item">Америка</li>
                     <li class="mainland__item">Острова</li>
                 </ul>
-                <ul class="country__list">
-                    <li class="country__item">Афганистан</li>
-                    <li class="country__item">Албания</li>
-                    <li class="country__item">Алжир</li>
-                    <li class="country__item">Андорра</li>
-                    <li class="country__item">Аргентина</li>
-                    <li class="country__item">Армения</li>
-                    <li class="country__item">Австралия</li>
-                    <li class="country__item">Австрия</li>
-                    <li class="country__item">Азербайджан</li>
+                <table class="nation__table">
+                    <tr class="nation__line">
+                        <th class="nation__cell nation__cell--grey">а</th>
+                        <th class="nation__cell">б</th>
+                        <th class="nation__cell">в</th>
+                        <th class="nation__cell">г</th>
+                        <th class="nation__cell">д</th>
+                    </tr>
+                    <tr class="nation__line">
+                        <th class="nation__cell">е</th>
+                        <th class="nation__cell">з</th>
+                        <th class="nation__cell">и</th>
+                        <th class="nation__cell">к</th>
+                        <th class="nation__cell">л</th>
+                    </tr>
+                    <tr class="nation__line">
+                        <th class="nation__cell">м</th>
+                        <th class="nation__cell">н</th>
+                        <th class="nation__cell">о</th>
+                        <th class="nation__cell">п</th>
+                        <th class="nation__cell">р</th>
+                    </tr>
+                    <tr class="nation__line">
+                        <th class="nation__cell">с</th>
+                        <th class="nation__cell">т</th>
+                        <th class="nation__cell">у</th>
+                        <th class="nation__cell">ф</th>
+                        <th class="nation__cell">х</th>
+                    </tr>
+                    <tr class="nation__line">
+                        <th class="nation__cell">ч</th>
+                        <th class="nation__cell">ш</th>
+                        <th class="nation__cell">э</th>
+                        <th class="nation__cell">ю</th>
+                        <th class="nation__cell">я</th>
+                    </tr>
+                </table>
+                <ul class="nation__list">
+                    <li class="nation__item">Афганистан</li>
+                    <li class="nation__item">Албания</li>
+                    <li class="nation__item">Алжир</li>
+                    <li class="nation__item">Андорра</li>
+                    <li class="nation__item">Аргентина</li>
+                    <li class="nation__item">Армения</li>
+                    <li class="nation__item">Австралия</li>
+                    <li class="nation__item">Австрия</li>
+                    <li class="nation__item">Азербайджан</li>
                 </ul>
-            </div>
-            <button class="biz__button" type="button">
-              Свернуть
-            </button>
-        </section>
+                <button class="nation__button" type="button">
+                  Свернуть
+                </button>
+            </section>
 
-        <section class="sidebar">
-            <h2 class="sidebar_title">Подберите идеального попутчика</h2>
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <div class="filter__item">
-                    <h3>Хобби</h3>
-                </div>
-                <div class="filter_item">
-                    <h3>Музыка</h3>
-                    <input type="checkbox" id="filter-check-1" name="music-1" value="Тяжелый рок" checked>
-                    <label for="filter-check-1">Тяжелый рок</label>
-                    <input type="checkbox" id="filter-check-2" name="music-2" value="Русский рэп">
-                    <label for="filter-check-2">Русский рэп</label>
-                    <input type="checkbox" id="filter-check-3" name="music-3" value="Евроденс">
-                    <label for="filter-check-3">Евроденс</label>
-                </div>
-                <div class="filter_item">
-                    <h3>Еда</h3>
-                </div>
-                <div class="filter_item">
-                    <h3>Транспорт</h3>
-                    <div class="filter__transport">
-                        <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
-                            width="19"
-                            height="21"
-                            alt="Самолет">
-                        <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
-                            width="17"
-                            height="21"
-                            alt="Автобус">
-                        <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
-                            width="24"
-                            height="21"
-                            alt="Велосипед">
-                        <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
-                            width="20"
-                            height="21"
-                            alt="Бегун">
-                    </div>
-                </div>
-                <div class="filter_item">
-                    <h3>Левел</h3>
-                    <div class="filter__range">
-                        <div class="filter__level">
-                            <label class="filter__level--label">
-                                <input class="filter_level--input" type="text" name="min-level" value="30">
-                            </label>
-                            <label class="filter_range_label filter_range_label_max">
-                                <input class="filter__level--input" type="text" name="max-level" value="100">
-                            </label>
+            <section class="sidebar">
+                <div class="sidebar__wrap">
+                    <h2 class="sidebar__title">Подберите идеального попутчика</h2>
+                    <form class="sidebar-filter" method="get" action="https://echo.htmlacademy.ru">
+                        <div class="sidebar__item">
+                            <h3 class="sidebar__unit">Хобби</h3>
                         </div>
-                    </div>
+                        <div class="sidebar__item">
+                            <h3 class="sidebar__unit">Музыка</h3>
+                            <div class="sidebar__music-wrap">
+                                <input class="sidebar__input" type="checkbox" id="sidebar-check-1" name="music-1" value="Тяжелый рок" checked>
+                                <label class="sidebar__label" for="sidebar-check-1">Тяжелый рок</label><br>
+                                <input class="sidebar__input" class="sidebar__input" type="checkbox" id="sidebar-check-2" name="music-2" value="Русский рэп">
+                                <label class="sidebar__label" for="sidebar-check-2">Русский рэп</label><br>
+                                <input class="sidebar__input" type="checkbox" id="sidebar-check-3" name="music-3" value="Евроденс">
+                                <label class="sidebar__label" for="sidebar-check-3">Евроденс</label><br>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <h3 class="sidebar__unit">Еда</h3>
+                        </div>
+                        <div class="sidebar__item">
+                            <h3 class="sidebar__unit">Транспорт</h3>
+                            <div class="sidebar__transport">
+                                <img class="companions-info__transport--img"
+                                    src="img/svg/#.svg"
+                                    width="19"
+                                    height="21"
+                                    alt="Самолет">
+                                <img class="companions-info__transport--img"
+                                    src="img/svg/#.svg"
+                                    width="17"
+                                    height="21"
+                                    alt="Автобус">
+                                <img class="companions-info__transport--img"
+                                    src="img/svg/#.svg"
+                                    width="24"
+                                    height="21"
+                                    alt="Велосипед">
+                                <img class="companions-info__transport--img"
+                                    src="img/svg/#.svg"
+                                    width="20"
+                                    height="21"
+                                    alt="Бегун">
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <h3 class="sidebar__unit">Левел</h3>
+                            <div class="sidebar__range">
+                                <div class="sidebar__level">
+                                    <label class="sidebar__level--label">
+                                        <input class="sidebar__level--input" type="text" name="min-level" value="30                     100">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="sidebar__button" type="submit" value="Показать">Показать!</button>
+                    </form>
                 </div>
-                <button class="filter__button" type="submit" value="Показать">Показать</button>
-            </form>
-        </section>
-        <main class="main">
+            </section>
 
             <section class="companions">
-                <h2 class="visually-hidden">Список попутчиков</h2>
+                <h2 class="companions__title">Список попутчиков</h2>
                 <article class="companions__item">
-                    <img class="companions__img"
-                    src="img/png/companions__firsova--avatar.png"
-                    width="70"
-                    height="70"
-                    alt="Девушка в воде">
+                    <div class="companions__img-wrap">
+                        <img class="companions__img"
+                        src="img/firsova-mobile@1x.jpg"
+                        width="70"
+                        height="70"
+                        alt="Девушка в воде">
+                    </div>
                     <h3 class="companions__name">Таня Фирсова</h3>
                     <p class="companions__hashtag">
                       #ЗОЖ #ПП #Фитнес #пляж
                       #авокадо #смузи
                     </p>
-                    хочет посетить:
-                    <div class="companions__country">
-                        <img class="companions__country--img"
+                    <span class="companions__item--grey">хочет посетить:</span>
+                    <div class="companions__nation">
+                        <img class="companions__nation--img"
                         src="img/png/flag_sri-lanka.png"
                         width="26"
                         height="18"
                         alt="Флаг Таиланда">
                         Шри-Ланка
-                        <img class="companions__country--img"
+                        <img class="companions__nation--img"
                         src="img/png/flag_thailand.png"
                         width="26"
                         height="18"
                         alt="Флаг Таиланда">
                         Таиланд
-                        <img class="companions__country--img"
+                        <img class="companions__nation--img"
                         src="img/png/flag_seychelles.png"
                         width="26"
                         height="18"
                         alt="Флаг Сейшельских островов">
                         Сейшелы
                     </div>
-                    транспорт:
+                    <span class="companions__item--grey">транспорт:</span>
                     <div class="companions__transport">
                         <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        src="img/plane.svg"
                         width="14"
                         height="16"
                         alt="Самолет">
-                        <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        <img class="companions__transport--img companions__transport--greyimg"
+                        src="img/bus.svg"
                         width="13"
                         height="16"
                         alt="Автобус">
-                        <img class="companionso__transport--img"
-                        src="img/svg/#.svg"
+                        <img class="companions__transport--img companions__transport--greyimg"
+                        src="img/bike.svg"
                         width="19"
                         height="17"
                         alt="Велосипед">
-                        <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        <img class="companions__transport--img companions__transport--greyimg"
+                        src="img/run.svg"
                         width="15"
                         height="17"
                         alt="Бегун">
                     </div>
-                    левел:
+                    <span class="companions__item--grey">левел:</span>
                     <div class="companions__level">
                         <span class="companions__level--blue">99</span>
                     </div>
-                    <a class="companions__сall button" href="#">
-                      Позвать
-                    </a>
+                    <div class="companions__link-wrap">
+                        <a class="companions__link" href="#">
+                          Позвать!
+                        </a>
+                    </div>
                 </article>
 
                 <article class="companions__item">
-
-                    <img class="companions__img"
-                    src="img/png/companions__demin--avatar.png"
-                    width="70"
-                    height="70"
-                    alt="Парень на фоне снега">
+                    <div class="companions__img-wrap">
+                        <img class="companions__img"
+                        src="img/demin-mobile@1x.jpg"
+                        width="70"
+                        height="70"
+                        alt="Парень на фоне снега">
+                    </div>
                     <h3 class="companions__name">Петя Демин</h3>
                     <p class="companions__hashtag">
                       #бургер #бар #футбол
                       #концерт #крафт
                     </p>
                     хочет посетить:
-                    <div class="companions__country">
-                        <img class="companions__country--img"
-                        src="img/png/flag_belgium.png"
+                    <div class="companions__nation">
+                        <img class="companions__nation--img"
+                        src="#"
                         width="26"
                         height="18"
                         alt="Флаг Бельгии">
                         Бельгия
-                        <img class="companions__country--img"
+                        <img class="companions__nation--img"
                         src="img/png/flag_czech.png"
                         width="26"
                         height="18"
@@ -202,210 +254,221 @@
                     </div>
                     транспорт:
                     <div class="companions__transport">
-                        <img class="companions__transport--img"
-                        src="img/svg/#.svg"
-                        width="14"
-                        height="16"
-                        alt="Самолет">
-                        <img class="companions__transport--img"
-                        src="img/svg/#.svg"
-                        width="13"
-                        height="16"
-                        alt="Автобус">
-                        <img class="companionso__transport--img"
-                        src="img/svg/#.svg"
-                        width="19"
-                        height="17"
-                        alt="Велосипед">
-                        <img class="companions__transport--img"
-                        src="img/svg/#.svg"
-                        width="15"
-                        height="17"
-                        alt="Бегун">
+                      <img class="companions__transport--img"
+                      src="img/plane.svg"
+                      width="14"
+                      height="16"
+                      alt="Самолет">
+                      <img class="companions__transport--img"
+                      src="img/bus.svg"
+                      width="13"
+                      height="16"
+                      alt="Автобус">
+                      <img class="companions__transport--img companions__transport--greyimg"
+                      src="img/bike.svg"
+                      width="19"
+                      height="17"
+                      alt="Велосипед">
+                      <img class="companions__transport--img"
+                      src="img/run.svg"
+                      width="15"
+                      height="17"
+                      alt="Бегун">
                     </div>
                     левел:
                     <div class="companions__level">
                         <span class="companions__level--blue">80</span>
                     </div>
-                    <a class="companions__сall button" href="#">
-                      Позвать
-                    </a>
+                    <div class="companions__link-wrap">
+                        <a class="companions__link" href="#">
+                          Позвать!
+                        </a>
+                    </div>
                 </article>
 
                 <article class="companions__item">
-
-                    <img class="companions__img"
-                    src="img/png/companions__smolov--avatar.png"
-                    width="70"
-                    height="70"
-                    alt="Парень на крыше автомобиля">
+                    <div class="companions__img-wrap">
+                        <img class="companions__img"
+                        src="img/smolov-mobile@1x.jpg"
+                        width="70"
+                        height="70"
+                        alt="Парень на крыше автомобиля">
+                    </div>
                     <h3 class="companions__name">Марк Смолов</h3>
                     <p class="companions__hashtag">
                       #рэп #тату #хайпбист
                       #кроссовки #суприм
                     </p>
-                    хочет посетить:
-                    <div class="companions__country">
-                        <img class="companions__country--img"
+                    <span class="companions__item--grey">хочет посетить:</span>
+                    <div class="companions__nation">
+                        <img class="companions__nation--img"
                         src="img/png/flag_usa.png"
                         width="26"
                         height="18"
                         alt="Флаг США">
                         США
-                        <img class="companions__country--img"
+                        <img class="companions__nation--img"
                         src="img/png/flag_australia.png"
                         width="26"
                         height="18"
                         alt="Флаг Австралии">
                         Австралия
-                        <img class="companions__country---img"
+                        <img class="companions__nation--img"
                         src="img/png/flag_dominicana.png"
                         width="26"
                         height="18"
                         alt="Флаг Доминиканы">
                         Доминикана
                     </div>
-                    транспорт:
+                    <span class="companions__item--grey">транспорт:</span>
                     <div class="companions__transport">
                         <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        src="img/plane.svg"
                         width="14"
                         height="16"
                         alt="Самолет">
-                        <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        <img class="companions__transport--img companions__transport--greyimg"
+                        src="img/bus.svg"
                         width="13"
                         height="16"
                         alt="Автобус">
-                        <img class="companionso__transport--img"
-                        src="img/svg/#.svg"
+                        <img class="companions__transport--img"
+                        src="img/bike.svg"
                         width="19"
                         height="17"
                         alt="Велосипед">
-                        <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        <img class="companions__transport--img companions__transport--greyimg"
+                        src="img/run.svg"
                         width="15"
                         height="17"
                         alt="Бегун">
                     </div>
-                    левел:
+                    <span class="companions__item--grey">левел:</span>
                     <div class="companions__level">
                         <span class="companions__level--blue">80</span>
                     </div>
-                    <a class="companions__сall button" href="#">
-                      Позвать
-                    </a>
+                    <div class="companions__link-wrap">
+                        <a class="companions__link" href="#">
+                          Позвать!
+                        </a>
+                    </div>
                 </article>
 
 
                 <article class="companions__item">
-                    <img class="companions__img"
-                    src="img/png/companions__rogovaya--avatar.png"
-                    width="70"
-                    height="70"
-                    alt="Девушка в деловом костюме">
+                    <div class="companions__img-wrap">
+                        <img class="companions__img"
+                        src="img/rogovaya-mobile@1x.jpg"
+                        width="70"
+                        height="70"
+                        alt="Девушка в деловом костюме">
+                    </div>
                     <h3 class="companions__name">Лариса Роговая</h3>
                     <p class="companions__hashtag">
                       #образование #карьера
                       #учеба #линкедин
                     </p>
-                    хочет посетить:
-                    <div class="companions__country">
-                        <img class="companions__country--img"
+                    <span class="companions__item--grey">хочет посетить:</span>
+                    <div class="companions__nation">
+                        <img class="companions__nation--img"
                         src="img/png/flag_uk.png"
                         width="26"
                         height="18"
                         alt="Флаг Великобритании">
                         Великобритания
-                        <img class="companions__country--img"
+                        <img class="companions__nation--img"
                         src="img/png/flag_germany.png"
                         width="26"
                         height="18"
                         alt="Флаг Германии">
                         Германия
                     </div>
-                    транспорт:
+                    <span class="companions__item--grey">транспорт:</span>
                     <div class="companions__transport">
                         <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        src="img/plane.svg"
                         width="14"
                         height="16"
                         alt="Самолет">
                         <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        src="img/bus.svg"
                         width="13"
                         height="16"
                         alt="Автобус">
-                        <img class="companionso__transport--img"
-                        src="img/svg/#.svg"
+                        <img class="companions__transport--img companions__transport--greyimg"
+                        src="img/bike.svg"
                         width="19"
                         height="17"
                         alt="Велосипед">
-                        <img class="companions__transport--img"
-                        src="img/svg/#.svg"
+                        <img class="companions__transport--img companions__transport--greyimg"
+                        src="img/run.svg"
                         width="15"
                         height="17"
                         alt="Бегун">
                     </div>
-                    левел:
+                    <span class="companions__item--grey">левел:</span>
                     <div class="companions__level">
                         <span class="companions__level--blue">50</span>
                     </div>
-                    <a class="companions__сall button" href="#">
-                      Позвать
-                    </a>
+                    <div class="companions__link-wrap">
+                        <a class="companions__link" href="#">
+                          Позвать!
+                        </a>
+                    </div>
                 </article>
-
             </section>
-        <main>
-        <footer class="footer">
-            <img class="footer__logo-image"
-            src="#"
-            width="100"
-            height="19"
-            alt="Логотип сайта Погнали">
-            <div class="footer__social social">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link social__link--facebook" href="#">
-                            <img class="develop__link--img"
-                            src="img/svg/#.svg"
-                            width="11"
-                            height="21"
-                            alt="Мы в Фейсбуке">
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--vkontakte" href="#">
-                            <img class="develop__link--img"
-                            src="img/svg/#.svg"
-                            width="23"
-                            height="12"
-                            alt="Мы в Вконтакте">
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--instagram" href="#">
-                            <img class="develop__link--img"
-                            src="img/svg/#.svg"
-                            width="11"
-                            height="21"
-                            alt="Мы в Инстаграме">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__develop">
-                <span class="develop__text">Разработано</span>
-                <a class="develop__link" href="#">
-                 <img class="develop__link--img"
-                 src="#"
-                 width="27"
-                 height="34"
-                 alt="Логотип HTML Academia">
-                </a>
-            </div>
 
-        </footer>
+        <main>
+
+            <footer class="footer">
+                <a class="footer__logo-link" href="index.html">
+                    <img class="footer__logo--img"
+                    src="img/logo-mobile-blue@1x.png"
+                    width="100"
+                    height="19"
+                    alt="Логотип сайта Погнали">
+                </a>
+                <div class="footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--facebook" href="#">
+                                <img class="social__link--img"
+                                src="img/facebook.svg"
+                                width="11"
+                                height="21"
+                                alt="Мы в Фейсбуке">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--vkontakte" href="#">
+                                <img class="social__link--img"
+                                src="img/vk.svg"
+                                width="23"
+                                height="12"
+                                alt="Мы в Вконтакте">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--instagram" href="#">
+                                <img class="social__link--img"
+                                src="img/instagram.svg"
+                                width="18"
+                                height="18"
+                                alt="Мы в Инстаграме">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__develop develop">
+                    <span class="develop__text">Разработано</span>
+                    <a class="develop__link" href="#">
+                       <img class="develop__link--img"
+                       src="img/htmlacademy.svg"
+                       width="27"
+                       height="34"
+                       alt="Логотип HTML Academia">
+                    </a>
+                </div>
+            </footer>
     </body>
 </html>
