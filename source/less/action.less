@@ -1,0 +1,177 @@
+.action__title {
+  .visuallyhidden();
+}
+
+.action__list {
+  .liststyle();
+}
+
+@media (min-width: 318px) {
+  .action {
+    position: relative;
+
+    width: 320px;
+    min-height: 300px;
+  }
+
+
+  .action__list {
+    position: absolute;
+    top: -68px;
+
+    margin: 0 25px;
+  }
+
+
+  .action__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .ffbasic("bloggersans-bold", sans-serif; 18px; 18px; 700; normal; @color-navy);
+    .boxset(220px, 50px);
+    border-radius: 10px 10px 0 0;
+
+    padding: 20px 25px;
+    margin-top: -10px;
+  }
+
+
+  .action__item--1 {
+    background-color: @color-darkorange;
+  }
+
+
+  .action__item--2 {
+    background-color: @color-lightorange;
+  }
+
+
+  .action__item--3 {
+    background-color: @color-darkyellow;
+  }
+
+
+  .action__item--4 {
+    background-color: @color-yellow;
+    border-radius: 10px;
+  }
+
+
+  .action__item--white {
+    .ffbasic("bloggersans-bold", sans-serif; 18px; 18px; 700; normal; @color-white);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .action {
+    min-height: 470px;
+
+    padding: 0 40px;
+  }
+
+
+  .action__list {
+    top: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 688px;
+
+    margin: 0;
+  }
+
+
+  .action__item {
+    flex-direction: column;
+
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-navy);
+
+    min-height: 80px;
+
+    padding: 30px;
+    margin: 0;
+  }
+
+
+  .action__item--1 {
+    width: 304px;
+    border-radius: 20px 0 0 0;
+    margin-top: 0;
+  }
+
+
+  .action__item--2 {
+    width: 284px;
+    border-radius: 20px 20px 0 0;
+    margin-left: -20px;
+  }
+
+
+  .action__item--3 {
+    width: 304px;
+    border-radius: 0 0 0 20px;
+  }
+
+
+  .action__item--4 {
+    width: 284px;
+    border-radius: 0 0 20px 0;
+    margin-left: -20px;
+  }
+
+
+  .action__item--white {
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-white);
+  }
+}
+
+@media (min-width: 1438px) {
+  .action {
+    width: 1320px;
+    min-height: 345px;
+
+    margin: 0 auto;
+    padding: 0;
+    margin-top: -230px;
+  }
+
+
+  .action__list {
+    position: static;
+    width: 1320px;
+  }
+
+
+  .action__item {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 262px;
+    min-height: 48px;
+
+    border-radius: 20px 0 0 20px;
+
+    margin-left: -30px;
+    padding: 30px 30px;
+    padding-right: 60px;
+  }
+
+
+  .action__item--1 {
+    margin: 0;
+    margin-top: 0;
+  }
+
+
+  .action__item--4 {
+    border-radius: 20px;
+  }
+
+
+  .action__item--white {
+    margin-top: 7px;
+  }
+}
