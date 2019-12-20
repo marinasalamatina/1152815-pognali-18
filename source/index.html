@@ -6,13 +6,15 @@
       	<meta name="description" content="Большой выбор направлений и попутчиков для совместного отдыха">
       	<meta name="keywords" content="Путешествие, трип, попутчики, отдых, друзья, поездки">
         <title>Погнали: приложение для путешествий</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link href="css/style.css" rel="stylesheet">
     </head>
+
     <body>
         <header class="header">
-            <a class="header__logo">
+            <a class="header__link" href="index.html">
                 <img class="header__logo-image"
                 src="./img/bus.svg"
+
                 width="100"
                 height="19"
                 alt="Логотип сайта Погнали">
@@ -22,110 +24,115 @@
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item">
-                            <a>О сервисе</a>
+                            <a class="site-list__link">О сервисе</a>
                         </li>
                         <li class="site-list__item">
-                            <a href="form.html">Направления</a>
+                            <a class="site-list__link" href="form.html">Направления</a>
                         </li>
                         <li class="site-list__item">
-                            <a href="catalog.html">Попутчики</a>
+                            <a class="site-list__link" href="catalog.html">Попутчики</a>
                         </li>
                     </ul>
                     <ul class="main-nav__list user-list">
-                        <li class="user-list__item">
-                            <a class="user-list__login" href="login.html">Авторизация</a>
-                        </li>
+                      <li class="user-list__item">
+                          <a class="user-list__login" href="login.html">Авторизация</a>
+                      </li>
                     </ul>
+                    <a class="main-nav__feedback--blue main-nav__link" href="tel:+7-800-555-86-28">8 800 555-86-28</a>
+                    <p class="main-nav__feedback--blue">mail@htmlacademy.ru</p>
                 </div>
             </nav>
         </header>
 
         <article class="site-info">
             <h1 class="site-info__title">В путешествие с крутыми попутчиками!</h1>
-
-            <section class="site-info__user-menu">
-                <h2 class="visually-hidden">Меню гостя</h2>
-                <ul class="user-menu__list connect-list">
-                    <li class="connect-list__item">
-                        <a class="connect-list__link-phone">
-                            <img class="connect-list__item--img"
-                            src="img/svg/#.svg"
-                            width="18"
-                            height="18"
-                            alt="Телефон">
+            <section class="site-info__general general">
+                <h2 class="general__title">Меню гостя</h2>
+                <ul class="general__list">
+                    <li class="general__item">
+                        <a class="general__link" href="#">
+                            <div class="general__link-wrap general__link-wrap--orange">
+                                <img class="general__link--img"
+                                src="img/topmenu-phone.svg"
+                                width="18"
+                                height="18"
+                                alt="Телефон">
+                            </div>
                         </a>
                     </li>
-                    <li class="connect-list__item">
-                        <a class="connect-list__link-letter">
-                            <img class="connect-list__item--img"
-                            src="img/svg/#.svg"
-                            width="18"
-                            height="14"
-                            alt="Письмо">
+                    <li class="general__item">
+                        <a class="general__link" href="#">
+                            <div class="general__link-wrap">
+                                <img class="general__link--img"
+                                src="img/topmenu-mail.svg"
+                                width="18"
+                                height="14"
+                                alt="Письмо">
+                            </div>
                         </a>
                     </li>
                 </ul>
-                <ul class="user-menu__list user-list">
-                    <li class="user-list__item">
-                        <a class="user-list__login" href="login.html">Авторизация</a>
+                <ul class="general__list general-user">
+                    <li class="general__item general-user__item">
+                        <a class="general-user__login" href="login.html">Авторизация</a>
                     </li>
                 </ul>
             </section>
 
-            <section class="site-info__excerpt">
-                <q class="excerpt__text">Лучшее приложение,
-                    что я видел в жизни!
-                </q>
-                <cite class="excerpt__author">Мурат Эльтазин главный редактор
+            <section class="site-info__excerpt excerpt">
+                <h2 class="excerpt__title">Отзыв о нас</h2>
+                <p class="excerpt__text">"Лучшее приложение,
+                    что я видел в жизни!"</p>
+                <p class="excerpt__author">Мурат Эльтазин главный редактор
                     газеты «гаджетлайф»
-                </cite>
+                </p>
             </section>
 
-            <section class="site-info__action">
-                <h2 class="visually-hidden">Порядок действий для удачного путешествия</h2>
+            <section class="site-info__action action">
+                <h2 class="action__title">Порядок действий для удачного путешествия</h2>
                 <ul class="action__list">
                     <li class="action__item action__item--1">
                       Выберите
                       направление
-                        <span class="action--white">1</span>
+                        <span class="action__item--white">1</span>
                     </li>
                     <li class="action__item action__item--2">
                       Изучите идеи
                       путешественников
-                        <span class="action--white">2</span>
+                        <span class="action__item--white">2</span>
                     </li>
                     <li class="action__item action__item--3">
                       Находите тех,
                       кто похож на вас
-                        <span class="action--white">3</span>
+                        <span class="action__item--white">3</span>
                     </li>
                     <li class="action__item action__item--4">
                       Путешествуйте
                       вместе!
-                        <span class="action--white">4</span>
+                        <span class="action__item--white">4</span>
                     </li>
                 </ul>
             </section>
 
-            <section class="site-info__servis-desc">
+            <section class="site-info__servis-desc servis-desc">
                 <h2 class="servis-desc__title">О сервисе</h2>
-                <p class="servis-desc__article text-desc">
+                <p class="servis-desc--light">
                   Любое путешествие веселее
                   с попутчиками, которые на одной волне с тобой!
                   Делитесь своими идеями путешествий и черпайте
                   вдохновение в чужих.
                 </p>
-                <p class="servis-desc__article text-appeal">
+                <p class="servis-desc--bold">
                   А если найдете кого-то
                   близкого по духу — скорее
                   зовите в совместный трип!
                 </p>
             </section>
+
         </article>
 
         <main class="main">
-            <section class="main__direct">
-
+            <section class="direct">
                 <h2 class="direct__title">Направления</h2>
                 <p class="direct__paragraph">
                   Мы не продаем туры
@@ -134,242 +141,227 @@
                   и чем можно там заняться.
                 </p>
                 <article class="direct__item">
-                    <img class="direct__item--img"
-                    src="img/png/direct__item_thailand.png"
-                    width="270"
-                    height="110"
-                    alt="Таиланд">
-                    <div class="direct__info">
-                        <img class="direct__info--img"
+                    <div class="direct__img-wrap direct__img-thailand">
+                        <img class="direct-info--img"
                         src="img/png/flag_thailand.png"
                         width="35"
                         height="24"
                         alt="Флаг Таиланда">
-                        <h3 class="direct__info-title">Таиланд</h3>
-                        <div class="direct__users">
-                            <img class="direct__users--img"
-                            src="img/svg/direct__users.svg"
+                    </div>
+                    <div class="direct-info">
+                        <h3 class="direct-info__title">Таиланд</h3>
+                        <div class="direct-info__sum-wrap">
+                            <img class="direct-info__sum--img"
+                            src="img/user.svg"
                             width="11"
                             height="11"
                             alt="Юзер">
-                            <span class="direct__users-sum">18321</span>
+                            <span class="direct-info__sum">18321</span>
                         </div>
-                        <p class="direct__info-slogan">Джунгли зовут!</p>
+                        <p class="direct-info__slogan">Джунгли зовут!</p>
                     </div>
                 </article>
+
                 <article class="direct__item">
-                    <img class="direct__item--img"
-                    src="img/png/direct__item_france.png"
-                    width="270"
-                    height="110"
-                    alt="Франция">
-                    <div class="direct__info">
-                        <img class="direct__info--img"
+                    <div class="direct__img-wrap direct__img-france">
+                        <img class="direct-info--img"
                         src="img/png/flag_france.png"
                         width="35"
                         height="24"
                         alt="Флаг Франции">
-                        <h3 class="direct__info_title">Франция</h3>
-                        <div class="direct__users">
-                            <img class="direct__users--img"
-                            src="img/svg/#.svg"
+                    </div>
+                    <div class="direct-info">
+                        <h3 class="direct-info__title">Франция</h3>
+                        <div class="direct-info__sum-wrap">
+                            <img class="direct-info__sum--img"
+                            src="img/user.svg"
                             width="11"
                             height="11"
                             alt="Юзер">
-                            <span class="direct__users-sum">12518</span>
+                            <span class="direct-info__sum">12518</span>
                         </div>
-                        <p class="direct__info-slogan">Трэ бьен, манифик!</p>
+                        <p class="direct-info__slogan">Трэ бьен, манифик!</p>
                     </div>
                 </article>
+
                 <article class="direct__item">
-                    <img class="direct__item--img"
-                    src="img/png/direct__item_czech.png"
-                    width="270"
-                    height="110"
-                    alt="Чехия">
-                    <div class="direct__info">
-                        <img class="direct__info--img"
+                    <div class="direct__img-wrap direct__img-czech">
+                        <img class="direct-info--img"
                         src="img/png/flag_czech.png"
                         width="35"
                         height="24"
                         alt="Флаг Чехии">
-                        <h3 class="direct__info-title">Чехия</h3>
-                        <div class="direct__users">
-                            <img class="direct__users--img"
-                            src="img/svg/#.svg"
+                    </div>
+                        <div class="direct-info">
+                        <h3 class="direct-info__title">Чехия</h3>
+                        <div class="direct-info__sum-wrap">
+                            <img class="direct-info__sum--img"
+                            src="img/user.svg"
                             width="11"
                             height="11"
                             alt="Юзер">
-                            <span class="direct__users-sum">5326</span>
+                            <span class="direct-info__sum">5326</span>
                         </div>
-                        <p class="direct__info-slogan">Закоулки старой Европы</p>
+                        <p class="direct-info__slogan">Закоулки старой Европы</p>
                     </div>
                 </article>
-                <a class="direct__all button" href="#">
-                  Показать все
-                    <img class="direct__all--img"
-                      src="img/svg/#.svg"
-                      width="10"
-                      height="14"
-                      alt="Стрелка">
+
+                <a class="direct__link button" href="form.html">
+                <div class="direct__wrapper">
+                      Показать все
+                </div>
                 </a>
+
             </section>
 
-            <section class="main__companions">
-
-                <h2 class="companions__title">Попутчики</h2>
-                <p class="companions__paragraph text-desc">
+            <section class="travelers">
+                <h2 class="travelers__title">Попутчики</h2>
+                <p class="travelers__paragraph">
                   Все мы индивидуальны и у каждого свой взгляд
                    на идеальный отдых. Одному нужен пляж и
                    коктейль, а другому маршрут для хайкинга.
                 </p>
-                <p class="companions__paragraph text-appeal">
+                <p class="travelers__paragraph travelers__paragraph--bold">
                     Теперь можно легко найти единомышленников!
                 </p>
-                <article class="companions__item">
-                    <img class="companions__item--img"
-                    src="img/png/companions__item_firsova.png"
-                    width="270"
-                    height="270"
-                    alt="Девушка в воде">
-                    <div class="companions__level">
-                        <span class="companions__level--white">99</span>
-                        <p class="companions__level-paragraph">level</p>
+
+                <article class="travelers__item">
+                    <div class="travelers__firsova-wrap">
+                        <div class="travelers__level">
+                            <span class="travelers__level--whitebold">99</span>
+                            <p class="travelers__level--whiteregular">level</p>
+                        </div>
                     </div>
-                    <div class="companions__info">
-                        <div class="companions__info-flags">
-                            <img class="companions__info--img"
+                    <div class="travelers__info">
+                        <div class="travelers__info-flags">
+                            <img class="travelers__info--img"
                             src="img/png/flag_sri-lanka.png"
                             width="35"
                             height="24"
                             alt="Флаг Таиланда">
-                            <img class="companions__info--img"
+                            <img class="travelers__info--img"
                             src="img/png/flag_thailand.png"
                             width="35"
                             height="24"
                             alt="Флаг Таиланда">
-                            <img class="companions__info--img"
+                            <img class="travelers__info--img"
                             src="img/png/flag_seychelles.png"
                             width="35"
                             height="24"
                             alt="Флаг Сейшельских островов">
                         </div>
-                        <h3 class="companions__name">Таня Фирсова</h3>
-                        <p class="companions__hashtag">
+                        <h3 class="travelers__name">Таня Фирсова</h3>
+                        <p class="travelers__hashtag">
                           #ЗОЖ #ПП #Фитнес #пляж
                           #авокадо #смузи
                         </p>
-                        <div class="companions-info__transport">
-                            <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
+                        <div class="travelers-info__transport">
+                            <img class="travelers-info__transport--img travelers-info__transport--blue"
+                            src="img/plane.svg"
                             width="19"
                             height="21"
                             alt="Самолет">
-                            <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
+                            <img class="travelers-info__transport--img travelers-info__transport--light"
+                            src="img/bus.svg"
                             width="17"
                             height="21"
                             alt="Автобус">
-                            <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
+                            <img class="travelers-info__transport--img travelers-info__transport--light"
+                            src="img/bike.svg"
                             width="24"
                             height="21"
                             alt="Велосипед">
-                            <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
+                            <img class="travelers-info__transport--img travelers-info__transport--light"
+                            src="img/run.svg"
                             width="20"
                             height="21"
                             alt="Бегун">
                         </div>
                     </div>
                 </article>
-                <article class="companions__item">
-                    <img class="companions__item--img"
-                    src="img/png/companions__item_demin.png"
-                    width="270"
-                    height="270"
-                    alt="Парень на фоне снега">
-                    <div class="companions__level">
-                        <span class="companions__level--white">80</span>
-                        <p class="companions__level-paragraph">level</p>
+
+                <article class="travelers__item">
+                    <div class="travelers__demin-wrap">
+                        <div class="travelers__level">
+                            <span class="travelers__level--whitebold">80</span>
+                            <p class="travelers__level--whiteregular">level</p>
+                        </div>
                     </div>
-                    <div class="companions__info">
-                        <div class="companions__info-flags">
-                            <img class="companions__info--img"
+                    <div class="travelers__info">
+                        <div class="travelers__info-flags">
+                            <img class="travelers__info--img"
                             src="img/png/flag_belgium.png"
                             width="35"
                             height="24"
                             alt="Флаг Бельгии">
-                            <img class="direct__info--img"
+                            <img class="travelers__info--img"
                             src="img/png/flag_czech.png"
                             width="35"
                             height="24"
                             alt="Флаг Чехии">
                         </div>
-                        <h3 class="companions__name">Петя Демин</h3>
-                        <p class="companions__hashtag">
+                        <h3 class="travelers__name">Петя Демин</h3>
+                        <p class="travelers__hashtag">
                           #бургер #бар #футбол
                           #концерт #крафт
                         </p>
-                        <div class="companions-info__transport">
-                            <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
+                        <div class="travelers-info__transport">
+                            <img class="travelers-info__transport--img"
+                            src="img/plane.svg"
                             width="19"
                             height="21"
                             alt="Самолет">
-                            <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
+                            <img class="travelers-info__transport--img"
+                            src="img/bus.svg"
                             width="17"
                             height="21"
                             alt="Автобус">
-                            <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
+                            <img class="travelers-info__transport--img travelers-info__transport--light"
+                            src="img/bike.svg"
                             width="24"
                             height="21"
                             alt="Велосипед">
-                            <img class="companions-info__transport--img"
-                            src="img/svg/#.svg"
+                            <img class="travelers-info__transport--img"
+                            src="img/run.svg"
                             width="20"
                             height="21"
                             alt="Бегун">
                         </div>
                     </div>
                 </article>
-                <a class="direct__all button" href="#">
-                  Показать всех
-                    <img class="direct__all--img"
-                      src="img/svg/#.svg"
-                      width="10"
-                      height="14"
-                      alt="Стрелка">
+
+                <a class="travelers__link" href="catalog.html">
+                    <div class="travelers__wrapper">
+                          Показать всех
+                    </div>
                 </a>
+
             </section>
+
             <article class="add-profile">
                 <h2 class="add-profile__title">Добавьте свой профиль</h2>
                 <div class="add-profile__wrap-avatar">
                 </div>
-
-                <ul class="add-profile__list tariff-list">
-                    <li class="tariff-list__item">
+                <ul class="add-profile__list">
+                    <li class="add-profile__item">
                       Базовое размещение
                       Бесплатно
-                        <span class="tariff-list--white">1</span>
+                        <span class="add-profile__item--white">1</span>
                     </li>
-                    <li class="tariff-list__item">
+                    <li class="add-profile__item">
                       Вывод на первых позициях
                       99 руб./мес
-                        <span class="tariff-list--white">2</span>
+                        <span class="add-profile__item--white">2</span>
                     </li>
-                    <li class="tariff-list__item">
+                    <li class="add-profile__item">
                       Кастомный цвет карточки
                       59 руб./мес
-                        <span class="tariff-list--white">3</span>
+                        <span class="add-profile__item--white">3</span>
                     </li>
                 </ul>
-                <a class="tariff__all button" href="#">
+                <button class="add-profile__button button" href="#">
                   Показать тарифы для бизнеса
-                </a>
-
+                </button>
             </article>
         </main>
 
@@ -381,39 +373,41 @@
                 Уже зарегистрированы? Тогда скорее
                 <span class="feedback__paragraph--yellow">авторизуйтесь</span>.
             </p>
-            <form class="login" action="#" method="get">
-                <div class="login__wrap">
-                     <input class="login__email" type="email" aria-label="Электронная почта" placeholder="E-mail">
-                     <button class="login_button" type="button" name="Продолжить регистрацию">
-                         <img class="direct__all--img"
-                         src="img/svg/#.svg"
-                         width="10"
-                         height="14"
-                         alt="Стрелка">
-                     </button>
-                </div>
-            </form>
+
+            <div class="login__wrap">
+                <form class="login" method="get" action="https://echo.htmlacademy.ru">
+                    <input class="login__input" type="email" aria-label="Электронная почта" placeholder="E-mail">
+                         <button class="login__button" type="button" name="Продолжить регистрацию">
+                             <img class="direct__all--img"
+                             src="img/triangle-arrow-right.svg"
+                             width="10"
+                             height="14"
+                             alt="Стрелка">
+                         </button>
+                </form>
+            </div>
+
             <p class="feedback__paragraph">
                 Остались вопросы?
                 Мы с радостью на них ответим!
             </p>
-            <a class="feedback__paragraph--yellow" href="tel:+7-800-555-86-28">8 800 555-86-28</a>
-            <p class="feedback__paragraph--yellow">mail@htmlacademy.ru</p>
+            <a class="feedback--yellow feedback__link" href="tel:+7-800-555-86-28">8 800 555-86-28</a>
+            <p class="feedback--yellow">mail@htmlacademy.ru</p>
         </section>
+
         <section class="address">
-            <h2 class="visually-hidden">Наш адрес</h2>
-            <p class="address-paragraph">
+            <h2 class="address__title">Наш адрес</h2>
+            <p class="address__paragraph">
                 ул. Большая
                 Конюшенная, 19/8
             </p>
+
             <a class="address__way" href="#">
-                Проложить маршрут
-                <img class="address__way--img"
-                  src="img/svg/#.svg"
-                  width="10"
-                  height="14"
-                  alt="Стрелка">
+                <div class="address__wrapper">
+                    Проложить маршрут
+                </div>
             </a>
+
         </section>
 
         <!--modal-->
@@ -445,17 +439,19 @@
 
 
         <footer class="footer">
-            <img class="footer__logo-image"
-            src="img/svg/#.svg"
-            width="100"
-            height="19"
-            alt="Логотип сайта Погнали">
+            <a class="footer__logo-link" href="index.html">
+                <img class="footer__logo--img"
+                src="img/logo-mobile-blue@1x.png"
+                width="100"
+                height="19"
+                alt="Логотип сайта Погнали">
+            </a>
             <div class="footer__social social">
                 <ul class="social__list">
                     <li class="social__item">
                         <a class="social__link social__link--facebook" href="#">
-                            <img class="develop__link--img"
-                            src="img/svg/#.svg"
+                            <img class="social__link--img"
+                            src="img/facebook.svg"
                             width="11"
                             height="21"
                             alt="Мы в Фейсбуке">
@@ -463,8 +459,8 @@
                     </li>
                     <li class="social__item">
                         <a class="social__link social__link--vkontakte" href="#">
-                            <img class="develop__link--img"
-                            src="img/svg/#.svg"
+                            <img class="social__link--img"
+                            src="img/vk.svg"
                             width="23"
                             height="12"
                             alt="Мы в Вконтакте">
@@ -472,23 +468,23 @@
                     </li>
                     <li class="social__item">
                         <a class="social__link social__link--instagram" href="#">
-                            <img class="develop__link--img"
-                            src="img/svg/#.svg"
-                            width="11"
-                            height="21"
+                            <img class="social__link--img"
+                            src="img/instagram.svg"
+                            width="18"
+                            height="18"
                             alt="Мы в Инстаграме">
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="footer__develop">
+            <div class="footer__develop develop">
                 <span class="develop__text">Разработано</span>
                 <a class="develop__link" href="#">
-                 <img class="develop__link--img"
-                 src="img/svg/#.svg"
-                 width="18"
-                 height="18"
-                 alt="Логотип HTML Academia">
+                   <img class="develop__link--img"
+                   src="img/htmlacademy.svg"
+                   width="27"
+                   height="34"
+                   alt="Логотип HTML Academia">
                 </a>
             </div>
         </footer>
