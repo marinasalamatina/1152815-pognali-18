@@ -1,0 +1,131 @@
+@media (min-width: 318px) {
+  .main__title-wrap {
+    background-color: @color-navy;
+    width: 270px;
+
+    border-radius: 0px 0px 30px 30px;
+
+    padding: 5px 25px;
+    margin: 0px;
+  }
+
+
+  .main__title {
+    .ffbasic('bloggersans-bold', sans-serif; 36px; 40px; 700; normal; @color-white);
+  }
+
+
+  .main__wrap {
+    display: none;
+  }
+
+
+  .main__title-return {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .main__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 616px;
+    background-color: @color-navy;
+
+    padding: 60px 77px;
+  }
+
+
+  .main__title {
+    .ffbasic('bloggersans-bold', sans-serif; 60px; 70px; 700; normal; @color-white);
+    margin: 0px;
+  }
+
+
+  .main__title-return {
+    .ffbasic('bloggersans-bold', sans-serif; 20px; 24px; 700; normal; @color-white);
+    text-transform: uppercase;
+
+    display: block;
+
+    margin: auto;
+    margin-right: 0px;
+
+    cursor: pointer;
+  }
+
+
+  .main__title-return--img {
+    margin-left: 30px;
+  }
+}
+
+
+@media (min-width: 1438px) {
+  .main__title-wrap {
+    width: 1190px;
+
+    padding: 80px 125px;
+
+    position: relative;
+  }
+
+
+  .main__wrap {
+    position: absolute;
+    right: 180px;
+    bottom: 0px;
+
+    display: block;
+  }
+
+
+  .main__img--desktop {
+    position: relative;
+
+    display: block;
+
+    border-radius: 0%;
+  }
+
+
+  .main__signature-wrap {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 190px;
+    min-height: 50px;
+    background-color: @color-profile--foto;
+
+    border-radius: 0 0 10px 10px;
+  }
+
+
+  .main__signature {
+    .ffbasic('bloggersans-medium', sans-serif; 20px; 18px; 500; normal; @color-cyan);
+    text-transform: uppercase;
+
+    margin: auto;
+  }
+
+
+  .main__level {
+    position: absolute;
+    top: 60px;
+    left: -120px;
+  }
+
+
+  .main__level--blue {
+    .ffbasic('bloggersans-bold', sans-serif; 38px; 38px; 700; normal; @color-white);
+  }
+
+
+  .main__level--blue {
+    .ffbasic('bloggersans-bold', sans-serif; 38px; 38px; 700; normal; @color-white);
+  }
+}
