@@ -1,0 +1,153 @@
+@media (min-width: 318px) {
+  .profile {
+    background-color: @color-grey;
+    width: 270px;
+
+    padding: 25px;
+  }
+
+
+  .profile__title {
+    .visuallyhidden();
+  }
+
+
+  .profile__header-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+
+  .profile__level {
+    text-align: center;
+
+    .boxset(95px; 85px);
+
+    border-radius: 50%;
+
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+
+  .profile__level--blue {
+    .ffbasic("bloggersans-bold", sans-serif; 38px; 38px; 700; normal; @color-navy);
+  }
+
+
+  .profile__img {
+    border-radius: 50%;
+
+    margin: 0 20px;
+  }
+
+  .profile__signature-wrap {
+    display: none;
+  }
+
+
+  .profile__paragraph {
+    .ffbasic("bloggersans-medium", sans-serif; 18px; 22px; 500; normal; @color-darkgrey);
+  }
+
+
+  .profile__fotoswap {
+    .buttonstyle();
+    .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
+    text-transform: uppercase;
+    text-align: center;
+
+    cursor: pointer;
+
+    .boxsetcolor(270px, 30px, @color-middlegrey);
+
+    border-radius: 20px;
+
+    padding: 5px 25px;
+    margin: 10px 0;
+    margin-top: 20px;
+  }
+
+
+  .profile-wrap {
+    border: 1px solid @color-borderbox;
+    border-radius: 10px;
+
+    padding-bottom: 20px;
+    margin: 30px 0;
+  }
+
+
+  .profile__transport-wrap {
+    text-align: center;
+  }
+
+
+  .profile__transport--img:not(:last-child) {
+    margin-right: 10px;
+  }
+
+
+  .profile-name {
+    background-color: @color-grey;
+
+    .ffbasic("bloggersans-bold", sans-serif; 16px; 18px; 700; normal; @color-cyan);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 10px 60px;
+    margin-top: -10px;
+  }
+
+
+  .profile__hashtag {
+    .ffbasic("bloggersans-medium", sans-serif; 16px; 18px; 500; normal; @color-darkgrey);
+    margin: 0 25px;
+  }
+}
+
+
+@media (min-width: 1438px) {
+  .profile {
+    z-index: -1;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 1320px;
+
+    padding: 60px;
+    padding-top: 100px;
+    margin-top: -20px;
+  }
+
+
+  .profile__img--mobile {
+    display: none;
+  }
+
+
+  .profile__level {
+    display: none;
+  }
+
+
+  .profile__level--blue {
+    .ffbasic("bloggersans-bold", sans-serif; 38px; 38px; 700; normal; @color-white);
+  }
+
+
+  .profile__fotoswap {
+    display: none;
+  }
+
+
+  .profile-wrap {
+    margin: 0;
+  }
+}

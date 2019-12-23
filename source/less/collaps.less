@@ -1,0 +1,172 @@
+@media (min-width: 318px) {
+  .collaps__wrap {
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 270px;
+    min-height: 50px;
+    background-color: @color-lightblue;
+
+    border-radius: 0 0 25px 25px;
+
+    padding: 0 25px;
+    padding-bottom: 20px;
+  }
+
+
+  .collaps {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .collaps__button-burger {
+    .buttonstyle();
+  }
+
+
+  .collaps__toggle--desktop {
+    display: none;
+  }
+
+
+  .collaps__title {
+    .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-blue);
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+
+    margin: 0;
+    margin-right: auto;
+  }
+
+
+  .collaps__country-list {
+    display: none;
+  }
+
+
+  .collaps__button-show {
+    .buttonstyle();
+
+    display: flex;
+  }
+
+
+  .collaps__button-text {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .collaps__wrap {
+    width: 620px;
+    min-height: 135px;
+
+    padding: 0 75px;
+    padding-bottom: 50px;
+  }
+
+
+  .collaps__title {
+    display: none;
+  }
+
+
+  .collaps__button-burger {
+    display: none;
+  }
+
+
+  .collaps__country-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .liststyle();
+  }
+
+
+  .collaps__country-item {
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-middleblue);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+    margin-right: 15px;
+  }
+
+
+  .collaps__country-item--dark {
+    color: @color-blue;
+  }
+
+
+  .collaps__button-show {
+    display: flex;
+
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-blue);
+    text-transform: uppercase;
+    letter-spacing: -1.2px;
+
+    cursor: pointer;
+  }
+
+
+  .collaps__button-text {
+    display: block;
+  }
+
+
+  .collaps__toggle--img {
+    margin: auto;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1438px) {
+  .collaps__wrap {
+    flex-direction: baseline;
+
+    width: 1300px;
+    min-height: 200px;
+    background-color: @color-grey;
+
+    padding: 0 70px;
+    padding-bottom: 50px;
+  }
+
+
+  .collaps__button-burger {
+    display: block;
+  }
+
+
+  .collaps__toggle--tablet {
+    display: none;
+  }
+
+
+  .collaps__title {
+    display: block;
+
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-blue);
+    letter-spacing: 0;
+    margin: 0 25px;
+  }
+
+
+  .collaps__country-list {
+    margin: 0 10px;
+  }
+
+
+  .collaps__country-item {
+    letter-spacing: 0;
+    margin-right: 25px;
+  }
+
+
+  .collaps__button-show {
+    margin-left: auto;
+    letter-spacing: 0;
+  }
+}

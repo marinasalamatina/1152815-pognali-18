@@ -1,0 +1,311 @@
+@media (min-width: 318px) {
+  .main-nav {
+    width: 320px;
+  }
+
+
+  .main-nav__toggle {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+
+    .buttonstyle();
+
+    cursor: pointer;
+  }
+
+
+  .main-nav__wrapper {
+    display: none;
+    background-color: @color-white;
+
+    padding: 30px 25px;
+  }
+
+
+  .site-list {
+    text-align: center;
+  }
+
+
+  .site-list__link {
+    .linkstyle();
+    .ffbasic("bloggersans-medium", sans-serif; 30px; 36px; 500; normal; @color-blue);
+  }
+
+
+  .user-list {
+    margin: 50px 0;
+  }
+
+
+  .user-list__login {
+    .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
+    .linkstyle();
+    text-align: center;
+
+    .boxsetcolor(188px, 34px, @color-yellow);
+
+    border-radius: 25px;
+
+    padding: 15px 70px;
+  }
+
+
+  .main-nav__login-list {
+    display: none;
+  }
+
+
+  .main-nav__list {
+    .liststyle();
+  }
+
+
+  .main-nav__link {
+    .linkstyle();
+    display: flex;
+  }
+
+
+  .main-nav__feedback-list {
+    display: flex;
+    flex-direction: column;
+
+    .liststyle();
+  }
+
+
+  .main-nav__feedback--blue {
+    .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-blue);
+    text-transform: uppercase;
+
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 15px;
+  }
+
+
+  .main-nav__img-wrap {
+    display: flex;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: @color-feedbackyellow;
+  }
+
+
+  .main-nav__img-mobile {
+    margin: auto;
+  }
+
+
+  .main-nav__img-desktop {
+    display: none;
+  }
+
+
+  .nav-social__list-wrap {
+    display: flex;
+  }
+
+
+  .nav-social__list {
+    display: flex;
+
+    .liststyle();
+
+    margin: 20px auto;
+    margin-top: 35px;
+  }
+
+
+  .nav-social__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    top: 55px;
+    right: 370px;
+  }
+
+
+  .main-nav__wrapper {
+    display: block;
+
+    width: 204px;
+    background-color: @color-blue;
+
+    padding: 0;
+    margin-left: auto;
+  }
+
+
+  .site-list {
+    display: none;
+  }
+
+
+  .user-list {
+    margin: 0;
+  }
+
+
+  .user-list__login {
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 30px; 700; normal; @color-navy);
+
+    background-color: @color-yellow;
+
+    border-radius: 30px;
+
+    padding: 12px 25px;
+  }
+
+
+  .main-nav__feedback-list {
+    display: none;
+  }
+
+
+  .nav-social__list-wrap {
+    display: none;
+  }
+}
+
+@media (min-width: 1438px) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+
+  .main-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    width: 975px;
+
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .main-nav::before {
+    position: absolute;
+    left: -95px;
+    top: 25px;
+
+    content: "";
+    width: 60px;
+    height: 0;
+    border: 1px solid @color-white;
+  }
+
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 975px;
+    min-height: 50px;
+    background-color: @color-navy;
+  }
+
+
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0;
+  }
+
+
+  .site-list__item {
+    padding: 10px 15px;
+  }
+
+
+  .site-list__link {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 30px; 500; normal; @color-white);
+  }
+
+
+  .main-nav__feedback-list {
+    order: 0;
+    display: flex;
+
+    .liststyle();
+
+    flex-direction: row;
+
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+  }
+
+
+  .main-nav__img-wrap {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .main-nav__imgmobile-wrap {
+    background-color: @color-darkorange;
+  }
+
+
+  .main-nav__imgdesktop-wrap {
+    background-color: @color-darkyellow;
+  }
+
+
+  .main-nav__img-mobile {
+    display: none;
+  }
+
+
+  .main-nav__img-desktop {
+    display: block;
+
+    margin: auto;
+  }
+
+
+  .main-nav__link {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .main-nav__feedback--blue {
+    display: none;
+  }
+
+
+  .user-list {
+    order: 1;
+  }
+
+
+  .user-list__item {
+    margin-top: 10px;
+  }
+
+
+  .user-list__login {
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 30px; 700; normal; @color-navy);
+
+    .boxsetcolor(128px, 50px, @color-yellow);
+
+    border-radius: 25px;
+
+    padding: 15px 30px;
+  }
+}
