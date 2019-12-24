@@ -1,198 +1,198 @@
 @media (min-width: 318px) {
-    .nation {
-        display: flex;
-        flex-direction: column;
+  .nation {
+    display: flex;
+    flex-direction: column;
 
-        padding: 0;
-    }
-
-
-    .nation__title {
-        .visuallyhidden();
-    }
+    padding: 0;
+  }
 
 
-    .nation__toggle {
-        .buttonstyle();
-    }
+  .nation__title {
+    .visuallyhidden();
+  }
 
 
-    .nation__table {
-        width: 218px;
-        background-color: @color-white;
-
-        border-collapse: collapse;
-
-        cursor: pointer;
-
-        margin: 0 auto;
-    }
+  .nation__toggle {
+    .buttonstyle();
+  }
 
 
-    .nation__cell {
-        .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal;  @color-cyan);
-        text-transform: uppercase;
+  .nation__table {
+    width: 218px;
+    background-color: @color-white;
 
-        height: 40px;
+    border-collapse: collapse;
 
-        border: 1px solid @color-borderbox;
-    }
+    cursor: pointer;
 
-    .nation__cell--grey {
-        color: @color-white;
-
-        background-color: @color-cyan;
-    }
-
-    .nation__list {
-        .liststyle();
-
-        margin: 40px 25px;
-    }
+    margin: 0 auto;
+  }
 
 
-    .nation__list-tablet {
-        display: none;
-    }
+  .nation__cell {
+    .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-cyan);
+    text-transform: uppercase;
+
+    height: 40px;
+
+    border: 1px solid @color-borderbox;
+  }
+
+  .nation__cell--grey {
+    color: @color-white;
+
+    background-color: @color-cyan;
+  }
+
+  .nation__list {
+    .liststyle();
+
+    margin: 40px 25px;
+  }
 
 
-    .nation__item {
-        .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
-
-        cursor: pointer;
-      }
+  .nation__list-tablet {
+    display: none;
+  }
 
 
-    .nation__button {
-        display: flex;
-        .buttonstyle();
+  .nation__item {
+    .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
 
-        cursor: pointer;
-
-        .boxsetcolor(270px; 40px; @color-greyblue);
-
-        border-radius: 25px;
-
-        margin: 25px 0;
-    }
-    .nation__button-wrap {
-        margin: auto;
-    }
+    cursor: pointer;
+  }
 
 
-    .nation__button--text {
-        .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-navy);
-        text-transform: uppercase;
-    }
+  .nation__button {
+    display: flex;
+    .buttonstyle();
+
+    cursor: pointer;
+
+    .boxsetcolor(270px; 40px; @color-greyblue);
+
+    border-radius: 25px;
+
+    margin: 25px 0;
+  }
+
+  .nation__button-wrap {
+    margin: auto;
+  }
 
 
-    .mainland__list {
-        .liststyle();
-
-        margin: 25px;
-        margin-top: 0;
-    }
+  .nation__button--text {
+    .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-navy);
+    text-transform: uppercase;
+  }
 
 
-    .mainland__item {
-        .ffbasic("bloggersans-bold", sans-serif; 16px; 30px; 700; normal; @color-middleblue);
-        text-transform: uppercase;
+  .mainland__list {
+    .liststyle();
 
-        cursor: pointer;
-    }
+    margin: 25px;
+    margin-top: 0;
+  }
+
+
+  .mainland__item {
+    .ffbasic("bloggersans-bold", sans-serif; 16px; 30px; 700; normal; @color-middleblue);
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
 }
 
 
 
 @media (min-width: 768px) {
-    .nation {
-        width: 630px;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+  .nation {
+    width: 630px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-        margin: 0;
-        padding: 0 30px;
-    }
-
-
-    .mainland__list {
-        display: none;
-    }
+    margin: 0;
+    padding: 0 30px;
+  }
 
 
-    .nation__table {
-        width: 400px;
-        background-color: @color-lightblue;
-
-        margin: 0;
-    }
+  .mainland__list {
+    display: none;
+  }
 
 
-    .nation__cell {
-        .ffbasic("bloggersans-bold", sans-serif; 60px; 24px; 700; normal; @color-nation_cell);
+  .nation__table {
+    width: 400px;
+    background-color: @color-lightblue;
 
-        border: none;
-        height: 85px;
-    }
-
-
-    .nation__cell--grey {
-        color: @color-blue;
-
-        background-color: @color-lightblue;
-    }
+    margin: 0;
+  }
 
 
-    .nation__button {
-        .ffbasic("bloggersans-bold", sans-serif; 20px; 30px; 700; normal; @color-navy);
+  .nation__cell {
+    .ffbasic("bloggersans-bold", sans-serif; 60px; 24px; 700; normal; @color-nation_cell);
 
-        width: 618px;
-        height: 80px;
-
-        margin: 70px auto;
-    }
+    border: none;
+    height: 85px;
+  }
 
 
-    .nation__list-mobile {
-        display: none;
-    }
+  .nation__cell--grey {
+    color: @color-blue;
+
+    background-color: @color-lightblue;
+  }
 
 
-    .nation__list-tablet{
-        display: block;
-    }
+  .nation__button {
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 30px; 700; normal; @color-navy);
+
+    width: 618px;
+    height: 80px;
+
+    margin: 70px auto;
+  }
 
 
-    .nation__list {
-        margin: 0;
-        padding: 15px 10px;
-    }
+  .nation__list-mobile {
+    display: none;
+  }
 
 
-    .nation__item {
-        .ffbasic("bloggersans-medium", sans-serif; 20px; 30px; 500; normal; @color-darkgrey);
-    }
+  .nation__list-tablet {
+    display: block;
+  }
+
+
+  .nation__list {
+    margin: 0;
+    padding: 15px 10px;
+  }
+
+
+  .nation__item {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 30px; 500; normal; @color-darkgrey);
+  }
 }
 
 @media (min-width: 1438px) {
-    .nation-wrap {
-        padding: 0;
-        margin: 0;
-    }
+  .nation-wrap {
+    padding: 0;
+    margin: 0;
+  }
 
 
-    .nation {
-         width: 1320px;
+  .nation {
+    width: 1320px;
 
-         flex-direction: column;
-         padding: 0;
-    }
+    flex-direction: column;
+    padding: 0;
+  }
 
 
-    .nation__button {
-          width: 1320px;
-          min-height: 100px;
-    }
+  .nation__button {
+    width: 1320px;
+    min-height: 100px;
+  }
 }
-
