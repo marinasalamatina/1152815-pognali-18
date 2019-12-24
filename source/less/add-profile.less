@@ -13,21 +13,21 @@
     .add-profile__title {
         position: relative;
 
-        .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal; @color-darkorange);
+        .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-darkorange);
         width: 130px;
 
         margin-left: 25px;
     }
 
 
-    .add-profile__title:before {
+    .add-profile__title::before {
         position: absolute;
         left: 145px;
         top: -20px;
 
         content: "";
 
-        background-image: url(../../img/rates.png);
+        background-image: url("../../img/rates.png");
         background-repeat: no-repeat;
         background-size: 99px;
         width: 99px;
@@ -47,7 +47,7 @@
     .add-profile__item {
         position: relative;
 
-        .ffbasic('bloggersans-light', sans-serif; 16px; 22px; 400; normal; @color-darkgrey);
+        .ffbasic("bloggersans-light", sans-serif; 16px; 22px; 400; normal; @color-darkgrey);
         width: 200px;
 
         border-top: 1px solid @color-addprofile;
@@ -61,7 +61,7 @@
     }
 
 
-    .add-profile__item:before {
+    .add-profile__item::before {
         position: absolute;
         left: 210px;
         top: 3px;
@@ -74,17 +74,17 @@
     }
 
 
-    .add-profile__item:nth-child(1n):before {
+    .add-profile__item:nth-child(1n)::before {
         background-color: @color-lightorange;
     }
 
 
-    .add-profile__item:nth-child(2n):before {
+    .add-profile__item:nth-child(2n)::before {
         background-color: @color-darkyellow;
     }
 
 
-    .add-profile__item:nth-child(3n):before {
+    .add-profile__item:nth-child(3n)::before {
         background-color: @color-yellow;
     }
 
@@ -94,13 +94,13 @@
         left: 223px;
         top: 13px;
 
-        .ffbasic('bloggersans-medium', sans-serif; 16px; 14px; 500; normal; @color-white);
+        .ffbasic("bloggersans-medium", sans-serif; 16px; 14px; 500; normal; @color-white);
     }
 
 
     .add-profile__button {
         .buttonstyle();
-        .ffbasic('bloggersans-bold', sans-serif; 16px; 16px; 700; normal; @color-blue);
+        .ffbasic("bloggersans-bold", sans-serif; 16px; 16px; 700; normal; @color-blue);
 
         cursor: pointer;
     }
@@ -111,7 +111,7 @@
     .add-profile {
         width: 688px;
 
-        background-image: url(../../img/blue_back.png);
+        background-image: url("../../img/blue_back.png");
         background-repeat: no-repeat;
         background-size: 198px 285px;
         background-position: top 140px right 45px;
@@ -121,7 +121,7 @@
 
 
     .add-profile__title {
-        .ffbasic('bloggersans-bold', sans-serif; 45px; 45px; 700; normal; @color-darkorange);
+        .ffbasic("bloggersans-bold", sans-serif; 45px; 45px; 700; normal; @color-darkorange);
         text-align: center;
 
         width: 677px;
@@ -132,7 +132,7 @@
     }
 
 
-    .add-profile__title:before {
+    .add-profile__title::before {
         display: none;
     }
 
@@ -149,7 +149,7 @@
     }
 
 
-    .add-profile__list-wrap:before {
+    .add-profile__list-wrap::before {
         position: absolute;
         left: -93px;
         bottom: -105px;
@@ -165,13 +165,13 @@
     }
 
 
-    .add-profile__list-wrap:after {
+    .add-profile__list-wrap::after {
         position: absolute;
         left: -68px;
         bottom: -80px;
 
         content: "";
-        background-image: url(../../img/business.svg);
+        background-image: url("../../img/business.svg");
         background-repeat: no-repeat;
         width: 17px;
         height: 21px;
@@ -189,14 +189,14 @@
         display: flex;
         flex-wrap: wrap;
 
-        .ffbasic('bloggersans-light', sans-serif; 28px; 33px; 400; normal; @color-darkgrey);
+        .ffbasic("bloggersans-light", sans-serif; 28px; 33px; 400; normal; @color-darkgrey);
 
         width: 540px;
         min-height: 35px;
     }
 
 
-    .add-profile__item:before {
+    .add-profile__item::before {
         left: -93px;
         top: 0px;
 
@@ -214,14 +214,14 @@
         left: -68px;
         top: 18px;
 
-        .ffbasic('bloggersans-medium', sans-serif; 28px; 28px; 500; normal; @color-white);
+        .ffbasic("bloggersans-medium", sans-serif; 28px; 28px; 500; normal; @color-white);
     }
 
 
     .add-profile__button {
         position: relative;
 
-        .ffbasic('bloggersans-bold', sans-serif; 20px; 20px; 700; normal; @color-blue);
+        .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-blue);
 
         margin-left: 90px;
         margin-bottom: 35px;
@@ -229,14 +229,14 @@
     }
 
 
-    .add-profile__button:before {
+    .add-profile__button::before {
         position: absolute;
         right: -230px;
         top: -20px;
 
         content: "";
 
-        background-image: url(../../img/rates.png);
+        background-image: url("../../img/rates.png");
         background-repeat: no-repeat;
         background-size: 100px;
         width: 100px;
@@ -254,7 +254,7 @@
 
         width: 1320px;
         min-height: 570px;
-        background-image: url(../../img/blue_add-profile_desktop.png);
+        background-image: url("../../img/blue_add-profile_desktop.png");
         background-size: 444px 300px;
         background-position: top 230px left 750px;
 
@@ -262,14 +262,14 @@
     }
 
 
-    .add-profile:before {
+    .add-profile::before {
         position: absolute;
         right: 130px;
         top: 285px;
 
         content: "";
 
-        background-image: url(../../img/rates-desktop.png);
+        background-image: url("../../img/rates-desktop.png");
         background-repeat: no-repeat;
         background-size: 198px;
         width: 198px;
@@ -304,7 +304,7 @@
     }
 
 
-    .add-profile__button:before {
+    .add-profile__button::before {
         display: none;
     }
 }

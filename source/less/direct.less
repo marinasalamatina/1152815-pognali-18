@@ -9,12 +9,12 @@
         padding-top: 40px;
     }
     .direct__title {
-        .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal; @color-darkorange);
+        .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-darkorange);
 
         padding: 0px 25px;
     }
     .direct__paragraph {
-        .ffbasic('bloggersans-light', sans-serif; 16px; 22px; 400; normal; @color-darkgrey);
+        .ffbasic("bloggersans-light", sans-serif; 16px; 22px; 400; normal; @color-darkgrey);
 
         padding: 25px;
         padding-bottom: 50px;
@@ -33,7 +33,7 @@
     .direct__img-thailand {
         width: 270px;
         min-height: 110px;
-        background-image: url(../../img/thailand-mobile@1x.jpg);
+        background-image: url("../../img/thailand-mobile@1x.jpg");
         background-repeat: no-repeat;
 
         border-radius: 25px 25px 0px 0px;
@@ -41,7 +41,7 @@
     .direct__img-france {
         width: 270px;
         min-height: 110px;
-        background-image: url(../../img/france-mobile@1x.jpg);
+        background-image: url("../../img/france-mobile@1x.jpg");
         background-repeat: no-repeat;
 
         border-radius: 25px 25px 0px 0px;
@@ -49,7 +49,7 @@
     .direct__img-czech {
         width: 270px;
         min-height: 110px;
-        background-image: url(../../img/czech-mobile@1x.jpg);
+        background-image: url("../../img/czech-mobile@1x.jpg");
         background-repeat: no-repeat;
 
         border-radius: 25px 25px 0px 0px;
@@ -73,7 +73,7 @@
         margin-top: -10px;
     }
     .direct-info__title {
-        .ffbasic('bloggersans-bold', sans-serif; 21px; 21px; 700; normal; @color-navy);
+        .ffbasic("bloggersans-bold", sans-serif; 21px; 21px; 700; normal; @color-navy);
 
         margin: 0px;
     }
@@ -86,10 +86,10 @@
         flex-wrap: wrap;
     }
     .direct-info__sum {
-        .ffbasic('bloggersans-medium', sans-serif; 16px; 30px; 500; normal;  @color-lightgrey);
+        .ffbasic("bloggersans-medium", sans-serif; 16px; 30px; 500; normal;  @color-lightgrey);
     }
     .direct-info__slogan {
-        .ffbasic('bloggersans-medium', sans-serif; 16px; 18px; 500; normal;  @color-lightgrey);
+        .ffbasic("bloggersans-medium", sans-serif; 16px; 18px; 500; normal;  @color-lightgrey);
 
         margin: 0px;
     }
@@ -108,7 +108,7 @@
         margin: 25px 0px;
   }
     .direct__link {
-        .ffbasic('bloggersans-bold', sans-serif; 18px; 18px; 700; normal;  @color-cyan);
+        .ffbasic("bloggersans-bold", sans-serif; 18px; 18px; 700; normal;  @color-cyan);
         .linkstyle();
         text-transform: none;
     }
@@ -118,7 +118,7 @@
 @media (min-width: 768px) {
     .direct {
         width: 620px;
-        background-image: url(../../img/flags-back@1x.png), url(../../img/blue_back_direct.png);
+        background-image: url("../../img/flags-back@1x.png"), url("../../img/blue_back_direct.png");
         background-repeat: no-repeat;
         background-size: 289px 575px, 141px 141px;
         background-position: top 80px right 40px, top 406px left 40px;
@@ -127,12 +127,12 @@
         padding-top: 50px;
     }
     .direct__title {
-        .ffbasic('bloggersans-bold', sans-serif; 45px; 45px; 700; normal; @color-darkorange);
+        .ffbasic("bloggersans-bold", sans-serif; 45px; 45px; 700; normal; @color-darkorange);
 
         padding: 0px;
     }
     .direct__paragraph {
-        .ffbasic('bloggersans-light', sans-serif; 28px; 33px; 400; normal; @color-darkgrey);
+        .ffbasic("bloggersans-light", sans-serif; 28px; 33px; 400; normal; @color-darkgrey);
 
         width: 355px;
 
@@ -152,13 +152,13 @@
     .direct__item--thailand {
         position: relative;
     }
-    .direct__item--thailand:before {
+    .direct__item--thailand::before {
         content: "";
         position: absolute;
         top: 0;
         right: 0;
 
-        background-image: url(../../img/thailand-desktop@1x.jpg);
+        background-image: url("../../img/thailand-desktop@1x.jpg");
         background-repeat: no-repeat;
 
         width: 185px;
@@ -166,13 +166,13 @@
 
         border-radius: 0px 25px 25px 0px;
     }
-    .direct__item--thailand:after {
+    .direct__item--thailand::after {
         content: "";
         position: absolute;
         top: 15px;
         right: -400px;
 
-        background-image: url(../../img/Thailand.png);
+        background-image: url("../../img/Thailand.png");
         background-repeat: no-repeat;
 
         width: 100%;
@@ -183,14 +183,14 @@
     .direct__item--france {
         position: relative;
     }
-    .direct__item--france:before {
+    .direct__item--france::before {
         position: absolute;
         top: 0;
         right: 0;
 
         content: "";
 
-        background-image: url(../../img/france-desktop@1x.jpg);
+        background-image: url("../../img/france-desktop@1x.jpg");
         background-repeat: no-repeat;
 
         width: 185px;
@@ -198,14 +198,14 @@
 
         border-radius: 0px 25px 25px 0px;
     }
-    .direct__item--france:after {
+    .direct__item--france::after {
         position: absolute;
         top: 15px;
         right: -400px;
 
         content: "";
 
-        background-image: url(../../img/France.png);
+        background-image: url("../../img/France.png");
         background-repeat: no-repeat;
 
         width: 100%;
@@ -216,14 +216,14 @@
     .direct__item--czech {
         position: relative;
     }
-    .direct__item--czech:before {
+    .direct__item--czech::before {
         position: absolute;
         top: 0;
         right: 0;
 
         content: "";
 
-        background-image: url(../../img/czech-desktop@1x.jpg);
+        background-image: url("../../img/czech-desktop@1x.jpg");
         background-repeat: no-repeat;
 
         width: 185px;
@@ -231,14 +231,14 @@
 
         border-radius: 0px 25px 25px 0px;
     }
-    .direct__item--czech:after {
+    .direct__item--czech::after {
         position: absolute;
         top: 15px;
         right: -400px;
 
         content: "";
 
-        background-image: url(../../img/Czech.png);
+        background-image: url("../../img/Czech.png");
         background-repeat: no-repeat;
 
         width: 100%;
@@ -259,7 +259,7 @@
         display: none;
     }
     .direct-info__title {
-        .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal; @color-navy);
+        .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-navy);
     }
     .direct-info__sum--img{
         width: 20px;
@@ -268,10 +268,10 @@
         margin-right: 10px;
     }
     .direct-info__sum {
-        .ffbasic('bloggersans-medium', sans-serif; 20px; 30px; 500; normal;  @color-lightgrey);
+        .ffbasic("bloggersans-medium", sans-serif; 20px; 30px; 500; normal;  @color-lightgrey);
     }
     .direct-info__slogan {
-        .ffbasic('bloggersans-medium', sans-serif; 20px; 18px; 500; normal;  @color-lightgrey);
+        .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal;  @color-lightgrey);
     }
     .direct__wrapper {
         .boxsetcolor(570px; 20px; @color-yellow);
@@ -282,7 +282,7 @@
         margin: 75px auto;
     }
     .direct__link {
-        .ffbasic('bloggersans-bold', sans-serif; 24px; 24px; 700; normal;  @color-cyan);
+        .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal;  @color-cyan);
     }
 }
 
