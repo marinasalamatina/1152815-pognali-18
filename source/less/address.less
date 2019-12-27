@@ -7,27 +7,28 @@
     width: 270px;
     background-color: @color-yellow;
 
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 30px 30px;
 
-    padding: 40px 25px;
+    padding: 20px 25px;
   }
 
 
   .address__paragraph {
     position: relative;
     .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-blue);
+    letter-spacing: -1.3px;
     text-transform: uppercase;
 
     width: 165px;
 
     padding-left: 15px;
-    margin-left: 62px;
+    margin-left: 45px;
   }
 
 
   .address__paragraph::before {
     position: absolute;
-    left: -62px;
+    left: -45px;
     top: -2px;
 
     content: "";
@@ -41,8 +42,8 @@
 
   .address__paragraph::after {
     position: absolute;
-    left: -47px;
-    top: 7px;
+    left: -28px;
+    top: 8px;
 
     content: "";
 
@@ -60,7 +61,7 @@
     border: 3px solid @color-blue;
     border-radius: 10px;
 
-    margin-top: 25px;
+    margin-top: 32px;
     padding: 20px 25px;
   }
 
@@ -68,6 +69,7 @@
   .address__way {
     .linkstyle(none; none);
     .ffbasic("bloggersans-bold", sans-serif; 18px; 18px; 700; normal; @color-cyan);
+    letter-spacing: -1.3px;
   }
 }
 

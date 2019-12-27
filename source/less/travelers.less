@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: 143px 143px, 61px 71px, 113px 132px;
     background-position: top 37px left 150px, top 309px left 0, top 37px left 0;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 30px 30px;
 
     padding: 10px 25px;
     padding-top: 50px;
@@ -16,6 +16,7 @@
 
   .travelers__title {
     .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-darkorange);
+    letter-spacing: -1.2px;
 
     padding: 0 25px;
   }
@@ -23,15 +24,17 @@
 
   .travelers__paragraph {
     .ffbasic("bloggersans-light", sans-serif; 16px; 22px; 400; normal; @color-white);
+    letter-spacing: -0.7px;
 
     padding: 0 25px;
+    margin: 0;
   }
 
 
   .travelers__paragraph--bold {
     .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-white);
 
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 50px;
   }
 
@@ -92,6 +95,7 @@
     text-align: center;
 
     padding: 25px;
+    padding-bottom: 18px;
   }
 
 
@@ -122,13 +126,15 @@
     position: relative;
 
     .ffbasic("bloggersans-bold", sans-serif; 21px; 21px; 700; normal; @color-cyan);
+    letter-spacing: -1px;
+    margin: 5px 0;
   }
 
 
   .travelers__name::before {
     position: absolute;
-    left: 30px;
-    top: 10px;
+    left: 28px;
+    top: 7px;
 
     content: "";
     width: 5px;
@@ -139,18 +145,19 @@
 
   .travelers__name--orange::before {
     background-color: @color-trvalers--orange;
-
-    left: 20px;
   }
 
 
   .travelers__name--green::before {
     background-color: @color-trvalers--green;
+
+    left: 38px;
   }
 
 
   .travelers__hashtag {
     .ffbasic("bloggersans-medium", sans-serif; 16px; 18px; 500; normal; @color-darkgrey);
+    letter-spacing: -1px;
   }
 
 
@@ -181,12 +188,13 @@
     border-radius: 10px;
 
     padding: 20px 25px;
-    margin: 25px 0;
+    margin: 20px 0;
   }
 
 
   .travelers__link {
     .ffbasic("bloggersans-bold", sans-serif; 18px; 18px; 700; normal; @color-cyan);
+    letter-spacing: -1.2px;
     .linkstyle();
     text-transform: none;
   }

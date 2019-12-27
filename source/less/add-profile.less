@@ -4,9 +4,10 @@
 
     width: 270px;
     background-color: @color-grey;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 30px 30px;
 
-    padding: 35px 25px;
+    padding: 32px 25px;
+    padding-bottom: 36px;
   }
 
 
@@ -14,6 +15,7 @@
     position: relative;
 
     .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-darkorange);
+    letter-spacing: -1.8px;
     width: 130px;
 
     margin-left: 25px;
@@ -23,7 +25,7 @@
   .add-profile__title::before {
     position: absolute;
     left: 145px;
-    top: -20px;
+    top: -15px;
 
     content: "";
 
@@ -38,7 +40,7 @@
   .add-profile__list {
     .liststyle();
 
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 30px;
     margin-left: 25px;
   }
@@ -52,7 +54,7 @@
 
     border-top: 1px solid @color-addprofile;
 
-    padding: 15px 0;
+    padding: 11px 0;
   }
 
 
@@ -101,8 +103,11 @@
   .add-profile__button {
     .buttonstyle();
     .ffbasic("bloggersans-bold", sans-serif; 16px; 16px; 700; normal; @color-blue);
+    letter-spacing: -1.4px;
 
     cursor: pointer;
+
+    margin: 0 25px;
   }
 }
 
