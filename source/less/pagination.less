@@ -86,11 +86,18 @@
 
 
   .pagination__item--page {
-    .boxsetcolor(50px; 50px; @color-yellow);
+    .boxset(50px; 50px);
     border-radius: 50%;
 
     display: flex;
     flex-wrap: wrap;
+
+    cursor: pointer;
+  }
+
+  .pagination__item--active,
+  .pagination__item--page:active {
+    background-color: @color-yellow;
   }
 
 
