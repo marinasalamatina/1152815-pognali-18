@@ -8,18 +8,19 @@
 
 @media (min-width: 320px) {
   .action {
-    position: relative;
+    display: flex;
+    flex-direction: column;
 
-    width: 320px;
-    min-height: 300px;
+    width: 100%;
+    min-height: 262px;
   }
 
 
   .action__list {
-    position: absolute;
-    top: -80px;
+    width: 84.38%;
 
-    margin: 0 25px;
+    margin: 0 auto;
+    margin-top: -85px;
   }
 
 
@@ -29,7 +30,10 @@
     justify-content: space-between;
 
     .ffbasic("bloggersans-bold", sans-serif; 18px; 18px; 700; normal; @color-navy);
-    .boxset(220px, 50px);
+
+    width: 100%;
+    min-height: 95px;
+
     letter-spacing: -1px;
 
     border-radius: 10px 10px 0 0;
@@ -42,13 +46,12 @@
   .action__item--1 {
     background-color: @color-darkorange;
 
-    min-height: 55px;
+    min-height: 90px;
   }
 
 
   .action__item--2 {
     background-color: @color-lightorange;
-    min-height: 50px;
   }
 
 
@@ -90,7 +93,7 @@
     width: 90%;
 
     margin: 0 auto;
-    margin-top: -30px;
+    margin-top: 0px;
   }
 
 
