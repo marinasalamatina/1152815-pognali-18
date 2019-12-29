@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   .direct {
-    width: 270px;
+    width: 320px;
     background-color: @color-grey;
 
     border-radius: 0 0 30px 30px;
@@ -136,35 +136,45 @@
 
 @media (min-width: 768px) {
   .direct {
-    width: 620px;
+    width: 100%;
+
     background-image: url("../img/flags-back@1x.png"), url("../img/blue_back_direct.png");
     background-repeat: no-repeat;
     background-size: 289px 575px, 141px 141px;
     background-position: top 80px right 40px, top 406px left 40px;
 
-    padding: 10px 75px;
-    padding-top: 50px;
+    border-radius: 0 0 60px 60px;
+
+    padding: 35px 75px;
+    padding-bottom: 53px;
   }
 
   .direct__title {
     .ffbasic("bloggersans-bold", sans-serif; 45px; 45px; 700; normal; @color-darkorange);
 
     padding: 0;
+    margin-bottom: 39px;
   }
 
   .direct__paragraph {
     .ffbasic("bloggersans-light", sans-serif; 28px; 33px; 400; normal; @color-darkgrey);
 
-    width: 355px;
+    width: 60%;
 
-    padding: 0;
+    padding: 20px 0;
+    margin-bottom: 90px;
   }
 
   .direct__item {
-    width: 620px;
+    overflow: hidden;
+    background-color: red;
+    width: 100%;
     height: 140px;
 
+    border-radius: 25px;
+
     display: flex;
+    justify-content: stretch;
 
     margin-top: 10px;
   }
@@ -196,7 +206,7 @@
     content: "";
     position: absolute;
     top: 15px;
-    right: -400px;
+    right: 0;
 
     background-image: url("../img/Thailand.png");
     background-repeat: no-repeat;
@@ -208,6 +218,7 @@
   }
 
   .direct__item--france {
+    background-color: green;
     position: relative;
   }
 
@@ -230,7 +241,7 @@
   .direct__item--france::after {
     position: absolute;
     top: 15px;
-    right: -400px;
+    right: -66.5%;
 
     content: "";
 
@@ -266,7 +277,7 @@
   .direct__item--czech::after {
     position: absolute;
     top: 15px;
-    right: -400px;
+    right: -66.5%;
 
     content: "";
 
@@ -282,12 +293,13 @@
   .direct-info {
     flex-direction: column;
 
-    width: 385px;
+    width: 70%;
 
     border-radius: 25px 0 0 25px;
 
     margin: 0;
-  }
+    padding: 0 5%;
+    }
 
   .direct-shadow--img {
     display: none;
@@ -295,7 +307,17 @@
 
   .direct-info__title {
     .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-navy);
+
+    margin-top: 28px;
   }
+
+
+  .direct-info__sum-wrap {
+    order: 1;
+
+    margin-bottom: 20px;
+  }
+
 
   .direct-info__sum--img {
     width: 20px;
@@ -309,16 +331,17 @@
   }
 
   .direct-info__slogan {
-    .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-lightgrey);
+    width: 100%;
   }
 
   .direct__wrapper {
-    .boxsetcolor(570px; 20px; @color-yellow);
+    .boxsetcolor(100%; 20px; @color-yellow);
 
-    border-radius: 25px;
+    border-radius: 20px;
 
     padding: 30px 25px;
-    margin: 75px auto;
+    margin: 25px auto;
+    margin-top: 45px;
   }
 
   .direct__link {

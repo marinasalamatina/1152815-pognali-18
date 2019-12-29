@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   .travelers {
-    width: 270px;
+    width: 320px;
 
     background-color: @color-blue;
     background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png"), url("../img/blue_travelers-index.png");
@@ -206,32 +206,35 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
     background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png"), url("../img/blueback.png");
     background-repeat: no-repeat;
     background-size: 143px 143px, 285px 285px, 213px 213px;
-    background-position: left 40px top 460px, right 40px top 80px, left 40px top 80px;
+    background-position: left 40px top 425px, right 75px top 80px, left 40px top 80px;
 
-    width: 620px;
+    width: 768px;
+    border-radius: 0 0 60px 60px;
 
-    padding: 10px 75px;
-    padding-top: 80px;
+    padding: 35px 75px;
+    padding-bottom: 10px;
   }
 
 
   .travelers__title {
     .ffbasic("bloggersans-bold", sans-serif; 45px; 45px; 700; normal; @color-darkorange);
 
-    padding: 0;
+    padding: 65px 0;
+    padding-bottom: 20px;
   }
 
 
   .travelers__paragraph {
     .ffbasic("bloggersans-light", sans-serif; 28px; 33px; 400; normal; @color-white);
 
-    width: 480px;
+    width: 75%;
 
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 42px;
   }
 
 
@@ -258,6 +261,7 @@
     flex-wrap: wrap;
 
     width: 280px;
+    min-height: 480px;
 
     border-radius: 20px;
 
@@ -271,7 +275,7 @@
 
 
   .travelers__firsova-wrap {
-    min-height: 240px;
+    min-height: 280px;
 
     background-image: url("../img/firsova-desktop.png");
     background-repeat: no-repeat;
@@ -280,7 +284,7 @@
 
 
   .travelers__demin-wrap {
-    min-height: 240px;
+    min-height: 280px;
 
     background-image: url("../img/demin-desktop.png");
     background-repeat: no-repeat;
@@ -289,7 +293,8 @@
 
 
   .travelers__info-flags {
-    margin-top: -47px;
+    margin-top: -45px;
+    margin-bottom: 8px;
   }
 
 
@@ -300,16 +305,17 @@
 
   .travelers__hashtag {
     .ffbasic("bloggersans-medium", sans-serif; 20px; 24px; 500; normal; @color-darkgrey);
+    margin-bottom: 27px;
   }
 
 
   .travelers__wrapper {
-    .boxsetcolor(570px; 20px; @color-yellow);
+    .boxsetcolor(100%; 20px; @color-yellow);
 
     border-radius: 25px;
 
     padding: 30px 25px;
-    margin: 75px auto;
+    margin: 79px auto;
   }
 
 
@@ -325,7 +331,7 @@
 
     flex-direction: row;
 
-    width: 1320px;
+    width: 1440px;
     min-height: 470px;
     background-position: top 130px left 545px, top 385px left 190px, top 70px left 60px;
 

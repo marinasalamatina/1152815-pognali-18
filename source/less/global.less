@@ -1,16 +1,23 @@
 html {
-  box-sizing: border-box;
-
   display: flex;
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 
 body {
   .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
+
   background-image: url("../img/pognali-index-tablet.png");
   background-position: left top;
   background-repeat: repeat;
-  opacity: 0.8;
+  opacity: 1;
 
   min-width: 320px;
 
@@ -19,6 +26,5 @@ body {
 
 
 img {
-  max-width: 100%;
   height: auto;
 }

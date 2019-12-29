@@ -2,7 +2,7 @@
   .add-profile {
     position: relative;
 
-    width: 270px;
+    width: 320px;
     background-color: @color-grey;
     border-radius: 0 0 30px 30px;
 
@@ -114,13 +114,14 @@
 
 @media (min-width: 768px) {
   .add-profile {
-    width: 688px;
-
+    width: 768px;
 
     background-image: url("../img/blue_back.png");
     background-repeat: no-repeat;
     background-size: 198px 285px;
     background-position: top 140px right 45px;
+
+    border-radius: 0 0 60px 60px;
 
     padding: 40px;
   }
@@ -129,12 +130,13 @@
   .add-profile__title {
     .ffbasic("bloggersans-bold", sans-serif; 45px; 45px; 700; normal; @color-darkorange);
     text-align: center;
+    letter-spacing: -4px;
 
     width: 677px;
 
     padding: 30px 0;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
 
@@ -197,9 +199,10 @@
     flex-wrap: wrap;
 
     .ffbasic("bloggersans-light", sans-serif; 28px; 33px; 400; normal; @color-darkgrey);
+    letter-spacing: -2px;
 
-    width: 540px;
-    min-height: 35px;
+    width: 100%;
+    min-height: 65px;
   }
 
 
@@ -231,15 +234,15 @@
     .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-blue);
 
     margin-left: 90px;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
     padding: 20px 0;
   }
 
 
   .add-profile__button::before {
     position: absolute;
-    right: -230px;
-    top: -20px;
+    right: -288px;
+    top: -25px;
 
     content: "";
 

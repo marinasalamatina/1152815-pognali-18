@@ -22,7 +22,12 @@
 
 @media (min-width: 768px) {
   .site-info {
-    width: 770px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0 0 55px 55px;
   }
 
 
@@ -31,10 +36,11 @@
     letter-spacing: 0;
 
     background-color: @color-blue;
-    width: 500px;
+    width: 70%;
+    min-height: 50px;
 
     margin: 0 auto;
-    padding: 10px;
+    padding: 17px;
   }
 }
 
@@ -56,7 +62,7 @@
     top: 110px;
     left: 130px;
 
-    width: 480px;
+    width: 34%;
     background-color: transparent;
 
     text-align: left;
