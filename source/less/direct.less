@@ -20,7 +20,7 @@
     .ffbasic("bloggersans-light", sans-serif; 16px; 22px; 400; normal; @color-darkgrey);
     letter-spacing: -0.7px;
 
-    padding: 5px 9.26%;
+    padding: 0 9.26%;
     padding-bottom: 45px;
   }
 
@@ -29,7 +29,7 @@
   }
 
   .direct__img-wrap {
-    width: 270px;
+    width: 100%;
     min-height: 110px;
 
     position: relative;
@@ -39,8 +39,10 @@
 
   .direct-info--img {
     position: absolute;
-    bottom: -12px;
+    bottom: -2px;
     left: 25px;
+
+    z-index: 1;
   }
 
   .direct__img-thailand {
@@ -67,12 +69,12 @@
     justify-content: space-between;
     align-items: baseline;
 
-    width: 220px;
+    width: 100%;
     background-color: @color-white;
 
     border-radius: 10px;
 
-    padding: 23px 25px;
+    padding: 23px;
     margin-top: -10px;
   }
 
@@ -122,14 +124,16 @@
 
 
   .direct__wrapper {
-    .boxsetcolor(220px; 20px; @color-yellow);
+    width: 100%;
+    background-color: @color-yellow;
+
     text-align: left;
 
     border-radius: 10px;
 
-    padding: 20px 25px;
+    padding: 22px 25px;
     margin: 20px 0;
-    margin-top: 30px;
+    margin-top: 26px;
   }
 }
 
