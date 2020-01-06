@@ -18,18 +18,21 @@
 
 
   .nation__table {
-    width: 218px;
+    width: 70%;
+    min-height: 205px;
     background-color: @color-white;
 
     border-collapse: collapse;
 
     cursor: pointer;
 
-    margin: 0 auto;
+    margin: 0 15%;
   }
 
 
   .nation__cell {
+    width: 20%;
+
     .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-cyan);
     text-transform: uppercase;
 
@@ -47,7 +50,8 @@
   .nation__list {
     .liststyle();
 
-    margin: 40px 25px;
+    margin: 48px 50px;
+    margin-bottom: 13px;
   }
 
 
@@ -69,12 +73,13 @@
 
     cursor: pointer;
 
-    .boxsetcolor(270px; 40px; @color-greyblue);
+    .boxsetcolor(80%; 40px; @color-greyblue);
 
     border-radius: 25px;
 
-    margin: 25px 0;
+    margin: 25px 10%;
   }
+
 
   .nation__button-wrap {
     margin: auto;
@@ -90,16 +95,24 @@
   .mainland__list {
     .liststyle();
 
-    margin: 25px;
-    margin-top: 0;
+    margin: 0 50px;
+    margin-bottom: 17px;
   }
 
 
   .mainland__item {
     .ffbasic("bloggersans-bold", sans-serif; 16px; 30px; 700; normal; @color-middleblue);
+    letter-spacing: -1px;
     text-transform: uppercase;
 
     cursor: pointer;
+
+    margin-bottom: -2.5px;
+  }
+
+
+  .mainland__item--blue {
+    color: @color-blue;
   }
 }
 
