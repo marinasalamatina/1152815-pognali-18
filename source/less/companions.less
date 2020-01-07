@@ -4,6 +4,7 @@
     width: 320px;
 
     padding: 25px;
+    padding-top: 0;
   }
 
 
@@ -37,7 +38,7 @@
 
     border-radius: 20px;
 
-    padding: 20px 0;
+    padding: 15px 0;
     padding-bottom: 18px;
     margin-top: 10px;
   }
@@ -87,7 +88,11 @@
   .companions__nation-wrap {
     border-top: 1px solid @color-grey;
 
+    min-height: 102px;
+
     margin: 20px 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
   }
 
   .companions__nation {
@@ -99,7 +104,7 @@
   .companions__nation--img-wrap {
     display: flex;
 
-    margin: 3px 25px;
+    margin: 4px 25px;
   }
 
   .companions__nation--img {
@@ -125,7 +130,7 @@
 
 
   .companions__transport--img {
-    margin: 0 5px;
+    margin: 0 6.5px;
   }
 
 
@@ -211,7 +216,7 @@
 
 @media (min-width: 768px) {
   .companions {
-    width: 690px;
+    width: 768px;
 
     padding: 10px 40px;
   }
@@ -243,16 +248,18 @@
 
 
   .companions__info-wrap {
-    width: 390px;
+    width: 67.2%;
 
     display: flex;
     flex-direction: column;
-    padding: 35px;
+    padding: 30px;
     padding-bottom: 0;
   }
 
 
   .companions__name {
+    .ffbasic("bloggersans-bold", sans-serif; 30px; 30px; 700; normal; @color-cyan);
+
     width: auto;
     position: static;
 
@@ -265,20 +272,21 @@
 
     width: 225px;
 
-    margin: 20px 0;
+    margin: 5px;
     padding: 12px 0;
   }
 
 
   .companions__nation-wrap {
     width: 688px;
+    min-height: 78px;
     order: 2;
 
     border-top: 1px solid @color-grey;
 
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: -290px;
-    padding-left: 60px;
+    padding-left: 70px;
   }
 
 
@@ -293,6 +301,8 @@
   .companions__nation--text {
     .ffbasic("bloggersans-medium", sans-serif; 20px; 30px; 500; normal; @color-cyan);
     text-transform: uppercase;
+
+    margin-right: 18px;
   }
 
 
@@ -300,7 +310,6 @@
     display: flex;
 
     margin: 0;
-    margin-right: 40px;
   }
 
 
@@ -325,12 +334,18 @@
   .companions__tablet-icon {
     position: absolute;
     top: 35px;
-    right: 40px;
+    right: 35px;
 
     border: none;
 
     display: flex;
     flex-direction: column;
+  }
+
+
+  .companions__nation--img-wrap {
+    padding: 0;
+    margin: 0;
   }
 
 
@@ -359,6 +374,8 @@
 
   .companions__level {
     position: static;
+
+    padding-top: 0;
   }
 
 
@@ -368,19 +385,22 @@
 
 
   .companions__level--blue {
-    margin-right: 25px;
+    margin-right: -5px;
   }
 
 
   .companions__link-wrap {
-    .boxsetcolor(148px; 30px; @color-yellow);
+    .boxsetcolor(37%; 47px; @color-yellow);
 
-    margin: 20px 0;
+    margin: 0;
+    margin-top: 32px;
+    padding: 10px 0;
   }
 
   .companions__more {
-    width: 210px;
-    margin: 60px 0;
+    width: 100%;
+
+    margin: 44px 0;
   }
 
   .companions__more--text {

@@ -174,29 +174,18 @@
               <th class="nation__cell">я</th>
             </tr>
           </table>
-          <ul class="nation__list nation__list-mobile">
-            <li class="nation__item">Афганистан</li>
+          <ul class="nation__list">
+            <li class="nation__item nation__item--last">Афганистан</li>
             <li class="nation__item">Албания</li>
             <li class="nation__item">Алжир</li>
+            <li class="nation__item nation__item--tablet">Ангола</li>
             <li class="nation__item">Андорра</li>
-            <li class="nation__item">Аргентина</li>
+            <li class="nation__item nation__item--tablet">Антигуа и Барбуда</li>
+            <li class="nation__item nation__item--tablet">Аргентина</li>
             <li class="nation__item">Армения</li>
-            <li class="nation__item">Австралия</li>
-            <li class="nation__item">Австрия</li>
-            <li class="nation__item">Азербайджан</li>
-          </ul>
-          <ul class="nation__list nation__list-tablet">
-            <li class="nation__item">Австралия</li>
-            <li class="nation__item">Австрия</li>
-            <li class="nation__item">Азербайджан</li>
-            <li class="nation__item">Албания</li>
-            <li class="nation__item">Аджир</li>
-            <li class="nation__item">Ангола</li>
-            <li class="nation__item">Андорра</li>
-            <li class="nation__item">Антигуа и Барбуда</li>
-            <li class="nation__item">Аргентина</li>
-            <li class="nation__item">Армения</li>
-            <li class="nation__item">Афганистан</li>
+            <li class="nation__item nation__item--first">Австралия</li>
+            <li class="nation__item nation__item--second">Австрия</li>
+            <li class="nation__item nation__item--third">Азербайджан</li>
           </ul>
           <button class="nation__button" type="button">
             <div class="nation__button-wrap">
@@ -211,28 +200,64 @@
     <section class="sidebar">
       <div class="sidebar__wrap">
         <h2 class="sidebar__title">Подберите идеального попутчика</h2>
-        <form class="sidebar-filter--mobile" method="get" action="https://echo.htmlacademy.ru">
+
+        <form class="sidebar-filter--tablet" method="get" action="https://echo.htmlacademy.ru">
+          <table class="sidebar__table">
+            <tr class="sidebar__line">
+              <th class="sidebar__unit">Хобби:</th>
+              <th class="sidebar__cell sidebar__cell-notshow">
+                <input class="sidebar__input" type="checkbox" id="sidebar-hobby-1" name="hobby-1" value="Спортзал"
+                  checked>
+                <label class="sidebar__label" for="sidebar-hobby-1">Спортзал</label>
+              </th>
+              <th class="sidebar__cell sidebar__cell-notshow">
+                <input class="sidebar__input" class="sidebar__input" type="checkbox" id="sidebar-hobby-2"
+                  name="hobby-2" value="Кальян">
+                <label class="sidebar__label" for="sidebar-hobby-2">Кальян</label>
+              </th>
+              <th class="sidebar__cell sidebar__cell-notshow">
+                <input class="sidebar__input" type="checkbox" id="sidebar-hobby-3" name="hobby-3" value="Диван">
+                <label class="sidebar__label" for="sidebar-hobby-3">Диван</label>
+              </th>
+            </tr>
+            <tr class="sidebar__line">
+              <th class="sidebar__unit">Музыка:</th>
+              <th class="sidebar__cell">
+                <input class="sidebar__input" type="checkbox" id="sidebar-music-1" name="music-1"
+                  value="Тяжелый рок" checked>
+                <label class="sidebar__label" for="sidebar-music-1">Тяжелый рок</label>
+              </th>
+              <th class="sidebar__cell">
+                <input class="sidebar__input" class="sidebar__input" type="checkbox" id="sidebar-music-2"
+                  name="music-2" value="Русский рэп">
+                <label class="sidebar__label" for="sidebar-music-2">Русский рэп</label>
+              </th>
+              <th class="sidebar__cell">
+                <input class="sidebar__input" type="checkbox" id="sidebar-music-3" name="music-3" value="Евроденс">
+                <label class="sidebar__label" for="sidebar-music-3">Евроденс</label>
+              </th>
+            </tr>
+            <tr class="sidebar__line">
+              <th class="sidebar__unit">Еда:</th>
+              <th class="sidebar__cell sidebar__cell-notshow">
+                <input class="sidebar__input" type="checkbox" id="sidebar-food-1" name="food-1" value="Мясоед"
+                  checked>
+                <label class="sidebar__label" for="sidebar-food-1">Мясоед</label>
+              </th>
+              <th class="sidebar__cell sidebar__cell-notshow">
+                <input class="sidebar__input" class="sidebar__input" type="checkbox" id="sidebar-food-2"
+                  name="food-2" value="Сидит на ПП">
+                <label class="sidebar__label" for="sidebar-food-2">Сидит на ПП</label>
+              </th>
+              <th class="sidebar__cell sidebar__cell-notshow">
+                <input class="sidebar__input" type="checkbox" id="sidebar-food-3" name="food-3"
+                  value="Веган-сыроед">
+                <label class="sidebar__label" for="sidebar-food-3">Веган-сыроед</label>
+              </th>
+            </tr>
+          </table>
           <div class="sidebar__item">
-            <h3 class="sidebar__unit">Хобби</h3>
-          </div>
-          <div class="sidebar__item">
-            <h3 class="sidebar__unit">Музыка</h3>
-            <div class="sidebar__item-wrap sidebar__music-wrap">
-              <input class="sidebar__input" type="checkbox" id="sidebar-music-1" name="music-1" value="Тяжелый рок"
-                checked>
-              <label class="sidebar__label" for="sidebar-music-1">Тяжелый рок</label><br>
-              <input class="sidebar__input" class="sidebar__input" type="checkbox" id="sidebar-music-2" name="music-2"
-                value="Русский рэп">
-              <label class="sidebar__label" for="sidebar-music-2">Русский рэп</label><br>
-              <input class="sidebar__input" type="checkbox" id="sidebar-music-3" name="music-3" value="Евроденс">
-              <label class="sidebar__label" for="sidebar-music-3">Евроденс</label><br>
-            </div>
-          </div>
-          <div class="sidebar__item">
-            <h3 class="sidebar__unit">Еда</h3>
-          </div>
-          <div class="sidebar__item">
-            <h3 class="sidebar__unit">Транспорт</h3>
+            <h3 class="sidebar__unit">Транспорт:</h3>
             <ul class="sidebar__item-wrap sidebar__transport-list">
               <li class="sidebar__transport-item">
                 <img class="sidebar__transport--img" src="img/plane.svg" width="19" height="21" alt="Самолет">
@@ -248,103 +273,20 @@
               </li>
             </ul>
           </div>
-          <div class="sidebar__item">
-            <h3 class="sidebar__unit">Левел</h3>
+          <div class="sidebar__item sidebar__item--level">
+            <h3 class="sidebar__unit">Левел:</h3>
             <div class="sidebar__range">
               <div class="sidebar__level">
                 <label class="sidebar__level--label">
-                  <input class="sidebar__level--input" type="text" name="min-level" value="30                     100">
+                  <input class="sidebar__level--input sidebar__level--input-left" type="text" name="min-level"
+                    value="30">
+                  <input class="sidebar__level--input sidebar__level--input-right" type="text" name="max-level"
+                    value="100">
                 </label>
               </div>
             </div>
           </div>
-          <button class="sidebar__button" type="submit" value="Показать">Показать!</button>
-        </form>
-
-        <form class="sidebar-filter--tablet sidebar-wide" method="get" action="https://echo.htmlacademy.ru">
-          <table class="sidebar-wide__table">
-            <tr class="sidebar-wide__line">
-              <th class="sidebar-wide__unit">Хобби:</th>
-              <th class="sidebar-wide__cell">
-                <input class="sidebar-wide__input" type="checkbox" id="sidebar-hobby-1" name="hobby-1" value="Спортзал"
-                  checked>
-                <label class="sidebar-wide__label" for="sidebar-hobby-1">Спортзал</label>
-              </th>
-              <th class="sidebar__cell">
-                <input class="sidebar-wide__input" class="sidebar__input" type="checkbox" id="sidebar-hobby-2"
-                  name="hobby-2" value="Кальян">
-                <label class="sidebar-wide__label" for="sidebar-hobby-2">Кальян</label>
-              </th>
-              <th class="sidebar-wide__cell">
-                <input class="sidebar-wide__input" type="checkbox" id="sidebar-hobby-3" name="hobby-3" value="Диван">
-                <label class="sidebar-wide__label" for="sidebar-hobby-3">Диван</label>
-              </th>
-            </tr>
-            <tr class="sidebar-wide__line">
-              <th class="sidebar-wide__unit">Музыка:</th>
-              <th class="sidebar-wide__cell">
-                <input class="sidebar-wide__input" type="checkbox" id="sidebar-music-1" name="music-1"
-                  value="Тяжелый рок" checked>
-                <label class="sidebar-wide__label" for="sidebar-music-1">Тяжелый рок</label>
-              </th>
-              <th class="sidebar-wide__cell">
-                <input class="sidebar-wide__input" class="sidebar__input" type="checkbox" id="sidebar-music-2"
-                  name="music-2" value="Русский рэп">
-                <label class="sidebar-wide__label" for="sidebar-music-2">Русский рэп</label>
-              </th>
-              <th class="sidebar-wide__cell">
-                <input class="sidebar-wide__input" type="checkbox" id="sidebar-music-3" name="music-3" value="Евроденс">
-                <label class="sidebar-wide__label" for="sidebar-music-3">Евроденс</label>
-              </th>
-            </tr>
-            <tr class="sidebar-wide__line">
-              <th class="sidebar-wide__unit">Еда:</th>
-              <th class="sidebar-wide__cell">
-                <input class="sidebar-wide__input" type="checkbox" id="sidebar-food-1" name="food-1" value="Мясоед"
-                  checked>
-                <label class="sidebar-wide__label" for="sidebar-food-1">Мясоед</label>
-              </th>
-              <th class="sidebar-wide__cell">
-                <input class="sidebar-wide__input" class="sidebar__input" type="checkbox" id="sidebar-food-2"
-                  name="food-2" value="Сидит на ПП">
-                <label class="sidebar-wide__label" for="sidebar-food-2">Сидит на ПП</label>
-              </th>
-              <th class="sidebar-wide__cell">
-                <input class="sidebar-wide__input" type="checkbox" id="sidebar-food-3" name="food-3"
-                  value="Веган-сыроед">
-                <label class="sidebar-wide__label" for="sidebar-food-3">Веган-сыроед</label>
-              </th>
-            </tr>
-          </table>
-          <div class="sidebar-wide__item">
-            <h3 class="sidebar-wide__unit">Транспорт:</h3>
-            <ul class="sidebar-wide__item-wrap sidebar__transport-list">
-              <li class="sidebar-wide__transport-item">
-                <img class="sidebar__transport--img" src="img/plane.svg" width="19" height="21" alt="Самолет">
-              </li>
-              <li class="sidebar-wide__transport-item">
-                <img class="sidebar__transport--img" src="img/bus.svg" width="17" height="21" alt="Автобус">
-              </li>
-              <li class="sidebar-wide__transport-item">
-                <img class="sidebar__transport--img" src="img/bike.svg" width="24" height="21" alt="Велосипед">
-              </li>
-              <li class="sidebar-wide__transport-item">
-                <img class="sidebar__transport--img" src="img/run.svg" width="20" height="21" alt="Бегун">
-              </li>
-            </ul>
-          </div>
-          <div class="sidebar-wide__item sidebar-wide__item--level">
-            <h3 class="sidebar-wide__unit">Левел:</h3>
-            <div class="sidebar-wide__range">
-              <div class="sidebar-wide__level">
-                <label class="sidebar-wide__level--label">
-                  <input class="sidebar-wide__level--input" type="text" name="min-level"
-                    value="30                     100">
-                </label>
-              </div>
-            </div>
-          </div>
-          <button class="sidebar-wide__button" type="submit" value="Показать">Показать</button>
+          <button class="sidebar__button" type="submit" value="Показать">Показать</button>
         </form>
 
 
