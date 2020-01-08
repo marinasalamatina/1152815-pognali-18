@@ -138,7 +138,7 @@
     display: block;
 
     width: 204px;
-    background-color: @color-navy;
+    background-color:  @color-blue;
 
     padding: 0;
     margin-left: auto;
@@ -196,8 +196,8 @@
 
   .main-nav::before {
     position: absolute;
-    left: -95px;
-    top: 25px;
+    left: -105px;
+    top: 29px;
 
     content: "";
     width: 60px;
@@ -227,7 +227,12 @@
 
 
   .site-list__item {
-    padding: 10px 15px;
+    padding: 15px;
+  }
+
+
+  .site-list__item:first-child {
+    padding-left: 0;
   }
 
 
@@ -246,6 +251,7 @@
 
     padding: 0;
     margin: 0;
+    margin-top: 4px;
     margin-left: auto;
   }
 
@@ -295,17 +301,15 @@
 
 
   .user-list__item {
-    margin-top: 10px;
+    margin-top: 13px;
   }
 
 
   .user-list__login {
     .ffbasic("bloggersans-bold", sans-serif; 20px; 30px; 700; normal; @color-navy);
 
-    .boxsetcolor(128px, 50px, @color-yellow);
-
     border-radius: 25px;
 
-    padding: 15px 30px;
+    padding: 15px 17px;
   }
 }
