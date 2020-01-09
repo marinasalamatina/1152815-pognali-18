@@ -37,6 +37,11 @@
 
     cursor: pointer;
   }
+
+
+  .login__button--text {
+    display: none;
+  }
 }
 
 
@@ -63,7 +68,7 @@
 
   .login__button {
     top: 7px;
-    right: 34px;
+    right: 33px;
 
     width: 12%;
     height: 80px;
@@ -75,21 +80,41 @@
 
 @media (min-width: 1438px) {
   .login__wrap {
-    width: 1440px;
+    width: 100%;
 
-    margin: 20px auto;
+    margin: 5px auto;
+  }
+
+
+  .login {
+    display: flex;
+
+    width: 100%;
+
+    margin: 0 auto;
   }
 
 
   .login__input {
-    width: 816px;
+    width: 89%;
 
     padding-left: 35px;
     padding-right: 324px;
+    margin: 0 auto;
   }
 
 
   .login__button {
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-cyan);
+
     width: 324px;
+
+    display: flex;
+    justify-content: space-between;
+
+    right: 5.4%;
+    top: 0px;
+
+    padding: 0 37px;
   }
 }
