@@ -1,143 +1,456 @@
-.dates {
-  background-color: @color-white;
-  width: 220px;
+@media (min-width: 320px) {
+  .dates {
+    background-color: @color-white;
+    width: 100%;
 
-  border-radius: 10px;
+    border-radius: 10px;
 
-  padding: 10px 25px;
-}
-
-
-.dates__title {
-  .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-cyan);
-}
+    padding: 10px 25px;
+    margin-top: 25px;
+  }
 
 
-.dates__paragraph {
-  .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
-}
+  .dates__title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-cyan);
+    margin: 13px 0;
+  }
+
+  .dates__title-number {
+    width: 100%;
+  }
+
+  .dates__paragraph {
+    width: 107.3%;
+    .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
+  }
+
+  .dates__subtitle {
+    width: 80%;
+
+    .ffbasic("bloggersans-medium", sans-serif; 16px; 4px; 500; normal; @color-cyan);
+    text-transform: uppercase;
+
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .dates__label {
+    position: relative;
+  }
+
+  .dates__unit {
+    .ffbasic("bloggersans-medium", sans-serif; 16px; 16px; 500; normal; @color-cyangrey);
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: -8px;
+    right: -2px;
+  }
+
+  .dates__input {
+    .ffbasic("bloggersans-medium", sans-serif; 15px; 14px; 500; normal; @color-cyan);
+    text-align: center;
+
+    width: 100%;
+    height: 43px;
+
+    border: 1px solid @color-borderbox;
+    border-radius: 5px;
+  }
+
+  .dates__child-wrapper {
+    margin: 24px 0;
+  }
+
+  .dates__label-child {
+    .ffbasic("bloggersans-medium", sans-serif; 15px; 15px; 500; normal; @color-darkgrey);
+    vertical-align: middle;
+
+    cursor: pointer;
+  }
+
+  .dates__input-child {
+    display: none;
+  }
+
+  .dates__input-child + .dates__label-child  {
+    position: relative;
+    padding: 0;
+    padding-left: 40px;
+  }
+
+  .dates__input-child + .dates__label-child::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    border: 1px solid @color-borderbox;
+    border-radius: 15%;
+  }
+
+  .dates__input-child:checked + label::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    background-image: url("../img/tick.svg");
+  }
 
 
-.dates__subtitle {
-  .ffbasic("bloggersans-medium", sans-serif; 16px; 16px; 500; normal; @color-cyan);
-  text-transform: uppercase;
-}
+  .dates__table-wrap {
+    margin: 10px 0;
+  }
 
 
-.dates__unit {
-  .ffbasic("bloggersans-medium", sans-serif; 16px; 16px; 500; normal; @color-cyangrey);
-  text-transform: uppercase;
-}
+  .dates__table {
+    width: 100%;
+
+    border-collapse: collapse;
+  }
 
 
-.dates__input {
-  .ffbasic("bloggersans-medium", sans-serif; 15px; 14px; 500; normal; @color-cyan);
-  text-align: center;
+  .dates__caption {
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-cyan);
 
-  width: 217px;
-  height: 41px;
+    border-top: 1px solid @color-borderbox;
+    border-bottom: 1px solid @color-borderbox;
 
-  border: 1px solid @color-borderbox;
-  border-radius: 5px;
+    padding: 10px 0;
+    margin-bottom: 11px;
+  }
 
-  padding: 0;
-}
+  .dates__weekday {
+    .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-darkgrey);
+    text-transform: uppercase;
 
+    padding: 10px 0;
+  }
 
-.dates__child-wrapper {
-  margin: 20px 0;
-}
+  .dates__letter {
+    display: none;
+  }
 
-
-.dates__input-child {
-  .boxsetcolor(24px; 24px; @color-white);
-  vertical-align: middle;
-
-  border: 1px solid @color-borderbox;
-  border-radius: 5px;
-
-  margin-right: 10px;
-}
-
-
-.dates__label-child {
-  .ffbasic("bloggersans-medium", sans-serif; 15px; 15px; 500; normal; @color-darkgrey);
-  vertical-align: middle;
-}
-
-
-.dates__table-wrap {
-  margin: 10px 0;
-}
-
-
-.dates__table {
-  width: 100%;
-
-  border-collapse: collapse;
-}
-
-
-.dates__caption {
-  .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-cyan);
-
-  border-top: 1px solid @color-borderbox;
-  border-bottom: 1px solid @color-borderbox;
-
-  padding: 10px 0;
-}
-
-
-.dates__weekday {
-  .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-darkgrey);
-  text-transform: uppercase;
-
-  padding: 10px 0;
-
-
-  &__weekday--tomato {
+  .dates__weekday--tomato {
     color: @color-tomato;
   }
-}
 
+  .dates__cell {
+    height: 31px;
 
-.dates__cell {
-  height: 30px;
+    .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-lightgrey);
+    text-transform: uppercase;
 
-  .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-lightgrey);
-  text-transform: uppercase;
+    border: 1px solid @color-borderbox;
 
-  border: 1px solid @color-borderbox;
+    cursor: pointer;
+  }
 
-
-  &--white {
+  .dates__cell--white {
     .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-white);
-
     background-color: @color-cyan;
   }
 
-  &--tomatowhite {
+  .dates__cell--tomatowhite {
     border: 2px solid @color-tomato;
   }
 
-  &--grey {
+  .dates__cell--grey {
     .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-darkgrey);
-
     background-color: @color-grey;
+  }
+
+  .dates__button--yellow {
+    .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
+    text-transform: uppercase;
+
+    .buttonstyle(none; @color-yellow);
+    width: 100%;
+
+    cursor: pointer;
+
+    border-radius: 20px;
+
+    margin: 11px 0;
+    padding: 6px 0;
   }
 }
 
+@media (min-width: 768px) {
+  .dates {
+    width: 100%;
 
-.dates__button--yellow {
-  .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
-  text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
 
-  .buttonstyle(none; @color-yellow);
-  .boxset(220px; 40px);
+    border-radius: 25px;
 
-  cursor: pointer;
+    padding: 35px 42px;
+    padding-bottom: 25px;
+  }
 
-  border-radius: 20px;
+  .dates__title {
+    .ffbasic("bloggersans-bold", sans-serif; 36px; 36px; 700; normal; @color-cyan);
 
-  margin: 10px 0;
+    margin-bottom: 17px;
+
+    order: -4;
+  }
+
+  .dates__paragraph {
+    width: 100%;
+
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 24px; 500; normal; @color-darkgrey);
+  }
+
+  .dates__paragraph-wrap {
+    order: -3;
+  }
+
+  .dates__subtitle {
+    width: 100%;
+
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-cyan);
+
+    border-top: 1px solid @color-borderbox;
+
+    padding-top: 22px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .dates__label-first {
+    order: -2;
+  }
+
+  .dates__unit {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-cyangrey);
+
+    bottom: 95px;
+    right: 2px;
+  }
+
+  .dates__input {
+    height: 70px;
+
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-cyan);
+  }
+
+  .dates__child-wrapper {
+    order: -1;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .dates__label-child {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-cyan);
+    text-transform: uppercase;
+  }
+
+  .dates__input-child + .dates__label-child  {
+    padding-left: 60px;
+  }
+
+  .dates__input-child + .dates__label-child::before {
+    top: -5px;
+    left: 3px;
+
+    width: 35px;
+    height: 35px;
+  }
+
+  .dates__input-child:checked + label::after {
+    bottom: 5px;
+    left: 15px;
+
+    width: 12px;
+    height: 12px;
+  }
+
+  .dates__table {
+    margin-bottom: 5px;
+  }
+
+  .dates__caption {
+    .ffbasic("bloggersans-bold", sans-serif; 36px; 67px; 700; normal; @color-cyan);
+
+     margin-top: 50px;
+     margin-bottom: 26px;
+  }
+
+  .dates__weekday {
+    font-size: 18px;
+    font-weight: 30px;
+
+    padding-top: 10px;
+  }
+
+  .dates__letter {
+    font-size: 18px;
+    font-weight: 30px;
+    text-transform: none;
+
+    display: inline;
+  }
+
+  .dates__cell {
+    font-size: 20px;
+
+    height: 69px;
+  }
+
+  .dates__button--yellow {
+    font-size: 24px;
+    text-transform: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 54%;
+
+    margin: 30px 0;
+    padding: 25px 35px;
+  }
+}
+
+@media (min-width: 1438px) {
+  .dates {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    border-radius: 60px;
+
+    padding: 83px 160px;
+  }
+
+  .dates__title {
+    order: -5;
+    width: 100%;
+
+    flex-direction: row;
+  }
+
+  .dates__title-number {
+    width: 12%;
+    margin-right: 5px;
+  }
+
+  .dates__paragraph-wrap {
+    order: -4;
+
+    width: 100%;
+    border-bottom: 1px solid @color-borderbox;
+
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .dates__paragraph {
+    width: 65%;
+
+    margin-bottom: 35px;
+  }
+
+  .dates__label {
+    width: 48.4%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dates__label-first {
+    order: -3;
+  }
+
+  .dates__label-second {
+    order: -1;
+  }
+
+  .dates__subtitle {
+    width: 45.4%;
+    border-top: none;
+  }
+
+  .dates__subtitle-first {
+    padding-top: 5px;
+  }
+
+  .dates__input {
+    width: 37.6%;
+    margin-top: 15px;
+  }
+
+  .dates__input-first {
+    margin-top: 0;
+  }
+
+  .dates__unit {
+    bottom: 27px;
+  }
+
+  .dates__child-wrapper {
+    text-align: right;
+    order: -2;
+
+    width: 51.6%;
+    margin: 0;
+    padding: 23px 0;
+  }
+
+  .dates__table-wrap {
+    width: 100%;
+
+    margin-top: 30px;
+  }
+
+  .dates__table {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .dates__caption {
+    .ffbasic("bloggersans-bold", sans-serif; 36px; 87px; 700; normal; @color-cyan);
+
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .dates__weekday {
+    vertical-align: top;
+
+    text-align: left;
+
+    padding: 16px;
+    padding-bottom: 19px;
+    margin: 0;
+  }
+
+  .dates__cell {
+    vertical-align: top;
+    text-align: left;
+
+    height: 71px;
+
+    padding: 13px;
+  }
+
+  .dates__button--yellow {
+    width: 28.5%;
+
+    margin: 23px 0;
+    margin-top: 48px;
+    padding: 25px 35px;
+  }
 }

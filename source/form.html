@@ -11,7 +11,7 @@
 
 
 <body>
-  <header class="header form__header">
+  <header class="header header--blue">
     <a class="header__logo-mobile" href="index.html">
       <img class="header__logo-image" src="img/logo-mobile-white@1x.png" width="100" height="19"
         alt="Логотип сайта Погнали">
@@ -28,7 +28,7 @@
       <button class="main-nav__toggle" type="button">
         <img class="main-nav__toggle--img" src="img/menu-tablet-mobile.png" width="25" height="11" alt="Открыть меню">
       </button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav__wrapper--blue">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#">О сервисе</a>
@@ -130,8 +130,10 @@
       <h1 class="plans__title">Мои планы:</h1>
       <ul class="plans__list">
         <li class="plans__item">
-          1. Франция, Италия
-          <p>
+          <h2 class="plans__item--title">
+            <span class="plans__item--number">1.</span> Франция, Италия
+          </h2>
+          <p class="plans__paragraph">
             <span class="plans__item--lighter">3 попутчика</span><br>
             <span class="plans__item--lighter">26 мар - 29 мар</span>
           </p>
@@ -140,8 +142,10 @@
           </button>
         </li>
         <li class="plans__item">
-          2. Таиланд, Индонезия
-          <p>
+          <h2 class="plans__item--title">
+            <span class="plans__item--number">2.</span> Таиланд, Индонезия
+          </h2>
+          <p class="plans__paragraph">
             <span class="plans__item--lighter">1 попутчик</span><br>
             <span class="plans__item--lighter">1 июл - 15 июл</span>
           </p>
@@ -156,20 +160,22 @@
       <h2 class="form-main__title">Добавить план</h2>
       <form class="planning" method="get" action="https://echo.htmlacademy.ru">
         <section class="dates">
-          <h3 class="dates__title">Шаг 1. Даты пребывания</h3>
-          <p class="dates__paragraph">
+          <h3 class="dates__title"><span class="dates__title-number">Шаг 1.</span>Даты пребывания</h3>
+          <div class="dates__paragraph-wrap">
+            <p class="dates__paragraph">
             Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку и ее предполагаемую длительность.
-          </p>
-          <label class="dates__label">
-            <h4 class="dates__subtitle">Ищу попутчиков:</h4>
+            </p>
+          </div>
+          <label class="dates__label dates__label-first">
+            <h4 class="dates__subtitle dates__subtitle-first">Ищу попутчиков:</h4>
             <p class="dates__unit--along"><span class="dates__unit">чел.</span></p>
-            <input class="dates__input" type="text" name="number-people" value="2">
+            <input class="dates__input dates__input-first" type="text" name="number-people" value="2">
           </label>
-          <label class="dates__label">
-            <h4 class="dates__subtitle">Длительность:</h4>
+          <label class="dates__label dates__label-second">
+            <h4 class="dates__subtitle dates__subtitle-second">Длительность:</h4>
             <p class="dates__unit--along"><span class="dates__unit">дн.</span></p>
-            <input class="dates__input" type="text" name="period" value="2">
+            <input class="dates__input dates__input" type="text" name="period" value="2">
           </label>
           <div class="dates__child-wrapper">
             <input class="dates__input-child" type="checkbox" id="dates-control" name="children" value="children-yes"
@@ -180,13 +186,13 @@
             <table class="dates__table">
               <caption class="dates__caption">Март 2019</caption>
               <tr class="dates__line">
-                <th class="dates__weekday">п</th>
-                <th class="dates__weekday">в</th>
-                <th class="dates__weekday">с</th>
-                <th class="dates__weekday">ч</th>
-                <th class="dates__weekday">п</th>
-                <th class="dates__weekday dates__weekday--tomato">с</th>
-                <th class="dates__weekday dates__weekday--tomato">в</th>
+                <th class="dates__weekday">п<span class="dates__letter">н</span></th>
+                <th class="dates__weekday">в<span class="dates__letter">т</span></th>
+                <th class="dates__weekday">с<span class="dates__letter">р</span></th>
+                <th class="dates__weekday">ч<span class="dates__letter">т</span></th>
+                <th class="dates__weekday">п<span class="dates__letter">т</span></th>
+                <th class="dates__weekday dates__weekday--tomato">с<span class="dates__letter">б</span></th>
+                <th class="dates__weekday dates__weekday--tomato">в<span class="dates__letter">с</span></th>
               </tr>
               <tr class="dates__line">
                 <th class="dates__cell">23</th>
@@ -228,9 +234,9 @@
                 <th class="dates__cell">23</th>
                 <th class="dates__cell">24</th>
                 <th class="dates__cell">25</th>
-                <th class="dates__cell--white dates__cell--tomatowhite">26</th>
-                <th class="dates__cell--white">27</th>
-                <th class="dates__cell--white">28</th>
+                <th class="dates__cell dates__cell--white dates__cell--tomatowhite">26</th>
+                <th class="dates__cell dates__cell--white">27</th>
+                <th class="dates__cell dates__cell--white">28</th>
                 <th class="dates__cell dates__cell--grey">29</th>
               </tr>
               <tr class="dates__line">
