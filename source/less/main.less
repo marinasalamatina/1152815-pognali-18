@@ -1,18 +1,20 @@
 @media (min-width: 320px) {
   .main__title-wrap {
-    background-color: @color-navy;
+    background-color: @color-grey;
+
     width: 320px;
-
-    border-radius: 0 0 20px 20px;
-
-    padding: 12px 25px;
-    margin: 0;
   }
 
 
   .main__title {
     .ffbasic("bloggersans-bold", sans-serif; 36px; 40px; 700; normal; @color-white);
-    letter-spacing: -2.5px;
+
+    background-color: @color-navy;
+
+    border-radius: 0 0 20px 20px;
+
+    padding: 12px 25px;
+    margin: 0;
 
     margin: 0;
   }
@@ -26,21 +28,20 @@
 
 @media (min-width: 768px) {
   .main__title-wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
     width: 768px;
-    background-color: @color-navy;
-
-    border-radius: 0 0 60px 60px;
-
-    padding: 70px 77px;
   }
 
 
   .main__title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border-radius: 0 0 60px 60px;
+
     .ffbasic("bloggersans-bold", sans-serif; 60px; 70px; 700; normal; @color-white);
+
+    padding: 70px 77px;
     margin: 0;
   }
 
@@ -64,17 +65,17 @@
 }
 
 
-@media (min-width: 1438px) {
+@media (min-width: 1440px) {
   .main__title-wrap {
-    width: 1438px;
+    width: 1440px;
+  }
+
+  .main__title {
+    .ffbasic("bloggersans-bold", sans-serif; 60px; 70px; 700; normal; @color-white);
 
     padding: 110px 125px;
     padding-bottom: 65px;
 
     position: relative;
-  }
-
-  .main__title {
-    .ffbasic("bloggersans-bold", sans-serif; 60px; 70px; 700; normal; @color-white);
   }
 }
