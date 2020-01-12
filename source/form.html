@@ -326,7 +326,6 @@
                 </ul>
               </div>
             </div>
-
             <!--model_END-->
 
             <label class="country__label">
@@ -347,17 +346,21 @@
             Наконец, расскажите о своих планах времяпровождения.
             Можно писать в свободной форме и ставить тэги.
           </p>
-          <label class="pastime__label">
-            <h4 class="pastime__subtitle">Босния и Герцеговина</h4>
-            <textarea class="pastime__input" rows="10" name="pastime-plan" placeholder="План действий"></textarea>
-          </label>
-          <label class="pastime__label">
-            <h4 class="pastime__subtitle">Чехия</h4>
-            <textarea class="pastime__input" rows="10" name="pastime-plan"
-              placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-          </label>
-          <button class="pastime__button--yellow" type="submit" alt="Показать">Отправить</button>
-          <button class="pastime__button--white" value="last-step">На шаг назад</button>
+          <div class="pastime__labels-wrap">
+            <label class="pastime__label">
+              <h4 class="pastime__subtitle">Босния и Герцеговина</h4>
+              <textarea class="pastime__input" rows="10" name="pastime-plan" placeholder="План действий"></textarea>
+            </label>
+            <label class="pastime__label">
+              <h4 class="pastime__subtitle">Чехия</h4>
+              <textarea class="pastime__input pastime__input--dark" rows="10" name="pastime-plan"
+                placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            </label>
+          </div>
+          <div class="pastime__button-wrap">
+            <button class="pastime__button--yellow" type="submit" alt="Показать">Отправить</button>
+            <button class="pastime__button--white" value="last-step">На шаг назад</button>
+          </div>
         </section>
       </form>
     </article>

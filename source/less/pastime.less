@@ -21,7 +21,7 @@
     margin: 13px 0;
   }
 
-  .dates__pastime-number {
+  .pastime__title-number {
     width: 100%;
   }
 
@@ -84,5 +84,157 @@
     border-radius: 20px;
 
     margin-top: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pastime {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 25px;
+
+    padding: 33px 42px;
+    padding-bottom: 25px;
+    margin-top: 50px;
+  }
+
+  .pastime__title {
+    .ffbasic("bloggersans-bold", sans-serif; 36px; 36px; 700; normal; @color-cyan);
+
+    margin-bottom: 17px;
+
+    order: -4;
+  }
+
+  .pastime__paragraph {
+    width: 100.4%;
+
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 24px; 500; normal; @color-darkgrey);
+  }
+
+  .pastime__labels-wrap {
+    border-top: 1px solid @color-borderbox;
+
+    margin-top: 10px;
+    padding-top: 40px;
+  }
+
+  .pastime__subtitle {
+    .ffbasic("bloggersans-bold", sans-serif; 30px; 18px; 700; normal; @color-cyan);
+    margin: 0;
+  }
+
+  .pastime__input {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 24px; 500; normal; @color-lightgrey);
+
+    width: 93.5%;
+    height: 142px;
+
+    border: 1px solid @color-borderbox;
+    border-radius: 5px;
+
+    padding: 15px;
+    margin: 45px 2px;
+    margin-bottom: 50px;
+  }
+
+  .pastime__input--dark {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 24px; 500; normal; @color-darkgrey);
+
+    margin-bottom: 40px;
+  }
+
+  .pastime__button-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  .pastime__button--yellow {
+    display: flex;
+    flex-wrap: wrap;
+
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-navy);
+    text-transform: none;
+
+    width: 54%;
+
+    cursor: pointer;
+
+    border-radius: 20px;
+
+    margin: 2px 0;
+    padding: 28px;
+  }
+
+  .pastime__button--white {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-navy);
+    text-transform: none;
+
+    width: 40%;
+
+    .buttonstyle(none; @color-white);
+
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1438px) {
+  .pastime {
+    width: 100%;
+
+    border-radius: 60px;
+
+    padding: 85px 160px;
+    margin-bottom: 44px;
+    margin-top: 0;
+  }
+
+  .pastime__title {
+    width: 100%;
+
+    flex-direction: row;
+  }
+
+  .pastime__title-number {
+    width: 12%;
+    margin-right: 5px;
+  }
+
+  .pastime__paragraph {
+    width: 55%;
+
+    margin-bottom: 43px;
+  }
+
+  .pastime__labels-wrap {
+    padding-top: 84px;
+  }
+
+  .pastime__input {
+    width: 72.9%;
+    padding: 22px;
+  }
+
+  .pastime__button-wrap {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .pastime__button--yellow {
+    width: 28.5%;
+
+    padding: 29px;
   }
 }
