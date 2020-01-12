@@ -256,7 +256,7 @@
         </section>
 
         <section class="country">
-          <h3 class="country__title">Шаг 2. Маршрут</h3>
+          <h3 class="country__title"><span class="dates__country-number">Шаг 2.</span> Маршрут</h3>
           <p class="country__paragraph">
             Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
           </p>
@@ -266,15 +266,12 @@
           <label class="country__label">
             <input class="country__input" type="text" name="country" value="Чехия">
           </label>
-          <label class="country__label">
-            <input class="country__input" type="text" name="country" value="Выберите страну">
+          <label class="country__label country__label--blue">
+            <input class="country__input country__input--blue" type="text" name="country" value="Выберите страну">
           </label>
 
           <!--modal-->
           <div class="alphabet__wrap">
-            <label class="alphabet__label">
-              <input class="alphabet__input" type="text" name="country" value="Выберите страну">
-            </label>
             <section class="alphabet">
               <table class="alphabet__table">
                 <tr class="alphabet__line">
@@ -336,10 +333,11 @@
           <button class="country__button--yellow" value="next-step">
             Следующий шаг
           </button>
+          <button class="country__button--white" value="last-step">На шаг назад</button>
         </section>
 
         <section class="pastime">
-          <h3 class="pastime__title">Шаг 3. Развлечения</h3>
+          <h3 class="pastime__title"><span class="pastime__title-number">Шаг 3.</span> Развлечения</h3>
           <p class="pastime__paragraph">
             Наконец, расскажите о своих планах времяпровождения.
             Можно писать в свободной форме и ставить тэги.
