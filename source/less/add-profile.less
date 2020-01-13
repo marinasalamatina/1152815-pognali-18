@@ -1,12 +1,13 @@
-@media (min-width: 318px) {
+@media (min-width: 320px) {
   .add-profile {
     position: relative;
 
-    width: 270px;
+    width: 320px;
     background-color: @color-grey;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 30px 30px;
 
-    padding: 35px 25px;
+    padding: 34px 25px;
+    padding-bottom: 36px;
   }
 
 
@@ -23,11 +24,11 @@
   .add-profile__title::before {
     position: absolute;
     left: 145px;
-    top: -20px;
+    top: -15px;
 
     content: "";
 
-    background-image: url("../../img/rates.png");
+    background-image: url("../img/rates.png");
     background-repeat: no-repeat;
     background-size: 99px;
     width: 99px;
@@ -39,7 +40,7 @@
     .liststyle();
 
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     margin-left: 25px;
   }
 
@@ -52,7 +53,7 @@
 
     border-top: 1px solid @color-addprofile;
 
-    padding: 15px 0;
+    padding: 11px 0;
   }
 
 
@@ -103,20 +104,28 @@
     .ffbasic("bloggersans-bold", sans-serif; 16px; 16px; 700; normal; @color-blue);
 
     cursor: pointer;
+
+    margin: 0 5px;
   }
 }
 
 
 @media (min-width: 768px) {
   .add-profile {
-    width: 688px;
+    width: 768px;
 
-    background-image: url("../../img/blue_back.png");
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-image: url("../img/blue_back.png");
     background-repeat: no-repeat;
     background-size: 198px 285px;
-    background-position: top 140px right 45px;
+    background-position: top 140px right 5.9%;
 
-    padding: 40px;
+    border-radius: 0 0 60px 60px;
+
+    padding: 41px 5.2%;
   }
 
 
@@ -124,11 +133,11 @@
     .ffbasic("bloggersans-bold", sans-serif; 45px; 45px; 700; normal; @color-darkorange);
     text-align: center;
 
-    width: 677px;
+    width: 100%;
 
     padding: 30px 0;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
 
@@ -171,7 +180,8 @@
     bottom: -80px;
 
     content: "";
-    background-image: url("../../img/business.svg");
+    background-image: url("../img/business.svg");
+
     background-repeat: no-repeat;
     width: 17px;
     height: 21px;
@@ -191,8 +201,8 @@
 
     .ffbasic("bloggersans-light", sans-serif; 28px; 33px; 400; normal; @color-darkgrey);
 
-    width: 540px;
-    min-height: 35px;
+    width: 100%;
+    min-height: 65px;
   }
 
 
@@ -221,22 +231,24 @@
   .add-profile__button {
     position: relative;
 
+    display: flex;
+
     .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-blue);
 
     margin-left: 90px;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
     padding: 20px 0;
   }
 
 
   .add-profile__button::before {
     position: absolute;
-    right: -230px;
-    top: -20px;
+    right: 2.4%;
+    top: -22px;
 
     content: "";
 
-    background-image: url("../../img/rates.png");
+    background-image: url("../img/rates.png");
     background-repeat: no-repeat;
     background-size: 100px;
     width: 100px;
@@ -244,20 +256,20 @@
   }
 }
 
-
-@media (min-width: 1438px) {
+@media (min-width: 1440px) {
   .add-profile {
     display: flex;
     flex-direction: column;
     position: relative;
 
-    width: 1320px;
-    min-height: 570px;
-    background-image: url("../../img/blue_add-profile_desktop.png");
+    width: 1440px;
+    min-height: 750px;
+
+    background-image: url("../img/blue_add-profile_desktop.png");
     background-size: 444px 300px;
     background-position: top 230px left 750px;
 
-    padding: 90px 60px;
+    padding: 75px 60px;
   }
 
 
@@ -267,8 +279,7 @@
     top: 285px;
 
     content: "";
-
-    background-image: url("../../img/rates-desktop.png");
+    background-image: url("../img/rates-desktop.png");
     background-repeat: no-repeat;
     background-size: 198px;
     width: 198px;
@@ -277,7 +288,7 @@
 
 
   .add-profile__title {
-    padding-bottom: 105px;
+    padding-bottom: 140px;
     margin: 0 auto;
   }
 

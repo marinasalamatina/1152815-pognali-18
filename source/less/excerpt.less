@@ -3,72 +3,83 @@
 }
 
 
-@media (min-width: 318px) {
+@media (min-width: 320px) {
   .excerpt {
-    width: 27 0;
+    width: 100%;
+    min-height: 286px;
     background-color: @color-navy;
 
-    padding: 5 0 25px;
+    padding: 30px 7.8%;
   }
 
 
   .excerpt__wrap {
-    width: 18 0;
+    width: 83%;
 
-    padding: 0 25px;
-    margin-bottom: 5 0;
+    padding: 0 9.26%;
+    margin-bottom: 33px;
   }
 
 
   .excerpt__text {
     .ffbasic("bloggersans-light", sans-serif; 16px; 22px; 400; normal; @color-white);
 
-    padding-bottom: 1 0;
+    padding-bottom: 5px;
   }
 
 
   .excerpt__author {
     .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-white);
+
+    padding-bottom: 45px;
   }
 }
 
 
 @media (min-width: 768px) {
   .excerpt {
-    width: 40 0;
+    width: 54%;
     background-color: transparent;
 
-    margin-top: -60 0;
-    margin-left: 3 0;
+    margin-top: -600px;
   }
 
 
   .excerpt__wrap {
-    width: 33 0;
-    min-height: 24 0;
+    width: 100%;
+
+    padding: 0;
   }
 
 
   .excerpt__text {
     .ffbasic("bloggersans-light", sans-serif; 28px; 33px; 400; normal; @color-white);
+    margin-top: 40px;
   }
 
 
   .excerpt__author {
     .ffbasic("bloggersans-bold", sans-serif; 21px; 25px; 700; normal; @color-white);
+    padding-bottom: 0;
   }
 }
 
-@media (min-width: 1438px) {
+@media (min-width: 1440px) {
   .excerpt {
     position: absolute;
-    top: 90;
-    right: 60;
+    top: 113px;
+    right: 60px;
 
-    width: 29 0;
+    width: 290px;
 
     margin: 0;
     padding: 0;
+  }
+
+
+  .excerpt__text {
+    margin: 0;
+    margin-bottom: 45px;
   }
 
 

@@ -1,9 +1,13 @@
-@media (min-width: 318px) {
+@media (min-width: 320px) {
   .profile {
     background-color: @color-grey;
-    width: 270px;
+    width: 320px;
 
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px;
+    padding-bottom: 60px;
   }
 
 
@@ -13,35 +17,54 @@
 
 
   .profile__header-wrap {
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    padding: 0 6.5%;
   }
 
 
   .profile__level {
-    text-align: center;
-
-    .boxset(95px; 85px);
-
-    border-radius: 50%;
+    width: 95px;
+    height: 93px;
 
     margin: 0;
-    margin-left: 20px;
-    padding: 0;
-    padding-top: 10px;
+    margin-left: 5px;
+    padding: 17px 0;
+
+    display: flex;
+    flex-direction: column;
   }
 
 
   .profile__level--blue {
     .ffbasic("bloggersans-bold", sans-serif; 38px; 38px; 700; normal; @color-navy);
+
+    margin: 0 auto;
   }
 
 
+  .profile__level-paragraph {
+    width: 48px;
+    border-top: 2px solid @color-borderbox;
+
+    .ffbasic("bloggersans-medium", sans-serif; 18px; 22.17px; 500; normal; @color-navy);
+    text-align: center;
+
+
+    padding-top: 3px;
+    margin: 0 auto;
+  }
+
   .profile__img {
     border-radius: 50%;
+  }
 
-    margin: 0 20px;
+  .profile__text-wrap {
+    display: none;
   }
 
   .profile__signature-wrap {
@@ -56,33 +79,40 @@
 
   .profile__fotoswap {
     .buttonstyle();
-    .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
+    .ffbasic("bloggersans-bold", sans-serif; 17px; 20px; 700; normal; @color-navy);
     text-transform: uppercase;
     text-align: center;
 
     cursor: pointer;
 
-    .boxsetcolor(270px, 30px, @color-middlegrey);
+    width: 100%;
+    background-color: @color-middlegrey;
 
     border-radius: 20px;
 
-    padding: 5px 25px;
-    margin: 10px 0;
-    margin-top: 20px;
+    padding: 10px 25px;
+    margin: 5px 0;
+    margin-top: 17px;
   }
 
 
   .profile-wrap {
+    width: 100%;
     border: 1px solid @color-borderbox;
     border-radius: 10px;
 
-    padding-bottom: 20px;
-    margin: 30px 0;
+    padding: 5px 0;
+    padding-bottom: 23px;
+    margin: 28px auto;
+    margin-bottom: 10px;
   }
 
 
   .profile__transport-wrap {
     text-align: center;
+
+    margin-top: 15px;
+    padding-bottom: 12px;
   }
 
 
@@ -99,41 +129,153 @@
     text-align: center;
 
     margin: 10px 60px;
-    margin-top: -10px;
+    margin-top: -11px;
   }
 
 
   .profile__hashtag {
-    .ffbasic("bloggersans-medium", sans-serif; 16px; 18px; 500; normal; @color-darkgrey);
+    .ffbasic("bloggersans-medium", sans-serif; 16px; 21px; 500; normal; @color-darkgrey);
+
     margin: 0 25px;
   }
 }
 
 
-@media (min-width: 1438px) {
+@media (min-width: 768px) {
   .profile {
-    z-index: -1;
+    width: 768px;
+
+    padding: 62px 75px;
+    padding-bottom: 87px;
+  }
+
+
+  .profile__header-wrap {
+    width: 100%;
+
+    order: -2;
+
+    padding: 0;
+  }
+
+  .profile__level {
+    width: 85px;
+  }
+
+  .profile__img {
+    border-radius: 10px 10px 0 0;
+
+    width: 15%;
+  }
+
+  .profile__hashtag-wrap {
     position: relative;
 
+    margin-top: 10px;
+    padding: 35px 0;
+    padding-bottom: 35px;
+  }
+
+  .profile__transport-wrap {
+    position: relative;
+
+    order: -1;
+
+    width: 50%;
+
+    padding: 37px 0;
+    padding-bottom: 28px;
+    margin-top: -94px;
+  }
+
+  .profile__transport--img:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .profile-name {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-cyan);
+    letter-spacing: 1px;
+  }
+
+  .profile__transport-name {
+    position: absolute;
+
+    left: 8%;
+    bottom: -20px;
+  }
+
+  .profile__hashtag-name {
+    position: absolute;
+
+    left: 36%;
+    bottom: -20px;
+  }
+
+  .profile__fotoswap {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 40px; 500; normal; @color-navy);
+
+    width: 100%;
+    border-radius: 10px;
+
+    margin: 44px auto;
+    margin-bottom: 40px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .profile {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 1320px;
+    width: 1440px;
 
-    padding: 60px;
-    padding-top: 100px;
-    margin-top: -20px;
+    padding: 75px 125px;
+    padding-bottom: 125px;
+    padding-right: 58px;
   }
 
 
   .profile__img--mobile {
-    display: none;
+    position: absolute;
+
+    width: 15.1%;
+
+    right: 98px;
+    top: -265px;
+  }
+
+  .profile__header-wrap {
+    position: relative;
+  }
+
+  .profile__level {
+    position: absolute;
+
+    right: 337px;
+    top: -220px;
   }
 
 
-  .profile__level {
-    display: none;
+  .profile__text-wrap {
+    display: flex;
+    position: absolute;
+    right: 98px;
+    top: -75px;
+
+    width: 15.1%;
+    background-color: @color-profile--foto;
+
+    border-radius: 0 0 10px 10px;
+  }
+
+  .profile__text {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 48px; 500; normal; @color-cyan);
+    text-transform: uppercase;
+
+    margin: auto;
   }
 
 
@@ -148,6 +290,30 @@
 
 
   .profile-wrap {
+    width: 40%;
+
     margin: 0;
+    padding: 32px 0;
+  }
+
+  .profile__hashtag-wrap {
+    width: 58%;
+  }
+
+  .profile__hashtag-name {
+    left: -25px;
+  }
+
+  .profile__transport-wrap {
+    width: 30.5%;
+    order: 1;
+  }
+
+  .profile__transport-name {
+    left: 70px;
+  }
+
+  .profile__transport--img:not(:last-child) {
+    margin-right: 19px;
   }
 }

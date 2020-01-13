@@ -1,5 +1,19 @@
-@media (min-width: 318px) {
+@media (min-width: 320px) {
   .footer {
+    width: 320px;
+    background-color: @color-planblue;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer--transparent {
+    background-color: transparent;
+
+    margin-top: -50px;
+  }
+
+  .footer-wrap {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -7,14 +21,13 @@
     text-align: center;
 
 
-    width: 270px;
+    width: 320px;
     background-color: @color-white;
 
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0;
 
-    padding: 10px 25px;
+    padding: 8px 25px;
   }
-
 
   .footer__logo-mobile {
     margin: 0 auto;
@@ -35,15 +48,21 @@
 
 @media (min-width: 768px) {
   .footer {
+    width: 768px;
+  }
+
+  .footer-wrap {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    width: 688px;
+    width: 100%;
 
-    padding: 45px 40px;
+    border-radius: 60px 60px 0 0;
+
+    padding: 10px 5.21%;
+    padding-top: 18px;
   }
-
 
   .footer__logo-mobile {
     display: none;
@@ -52,23 +71,27 @@
 
   .footer__logo-tablet {
     display: block;
+
+    padding-right: 35px;
   }
 }
 
 
-@media (min-width: 1438px) {
+@media (min-width: 1440px) {
   .footer {
-    width: 1320px;
-    min-height: 65px;
+    width: 1440px;
+  }
 
-    padding: 45px 60px;
+  .footer-wrap {
+    width: 100%;
+    min-height: 157px;
+    padding: 0 4.13%;
   }
 
 
   .footer__logo-tablet {
     display: none;
   }
-
 
   .footer__logo-desktop {
     display: block;

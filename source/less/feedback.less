@@ -1,17 +1,28 @@
-@media (min-width: 318px) {
+@media (min-width: 320px) {
+  .feedback-wrap {
+    width: 320px;
+    background-color: @color-yellow;
+  }
+
   .feedback {
-    width: 270px;
+    width: 100%;
     background-color: @color-blue;
 
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 30px 30px;
 
-    padding: 40px 25px;
+    padding: 25px;
+    padding-top: 89px;
+    padding-bottom: 17px;
+    margin-top: -68px;
   }
 
 
   .feedback__title {
     .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-darkorange);
     text-align: center;
+
+    margin: 0;
+    margin-top: 45px;
   }
 
 
@@ -19,13 +30,21 @@
     .ffbasic("bloggersans-light", sans-serif; 16px; 22px; 400; normal; @color-white);
     text-align: center;
 
-    padding: 10px 35px;
+    padding: 5px 17px;
+    padding-bottom: 9px;
   }
 
 
   .feedback__paragraph--yellow {
     .ffbasic("bloggersans-light", sans-serif; 16px; 22px; 400; normal; @color-yellow);
     text-decoration: underline;
+
+    cursor: pointer;
+  }
+
+
+  .feedback--yellow-wrap {
+    margin-top: 21px;
   }
 
 
@@ -65,7 +84,7 @@
 
     content: "";
 
-    background-image: url("../../img/contacts-phone.svg");
+    background-image: url("../img/contacts-phone.svg");
     background-repeat: no-repeat;
     background-size: 18px;
     width: 18px;
@@ -84,7 +103,8 @@
     top: 10px;
 
     content: "";
-    background-image: url("../../img/contacts-mail.svg");
+
+    background-image: url("../img/contacts-mail.svg");
     background-repeat: no-repeat;
     background-size: 18px;
     width: 18px;
@@ -94,10 +114,17 @@
 
 
 @media (min-width: 768px) {
-  .feedback {
-    width: 690px;
+  .feedback-wrap {
+    width: 768px;
+  }
 
-    padding: 40px;
+  .feedback {
+    width: 100%;
+
+    border-radius: 0 0 60px 60px;
+
+    padding: 95px 3.91%;
+    padding-bottom: 28px;
   }
 
 
@@ -109,7 +136,7 @@
   .feedback__paragraph {
     .ffbasic("bloggersans-light", sans-serif; 28px; 33px; 400; normal; @color-white);
 
-    padding: 20px 0;
+    padding: 29px 0;
   }
 
 
@@ -121,12 +148,13 @@
   .feedback--yellow {
     .ffbasic("bloggersans-bold", sans-serif; 28px; 28px; 700; normal; @color-yellow);
 
-    margin-left: 128px;
+    margin-left: 19%;
+    margin-bottom: 45px;
   }
 
 
   .feedback--yellow::before {
-    left: -93px;
+    left: -89px;
     top: -10px;
 
     width: 66px;
@@ -135,8 +163,8 @@
 
 
   .feedback__phone::after {
-    left: -73px;
-    top: 8px;
+    left: -69px;
+    top: 9px;
 
     background-size: 27px;
     width: 27px;
@@ -145,8 +173,8 @@
 
 
   .feedback__mail::after {
-    left: -73px;
-    top: 12px;
+    left: -70px;
+    top: 15px;
 
     background-size: 27px;
     width: 27px;
@@ -155,20 +183,25 @@
 }
 
 
-@media (min-width: 1438px) {
+@media (min-width: 1440px) {
+  .feedback-wrap {
+    width: 1440px;
+  }
+
   .feedback {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
 
+    border-radius: 0 0 60px 60px;
 
-    width: 1320px;
-    min-height: 580px;
-    padding: 85px 60px;
+    padding: 125px 60px;
+    padding-bottom: 110px;
   }
 
-
   .feedback__paragraph {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
 
@@ -177,9 +210,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    width: 850px;
-    margin: 30px auto;
-    padding-left: 80px;
+    width: 69.3%;
+    margin: 14px auto;
+    padding: 0;
+    padding-left: 143px;
   }
 
 
@@ -190,7 +224,7 @@
 
   .feedback--yellow::before {
     top: -25px;
-    left: -130px;
+    left: -120px;
 
     width: 90px;
     height: 90px;
@@ -198,8 +232,8 @@
 
 
   .feedback__phone::after {
-    top: 0;
-    left: -103px;
+    top: 4px;
+    left: -94px;
 
     background-size: 36px;
     width: 36px;
@@ -208,8 +242,8 @@
 
 
   .feedback__mail::after {
-    top: 7px;
-    left: -102px;
+    top: 9px;
+    left: -93px;
 
     background-size: 36px;
     width: 36px;

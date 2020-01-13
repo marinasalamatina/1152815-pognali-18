@@ -1,4 +1,4 @@
-@media (min-width: 318px) {
+@media (min-width: 320px) {
   .main-nav {
     width: 320px;
   }
@@ -7,7 +7,7 @@
   .main-nav__toggle {
     position: absolute;
     top: 30px;
-    right: 25px;
+    right: 6%;
 
     .buttonstyle();
 
@@ -129,8 +129,8 @@
 
 @media (min-width: 768px) {
   .main-nav__toggle {
-    top: 55px;
-    right: 370px;
+    top: 59px;
+    right: 47.5%;
   }
 
 
@@ -142,6 +142,11 @@
 
     padding: 0;
     margin-left: auto;
+  }
+
+
+  .main-nav__wrapper--blue {
+    background-color: @color-navy;
   }
 
 
@@ -162,7 +167,7 @@
 
     border-radius: 30px;
 
-    padding: 12px 25px;
+    padding: 14px 18px;
   }
 
 
@@ -176,7 +181,7 @@
   }
 }
 
-@media (min-width: 1438px) {
+@media (min-width: 1440px) {
   .main-nav__toggle {
     display: none;
   }
@@ -196,8 +201,8 @@
 
   .main-nav::before {
     position: absolute;
-    left: -95px;
-    top: 25px;
+    left: -105px;
+    top: 29px;
 
     content: "";
     width: 60px;
@@ -227,7 +232,12 @@
 
 
   .site-list__item {
-    padding: 10px 15px;
+    padding: 15px;
+  }
+
+
+  .site-list__item:first-child {
+    padding-left: 0;
   }
 
 
@@ -246,6 +256,7 @@
 
     padding: 0;
     margin: 0;
+    margin-top: 4px;
     margin-left: auto;
   }
 
@@ -295,17 +306,15 @@
 
 
   .user-list__item {
-    margin-top: 10px;
+    margin-top: 14px;
   }
 
 
   .user-list__login {
     .ffbasic("bloggersans-bold", sans-serif; 20px; 30px; 700; normal; @color-navy);
 
-    .boxsetcolor(128px, 50px, @color-yellow);
-
     border-radius: 25px;
 
-    padding: 15px 30px;
+    padding: 15px 17px;
   }
 }
