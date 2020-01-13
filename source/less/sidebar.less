@@ -41,6 +41,7 @@
   .sidebar__cell {
     display: flex;
 
+    margin: 0;padding: 0;
     padding-bottom: 6px;
   }
 
@@ -59,7 +60,7 @@
 
     display: flex;
 
-    padding: 10px 0;
+    padding: 11px 0;
     margin: 0;
   }
 
@@ -68,7 +69,7 @@
 
     display: flex;
 
-    margin: 9px 0;
+    margin: 0;
     margin-bottom: 22px;
   }
 
@@ -84,12 +85,42 @@
   }
 
   .sidebar__input {
-    .boxsetcolor(17px; 17px; @color-white);
-    vertical-align: middle;
+    display: none;
+  }
 
-    border-radius: 5px;
+  .sidebar__label {
+    padding-bottom: 5px;
+  }
 
-    margin: 5px 0;
+  .sidebar__input + .sidebar__label {
+    position: relative;
+
+    margin: 3px 0;
+    padding-left: 25px;
+  }
+
+  .sidebar__input + .sidebar__label::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -2px;
+
+    width: 18px;
+    height: 18px;
+    background-color: @color-white;
+
+    border: none;
+    border-radius: 15%;
+  }
+
+  .sidebar__input:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 9px;
+    height: 9px;
+    background-image: url("../img/tick.svg");
   }
 
 
@@ -97,7 +128,6 @@
     .ffbasic("bloggersans-medium", sans-serif; 15px; 15px; 500; normal; @color-darkgrey);
 
     margin-left: 10px;
-    margin-top: 5px;
   }
 
 
@@ -111,7 +141,8 @@
     border: 1px solid @color-borderbox;
     border-radius: 5px;
 
-    margin: 5px 0;
+    margin: 0;
+    margin-bottom: 5px;
   }
 
 
@@ -159,7 +190,7 @@
 
     padding: 40px;
     padding-top: 180px;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
   }
 
 
@@ -205,8 +236,7 @@
 
 
   .sidebar__unit {
-    .ffbasic("bloggersans-medium", sans-serif; 20px; 30px; 500; normal; @color-cyan);
-    letter-spacing: -2.1px;
+    .ffbasic("bloggersans-medium", sans-serif; 18px; 29px; 500; normal; @color-cyan);
     text-transform: uppercase;
 
     border: none;
@@ -224,7 +254,7 @@
 
 
   .sidebar__cell {
-    width: 26.3%;
+    width: 26.4%;
     text-align: left;
 
     padding: 8px 0;
@@ -239,7 +269,6 @@
 
   .sidebar__transport-list {
     width: 77%;
-
     margin-right: auto;
     margin-bottom: 0;
   }
@@ -262,12 +291,34 @@
 
 
   .sidebar__label {
+    width: 100%;
+
     .ffbasic("bloggersans-medium", sans-serif; 20px; 20px; 500; normal; @color-darkgrey);
     vertical-align: middle;
 
-    margin-left: 5px;
+    margin-left: 0;
+    padding-left: 0;
   }
 
+  .sidebar__input + .sidebar__label {
+    padding-left: 34px;
+  }
+
+  .sidebar__input + .sidebar__label::before {
+    content: "";
+    top: -2px;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+  }
+
+  .sidebar__input:checked + label::after {
+    top: 4px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+  }
 
   .sidebar__level {
     margin: 0;
