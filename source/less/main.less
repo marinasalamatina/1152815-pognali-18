@@ -1,15 +1,16 @@
 @media (min-width: 320px) {
-  .main__title-wrap {
-    background-color: @color-grey;
-
+  .main__header-wrap {
     width: 320px;
+
+    background-color: @color-grey;
   }
 
+  .main__title-wrap {
+    background-color: @color-navy;
+  }
 
   .main__title {
     .ffbasic("bloggersans-bold", sans-serif; 36px; 40px; 700; normal; @color-white);
-
-    background-color: @color-navy;
 
     border-radius: 0 0 20px 20px;
 
@@ -25,22 +26,26 @@
 
 
 @media (min-width: 768px) {
-  .main__title-wrap {
+  .main__header-wrap {
     width: 768px;
+    background-color: @color-grey;
   }
 
-
-  .main__title {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  .main__title-wrap {
+    width: 100%;
 
     border-radius: 0 0 60px 60px;
 
-    .ffbasic("bloggersans-bold", sans-serif; 60px; 70px; 700; normal; @color-white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    padding: 70px 77px;
-    margin: 0;
+    padding: 58px 50px;
+    padding-right: 74px;
+  }
+
+  .main__title {
+    .ffbasic("bloggersans-bold", sans-serif; 60px; 70px; 700; normal; @color-white);
   }
 
 
@@ -64,16 +69,31 @@
 
 
 @media (min-width: 1440px) {
-  .main__title-wrap {
+  .main__header-wrap {
     width: 1440px;
   }
 
+  .main__title-wrap {
+    width: 100%;
+
+    border-radius: 0 0 60px 60px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 84px 100px;
+    padding-top: 128px;
+    padding-right: 125px;
+  }
+
   .main__title {
-    .ffbasic("bloggersans-bold", sans-serif; 60px; 70px; 700; normal; @color-white);
+    .ffbasic("bloggersans-bold", sans-serif; 60px; 10px; 700; normal; @color-white);
+  }
 
-    padding: 110px 125px;
-    padding-bottom: 65px;
+  .main__title-return--img {
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-white);
 
-    position: relative;
+    margin-top: 10px;
   }
 }
