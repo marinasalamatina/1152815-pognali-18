@@ -1,0 +1,211 @@
+@media (min-width: 320px) {
+  .filter-wrap {
+    display: none;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+    background-color: @color-lightblue;
+
+    border-radius: 0 0 25px 25px;
+
+    padding: 0;
+  }
+
+
+  .filter__header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 0 0 20px 20px;
+
+    padding: 25px 20px;
+    padding-top: 17px;
+  }
+
+
+  .filter__button-show {
+    display: none;
+  }
+
+
+  .filter__toggle {
+    .buttonstyle();
+  }
+
+
+  .filter__toggle--desktop {
+    display: none;
+  }
+
+
+  .filter__toggle-close {
+    display: flex;
+
+    cursor: pointer;
+  }
+
+
+  .filter__close--text {
+    display: none;
+  }
+
+
+  .filter__toggle--img {
+    margin: auto;
+  }
+
+
+  .filter__title {
+    .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-blue);
+    text-transform: uppercase;
+
+    margin: 0;
+    margin-right: auto;
+  }
+
+
+  .filter__country-list {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .filter {
+    width: 768px;
+    border-radius: 0 0 50px 50px;
+
+    padding: 0 42px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+
+  .filter__header {
+    padding: 30px;
+  }
+
+
+  .filter__toggle {
+    display: none;
+  }
+
+
+  .filter__title {
+    display: none;
+  }
+
+
+  .filter__country-list {
+    .liststyle();
+    display: flex;
+  }
+
+
+  .filter__country-item {
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-middleblue);
+    text-transform: uppercase;
+
+    margin-right: 15px;
+  }
+
+
+  .filter__toggle-show {
+    display: flex;
+
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-blue);
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+
+
+  .filter__toggle-close {
+    display: flex;
+  }
+
+
+  .filter__close--text {
+    display: block;
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-blue);
+    text-transform: uppercase;
+
+    margin-right: 70px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .filter {
+    width: 1440px;
+    background-color: @color-almost-white;
+  }
+
+
+  .filter__header {
+    width: 100%;
+    background-color: @color-almost-white;
+
+    padding: 55px 75px;
+  }
+
+
+  .filter__toggle-burger {
+    display: block;
+  }
+
+
+  .filter__toggle--mobile {
+    display: none;
+  }
+
+
+  .filter__toggle--desktop {
+    display: block;
+  }
+
+
+  .filter__title {
+    display: block;
+
+    .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-blue);
+    letter-spacing: 0;
+
+    margin: 0 25px;
+  }
+
+
+  .filter__country-list {
+    margin: 0 10px;
+  }
+
+
+  .filter__country-item {
+    letter-spacing: 0;
+    margin-right: 25px;
+  }
+
+
+  .filter__toggle-close {
+    margin-left: auto;
+    margin-right: 45px;
+    letter-spacing: 0;
+  }
+
+
+  .filter__close--text {
+    margin-right: 80px;
+  }
+
+
+  .filter__toggle--img {
+    width: 18px;
+    height: 18px;
+  }
+}
