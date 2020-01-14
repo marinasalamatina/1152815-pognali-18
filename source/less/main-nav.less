@@ -17,6 +17,7 @@
 
   .main-nav__wrapper {
     display: none;
+    position: absolute;
     background-color: @color-white;
 
     padding: 30px 25px;
@@ -243,6 +244,15 @@
 
   .site-list__link {
     .ffbasic("bloggersans-medium", sans-serif; 20px; 30px; 500; normal; @color-white);
+
+
+    &:hover {
+      color: @color-yellow;
+    }
+
+    &:active {
+      color: @color-main-navactive;
+    }
   }
 
 
@@ -256,7 +266,7 @@
 
     padding: 0;
     margin: 0;
-    margin-top: 4px;
+    margin-top: 2px;
     margin-left: auto;
   }
 
@@ -264,16 +274,32 @@
   .main-nav__img-wrap {
     width: 50px;
     height: 50px;
+
+
+    &:active {
+      .main-nav__img {
+        opacity: 0.3;
+      }
+    }
   }
 
 
   .main-nav__imgmobile-wrap {
     background-color: @color-darkorange;
+
+    &:hover {
+      background-color: @color-generallinkhover;
+    }
   }
 
 
   .main-nav__imgdesktop-wrap {
     background-color: @color-darkyellow;
+
+
+    &:hover {
+      background-color: @color-darkorange;
+    }
   }
 
 
@@ -306,7 +332,7 @@
 
 
   .user-list__item {
-    margin-top: 14px;
+    margin-top: 11px;
   }
 
 

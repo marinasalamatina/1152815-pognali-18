@@ -38,7 +38,7 @@
 
     padding: 0;
     margin: 0;
-    margin-top: 25px;
+    margin-top: 27px;
   }
 
   .dates__label {
@@ -63,6 +63,16 @@
 
     border: 1px solid @color-borderbox;
     border-radius: 5px;
+
+
+    &:hover {
+      border-color: @color-dateshover;
+    }
+
+
+    &:active {
+      border-color: @color-navy;
+    }
   }
 
   .dates__child-wrapper {
@@ -97,6 +107,19 @@
 
     border: 1px solid @color-borderbox;
     border-radius: 15%;
+  }
+
+  .dates__input-child:hover + .dates__label-child::before {
+    border: 1px solid @color-dateshover;
+  }
+
+  .dates__input-child:active + .dates__label-child::before {
+    border: 1px solid @color-lightblue;
+    background-color: @color-lightblue;
+  }
+
+  .dates__input-child:active + .dates__label-child::after{
+    opacity: 0.3;
   }
 
   .dates__input-child:checked + label::after {
@@ -148,6 +171,7 @@
   }
 
   .dates__cell {
+    width: 14.29%;
     height: 31px;
 
     .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-lightgrey);
@@ -156,6 +180,25 @@
     border: 1px solid @color-borderbox;
 
     cursor: pointer;
+
+
+    &:disabled {
+      border: 1px solid @color-borderbox;
+      color: @color-lightgrey;
+    }
+
+    &:hover {
+      height: 25px;
+      width: 14.29%;
+      border: 3px solid @color-tomato;
+      background-color: @color-cyan;
+      color: @color-white;
+    }
+
+    &:active {
+      background-color: @color-dateschosen;
+      border: none;
+    }
   }
 
   .dates__cell--white {
@@ -164,7 +207,7 @@
   }
 
   .dates__cell--tomatowhite {
-    border: 2px solid @color-tomato;
+    border: 3px solid @color-tomato;
   }
 
   .dates__cell--grey {
