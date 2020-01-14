@@ -98,27 +98,26 @@
 
     <section class="profile">
       <div class="profile__header-wrap">
-        <h2 class="profile__title">Профиль</h2>
+
+        <h2 class="profile__title visually-hidden">Профиль</h2>
+
         <div class="profile__level">
           <span class="profile__level--blue">80</span>
           <p class="profile__level-paragraph">level</p>
         </div>
         <img class="profile__img profile__img--mobile" src="img/photo-account-mobile@1x.jpg" width="100" height="100"
           alt="Парень на фоне снега">
-        <div class="profile__text-wrap">
-          <span class="profile__text">Фото</span>
-        </div>
       </div>
       <button class="profile__fotoswap">
-        Сменить фото
+        <span class="profile__fotoswap--none">Сменить</span><span class="profile__fotoswap_text"> фото</span>
       </button>
-      <div class="profile-wrap profile__hashtag-wrap">
-        <h3 class="profile-name profile__hashtag-name">Тэги</h3>
-        <p class="profile__hashtag">
-          #бургер #бар #футбол #концерт #крафт
-        </p>
-      </div>
-      <div class="profile-wrap profile__transport-wrap">
+
+        <label class="profile__label profile__hashtag-wrap">
+          <h3 class="profile-name profile__hashtag-name">Тэги</h3>
+          <textarea class="profile__hashtag" type="text" name="hashtag">#бургер #бар #футбол #концерт #крафт</textarea>
+        </label>
+
+      <div class="profile__label profile__transport-wrap">
         <h3 class="profile-name profile__transport-name">Транспорт</h3>
         <img class="profile__transport--img" src="img/plane.svg" width="19" height="21" alt="Самолет">
         <img class="profile__transport--img" src="img/bus.svg" width="17" height="21" alt="Автобус">

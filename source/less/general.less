@@ -1,7 +1,3 @@
-.general__title {
-  .visuallyhidden();
-}
-
 @media (min-width: 320px) {
   .general {
     display: flex;
@@ -43,11 +39,28 @@
     border-radius: 50%;
 
     padding-top: 12px;
+    
+
+    &:hover {
+      background-color: @color-darkorange;
+    }
+
+
+    &:active {
+      .general__link--img  {
+        opacity: 0.3;
+      }
+    }
   }
 
 
   .general__link-wrap--orange {
     background-color: @color-darkorange;
+
+
+    &:hover {
+      background-color: @color-generallinkhover;
+    }
   }
 
 
@@ -59,12 +72,22 @@
     border-radius: 25px;
 
     padding-top: 5px;
+
+
+    &:hover {
+      background-color: @color-darkyellow;
+    }
   }
 
 
   .general-user__login {
     .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
     .linkstyle();
+
+
+    &:active {
+      color: @color-textactive;
+    }
   }
 }
 

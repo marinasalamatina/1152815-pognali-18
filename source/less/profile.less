@@ -11,11 +11,6 @@
   }
 
 
-  .profile__title {
-    .visuallyhidden();
-  }
-
-
   .profile__header-wrap {
     width: 100%;
 
@@ -33,6 +28,7 @@
 
     margin: 0;
     margin-left: 5px;
+    margin-right: auto;
     padding: 17px 0;
 
     display: flex;
@@ -63,10 +59,6 @@
     border-radius: 50%;
   }
 
-  .profile__text-wrap {
-    display: none;
-  }
-
   .profile__signature-wrap {
     display: none;
   }
@@ -91,52 +83,105 @@
     border-radius: 20px;
 
     padding: 10px 25px;
-    margin: 5px 0;
+    margin: 35px 0;
     margin-top: 17px;
+
+
+    &:hover {
+      background-color: @color-fotoswaphover;
+    }
+
+    &:active {
+      .profile__fotoswap--none,
+      .profile__fotoswap_text {
+        opacity: 0.3;
+      }
+    }
   }
-
-
-  .profile-wrap {
-    width: 100%;
-    border: 1px solid @color-borderbox;
-    border-radius: 10px;
-
-    padding: 5px 0;
-    padding-bottom: 23px;
-    margin: 28px auto;
-    margin-bottom: 10px;
-  }
-
-
-  .profile__transport-wrap {
-    text-align: center;
-
-    margin-top: 15px;
-    padding-bottom: 12px;
-  }
-
-
-  .profile__transport--img:not(:last-child) {
-    margin-right: 10px;
-  }
-
 
   .profile-name {
+    width: 45%;
     background-color: @color-grey;
 
     .ffbasic("bloggersans-bold", sans-serif; 16px; 18px; 700; normal; @color-cyan);
     text-transform: uppercase;
     text-align: center;
 
-    margin: 10px 60px;
-    margin-top: -11px;
+    margin: 10px auto;
+    margin-top: -14px;
+  }
+
+
+  .profile__hashtag-name {
+    width: 25%;
+
+    position: absolute;
+
+    top: -8px;
+    left: 103px;
+
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .profile__hashtag-wrap {
+    position: relative;
   }
 
 
   .profile__hashtag {
+    width: 100%;
+    min-height: 88px;
+
     .ffbasic("bloggersans-medium", sans-serif; 16px; 21px; 500; normal; @color-darkgrey);
 
-    margin: 0 25px;
+    background-color: transparent;
+    border: 1px solid @color-borderbox;
+    border-radius: 10px;
+
+    margin: 0;
+    padding: 22px;
+
+    resize: none;
+
+    &:hover {
+      border-color: @color-borderhover;
+      color: @color-inputtextactive;
+    }
+
+    &:active {
+      border-color: @color-navy;
+      color: @color-darkgrey;
+    }
+  }
+
+  .profile__transport-wrap{
+    width: 100%;
+    border: 1px solid @color-borderbox;
+    border-radius: 10px;
+
+    text-align: center;
+
+    padding: 5px 0;
+    padding-bottom: 12px;
+    margin: 19px auto;
+    margin-bottom: 15px;
+
+
+    &:hover {
+      border-color: @color-borderhover;
+    }
+
+
+    &:active {
+      border-color: @color-navy;
+    }
+  }
+
+
+  .profile__transport--img:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
@@ -225,6 +270,7 @@
 
 @media (min-width: 1440px) {
   .profile {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -259,23 +305,31 @@
   }
 
 
-  .profile__text-wrap {
+  .profile__fotoswap {
     display: flex;
     position: absolute;
-    right: 98px;
-    top: -75px;
+    right: 156px;
+    top: 0;
 
-    width: 15.1%;
+    width: 13.2%;
     background-color: @color-profile--foto;
 
     border-radius: 0 0 10px 10px;
+
+    margin: 0;
+    padding: 0;
   }
 
-  .profile__text {
+  .profile__fotoswap_text {
     .ffbasic("bloggersans-medium", sans-serif; 20px; 48px; 500; normal; @color-cyan);
     text-transform: uppercase;
 
     margin: auto;
+
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
 
@@ -284,12 +338,12 @@
   }
 
 
-  .profile__fotoswap {
+  .profile__fotoswap--none {
     display: none;
   }
 
 
-  .profile-wrap {
+  .profile-label {
     width: 40%;
 
     margin: 0;
