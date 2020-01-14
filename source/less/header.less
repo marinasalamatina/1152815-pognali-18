@@ -1,0 +1,82 @@
+@media (min-width: 320px) {
+  .header {
+    width: 320px;
+    position: relative;
+
+    background-color: @color-navy;
+
+    padding: 27px 3.6%;
+  }
+
+
+  .header__logo-tablet {
+    display: none;
+  }
+
+
+  .header__logo-desktop {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 768px;
+    background-color: @color-blue;
+
+    padding: 50px 40px;
+    padding-right: 25px;
+  }
+
+  .header--blue {
+    background-color: @color-navy;
+  }
+
+
+  .header__logo-mobile {
+    display: none;
+  }
+
+
+  .header__logo-tablet {
+    display: block;
+
+    margin-top: -5px;
+  }
+
+
+  .header__logo-desktop {
+    display: none;
+  }
+
+
+  .catalog__header {
+    background-color: @color-navy;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .header {
+    width: 100%;
+    background-color: @color-navy;
+
+    padding: 45px 60px;
+    padding-bottom: 0;
+  }
+
+
+  .header__logo-tablet {
+    display: none;
+  }
+
+
+  .header__logo-desktop {
+    display: block;
+  }
+}
