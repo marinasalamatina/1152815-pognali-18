@@ -63,7 +63,7 @@
 
     border: 1px solid @color-borderbox;
     border-radius: 5px;
-    
+
 
     &:hover {
       border-color: @color-dateshover;
@@ -76,7 +76,7 @@
   }
 
   .dates__child-wrapper {
-    margin: 24px 0;
+    margin: 22px 0;
   }
 
   .dates__label-child {
@@ -229,6 +229,17 @@
     margin: 20px 0;
     margin-bottom: 11px;
     padding: 6px 0;
+
+
+    &:focus,
+    &:hover {
+      background-color: @color-darkyellow;
+    }
+
+
+    &:active {
+      color: @color-datesbuttonactive;
+    }
   }
 }
 

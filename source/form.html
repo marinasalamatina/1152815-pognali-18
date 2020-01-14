@@ -112,10 +112,10 @@
         <span class="profile__fotoswap--none">Сменить</span><span class="profile__fotoswap_text"> фото</span>
       </button>
 
-        <label class="profile__label profile__hashtag-wrap">
-          <h3 class="profile-name profile__hashtag-name">Тэги</h3>
-          <textarea class="profile__hashtag" type="text" name="hashtag">#бургер #бар #футбол #концерт #крафт</textarea>
-        </label>
+      <label class="profile__label profile__hashtag-wrap">
+        <h3 class="profile-name profile__hashtag-name">Тэги</h3>
+        <textarea class="profile__hashtag" type="text" name="hashtag">#бургер #бар #футбол #концерт #крафт</textarea>
+      </label>
 
       <div class="profile__label profile__transport-wrap">
         <h3 class="profile-name profile__transport-name">Транспорт</h3>
@@ -347,17 +347,24 @@
             Наконец, расскажите о своих планах времяпровождения.
             Можно писать в свободной форме и ставить тэги.
           </p>
-          <div class="pastime__labels-wrap">
+
+          <div class="pastime__labels-wrap pastime__label_first">
             <label class="pastime__label">
               <h4 class="pastime__subtitle">Босния и Герцеговина</h4>
-              <textarea class="pastime__input" rows="10" name="pastime-plan" placeholder="План действий"></textarea>
-            </label>
-            <label class="pastime__label">
-              <h4 class="pastime__subtitle">Чехия</h4>
-              <textarea class="pastime__input pastime__input--dark" rows="10" name="pastime-plan"
-                placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <textarea class="pastime__input" required rows="10" name="pastime-plan" placeholder="План действий"></textarea>
+              <div class="pastime__required">Это поле должно быть заполнено</div>
             </label>
           </div>
+
+          <div class="pastime__labels-wrap">
+            <label class="pastime__label">
+              <h4 class="pastime__subtitle">Чехия</h4>
+              <textarea class="pastime__input pastime__input--dark" required rows="10" name="pastime-plan"
+                placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <div class="pastime__required">Это поле должно быть заполнено</div>
+            </label>
+          </div>
+
           <div class="pastime__button-wrap">
             <button class="pastime__button--yellow" type="submit" alt="Показать">Отправить</button>
             <button class="pastime__button--white" value="last-step">На шаг назад</button>

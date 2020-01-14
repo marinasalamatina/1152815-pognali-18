@@ -54,19 +54,41 @@
     margin-bottom: 22.5px;
 
 
+    &:focus,
+    &:hover {
+      border-color: @color-dateshover;
+    }
+
+    &:active {
+      color: @color-white;
+      border-radius: 5px 5px 0 0;
+      border-color: transparent;
+
+      background-color: @color-cyan;
+    }
+
     &--grey {
       background-color: @color-grey;
       border: none;
     }
+
+    &--blue {
+      .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-white);
+      border-radius: 5px 5px 0 0;
+      border-color: transparent;
+
+      background-color: @color-cyan;
+    }
   }
 
-  .country__input--blue:hover {
-    .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-white);
+  .country__input--grey:focus,
+  .country__input--grey:hover {
+    background-color: @color-profile--foto;
+  }
 
-    border-radius: 5px 5px 0 0;
-    border-color: transparent;
 
-    background-color: @color-cyan;
+  .country__input--grey:active {
+    color: @color-middleblue;
   }
 
 
@@ -83,6 +105,17 @@
 
     margin: 2px 0;
     padding: 5px 0;
+
+
+    &:focus,
+    &:hover {
+      background-color: @color-darkyellow;
+    }
+
+
+    &:active {
+      color: @color-datesbuttonactive;
+    }
   }
 
   .country__button--white {
@@ -98,6 +131,16 @@
 
     margin-top: 5px;
     padding: 5px 0;
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -146,8 +189,10 @@
     margin-bottom: 14px;
   }
 
-  .country__input--blue:hover {
-    .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-white);
+  .country__input--blue {
+    font-size: 20px;
+    font-weight: 18px;
+    color: @color-white;
   }
 
   .country__button-wrap {
