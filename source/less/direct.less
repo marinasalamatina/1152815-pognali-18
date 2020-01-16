@@ -134,6 +134,9 @@
 
 
   .direct__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
     width: 100%;
     background-color: @color-yellow;
 
@@ -144,6 +147,23 @@
     padding: 22px 25px;
     margin: 20px 0;
     margin-top: 26px;
+  }
+
+  .direct__icon {
+    fill: @color-cyan;
+
+    margin-left: auto;
+  }
+
+  .direct__wrapper:focus,
+  .direct__wrapper:hover {
+    background-color: @color-darkyellow;
+  }
+
+  .direct__wrapper:active,
+  .direct__wrapper:active .direct__icon {
+    color: @color-datesbuttonactive;
+    fill: @color-datesbuttonactive;
   }
 }
 

@@ -26,6 +26,9 @@
 
 
   .login__button {
+    display: flex;
+    flex-wrap: wrap;
+
     position: absolute;
     top: 0;
     right: 0;
@@ -36,11 +39,34 @@
     border-radius: 10px;
 
     cursor: pointer;
+
+
+    &:focus,
+    &:hover {
+      background-color: @color-darkyellow;
+    }
+
+
+    &:active {
+      color: @color-datesbuttonactive;
+    }
   }
 
 
   .login__button--text {
     display: none;
+  }
+
+  .login__icon {
+    fill: @color-cyan;
+    margin: auto;
+  }
+
+
+  .login__button:active .login__button--text,
+  .login__button:active .login__icon  {
+    color: @color-datesbuttonactive;
+    fill: @color-datesbuttonactive;
   }
 }
 
@@ -114,7 +140,6 @@
 
     width: 324px;
 
-    display: flex;
     justify-content: space-between;
 
     right: 5.4%;

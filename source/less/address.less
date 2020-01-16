@@ -71,6 +71,32 @@
     .ffbasic("bloggersans-bold", sans-serif; 18px; 18px; 700; normal; @color-cyan);
   }
 
+  .address__icon {
+    fill: @color-cyan;
+
+    margin-left: 21px;
+  }
+
+  .address__wrapper:focus,
+  .address__wrapper:hover,
+  .address__wrapper:active {
+    background-color: @color-blue;
+  }
+
+  .address__wrapper:focus .address__way,
+  .address__wrapper:hover .address__way,
+  .address__wrapper:focus .address__icon,
+  .address__wrapper:hover .address__icon {
+    color: @color-white;
+    fill: @color-white;
+  }
+
+  .address__wrapper:active .address__way,
+  .address__wrapper:active .address__icon  {
+    color: @color-text-adressactive;
+    fill: @color-text-adressactive;
+  }
+
   .address-iframe {
     position: absolute;
     top: 0;

@@ -21,11 +21,35 @@
 
     display: flex;
     flex-wrap: wrap;
+
+    &:focus,
+    &:hover {
+      background-color: @color-darkyellow;
+    }
   }
 
-
-  .social__link--img {
+  .social__icon {
     margin: auto;
+    fill: @color-cyan;
+  }
+
+  .social__link:active .social__icon {
+    fill: @color-datesbuttonactive;
+  }
+
+  .social__facebook {
+    width: 11px;
+    height: 21px;
+  }
+
+  .social__vk {
+    width: 23px;
+    height: 12px;
+  }
+
+  .social__instagram {
+    width: 18px;
+    height: 18px;
   }
 }
 

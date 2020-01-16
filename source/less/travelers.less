@@ -111,19 +111,19 @@
     flex-wrap: wrap;
     align-items: baseline;
 
-    margin-top: -47px;
+    margin-top: -35px;
     padding: 0 10px;
   }
 
 
   .travelers__info--img {
-    padding: 9px 0;
+    background-color: grey;
   }
 
 
-  .travelers__info--img:not(:last-child) {
+  .travelers__flag-wrap:not(:last-child) {
     margin-top: -30px;
-    margin-right: 15px;
+    margin-right: 18px;
   }
 
 
@@ -131,21 +131,40 @@
     position: relative;
 
     .ffbasic("bloggersans-bold", sans-serif; 21px; 21px; 700; normal; @color-cyan);
+
+    cursor: pointer;
+
     margin: 3px 0;
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
 
   .travelers__name::before {
     position: absolute;
-    left: 28px;
-    top: 7px;
+    top: 8px;
+    left: 20px;
 
     content: "";
     width: 5px;
     height: 5px;
     border-radius: 50%;
-  }
 
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   .travelers__name--orange::before {
     background-color: @color-trvalers--orange;
@@ -155,12 +174,13 @@
   .travelers__name--green::before {
     background-color: @color-trvalers--green;
 
-    left: 38px;
+    left: 28px;
   }
 
 
   .travelers__hashtag {
     .ffbasic("bloggersans-medium", sans-serif; 16px; 18px; 500; normal; @color-darkgrey);
+    margin-bottom: 14px;
   }
 
 
@@ -168,23 +188,109 @@
     cursor: pointer;
   }
 
+  .travelers-info__transport {
+    display: flex;
+    flex-wrap: wrap;
 
-  .travelers-info__transport--img:not(:last-child) {
-    margin-right: 10px;
+    margin: 17px 50px;
+    margin-bottom: 0;
+  }
+
+
+  .travelers__transport-wrap:not(:last-child) {
+    margin-right: 13px;
   }
 
 
   .travelers-info__transport--light {
-    opacity: 0.15;
+    fill: @color-transport-icon-grey;
   }
 
 
   .travelers-info__transport--blue {
-    color: @color-cyan;
+    fill: @color-cyan;
   }
 
+  .travelers__flag-wrap,
+  .travelers__transport-wrap {
+    position: relative;
+  }
+
+  .travelers__tiltup {
+    display: none;
+    top: 38px;
+  }
+
+  .travelers__Sri-Lanka-tiltup {
+    left: -30px;
+  }
+
+  .travelers__Thailand-tiltup {
+    left: -40px;
+  }
+
+  .travelers__Seychelles-tiltup {
+    left: -60px;
+  }
+
+  .travelers__Belgium-tiltup {
+    left: -40px;
+  }
+
+  .travelers__Czech-tiltup {
+    left: -30px;
+  }
+
+  .travelers__avia-tiltup {
+    left: -68px;
+  }
+
+  .travelers__bus-tiltup {
+    left: -74px;
+  }
+
+  .travelers__byke-tiltup {
+    left: -54px;
+  }
+
+  .travelers__run-tiltup {
+    left: -44px;
+  }
+
+  .travelers__tiltup::before {
+    display: block;
+
+    position: absolute;
+    content: "";
+    left: 40%;
+    top: -20px;
+
+    border: 10px solid transparent;
+    border-bottom: 10px solid @color-dateschosen;;
+  }
+
+  .travelers__flag-wrap:focus .travelers__tiltup,
+  .travelers__flag-wrap:hover .travelers__tiltup,
+  .travelers__transport-wrap:focus .travelers__tiltup,
+  .travelers__transport-wrap:hover .travelers__tiltup {
+    display: block;
+    position: absolute;
+
+    background-color: @color-dateschosen;
+
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 20px; 500; normal; @color-white);
+
+    padding: 20px;
+  }
+
+  .travelers__transport-wrap:focus .travelers__tiltup::before,
+  .travelers__transport-wrap:hover .travelers__tiltup::before {
+    display: block;
+  }
 
   .travelers__wrapper {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-color: @color-yellow;
     text-align: left;
@@ -192,7 +298,8 @@
     border-radius: 10px;
 
     padding: 22px 25px;
-    margin: 20px 0;
+    margin: 18px 0;
+    margin-bottom: 19px;
   }
 
 
@@ -200,6 +307,23 @@
     .ffbasic("bloggersans-bold", sans-serif; 18px; 18px; 700; normal; @color-cyan);
     .linkstyle();
     text-transform: none;
+  }
+
+  .travelers__icon {
+    fill: @color-cyan;
+
+    margin-left: auto;
+  }
+
+  .travelers__wrapper:focus,
+  .travelers__wrapper:hover {
+    background-color: @color-darkyellow;
+  }
+
+  .travelers__wrapper:active,
+  .travelers__wrapper:active .travelers__icon {
+    color: @color-datesbuttonactive;
+    fill: @color-datesbuttonactive;
   }
 }
 
