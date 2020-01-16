@@ -7,7 +7,7 @@
     border-radius: 0 0 30px 30px;
 
     padding: 34px 25px;
-    padding-bottom: 36px;
+    padding-bottom: 34px;
   }
 
 
@@ -39,7 +39,7 @@
   .add-profile__list {
     .liststyle();
 
-    margin-top: 40px;
+    margin-top: 43px;
     margin-bottom: 28px;
     margin-left: 25px;
   }
@@ -53,7 +53,7 @@
 
     border-top: 1px solid @color-addprofile;
 
-    padding: 11px 0;
+    padding: 12px 0;
   }
 
 
@@ -119,6 +119,11 @@
       color: @color-addprofile-active;
     }
   }
+
+
+  .add-profile__icon {
+    display: none;
+  }
 }
 
 
@@ -137,7 +142,7 @@
 
     border-radius: 0 0 60px 60px;
 
-    padding: 41px 5.2%;
+    padding: 41px 41px;
   }
 
 
@@ -170,7 +175,7 @@
   }
 
 
-  .add-profile__list-wrap::before {
+  .add-profile__button::after {
     position: absolute;
     left: -93px;
     bottom: -105px;
@@ -186,19 +191,16 @@
   }
 
 
-  .add-profile__list-wrap::after {
+  .add-profile__icon {
     position: absolute;
-    left: -68px;
-    bottom: -80px;
+    left: -65px;
+    top: 17px;
 
-    content: "";
-    background-image: url("../img/business.svg");
-
-    background-repeat: no-repeat;
     width: 17px;
     height: 21px;
+    fill:  @color-blue;
 
-    cursor: pointer;
+    z-index: 1;
   }
 
 
@@ -220,7 +222,7 @@
 
   .add-profile__item::before {
     left: -93px;
-    top: 0;
+    top: -4px;
 
     width: 66px;
     height: 66px;
@@ -248,8 +250,23 @@
     .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-blue);
 
     margin-left: 90px;
-    margin-bottom: 24px;
-    padding: 20px 0;
+    margin-bottom: 28px;
+    padding: 18px 0;
+  }
+
+  .add-profile__button::after {
+    position: absolute;
+    left: -90px;
+    top: -3px;
+
+    content: "";
+
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: @color-lightblue;
+
+    cursor: pointer;
   }
 
 
@@ -267,8 +284,16 @@
     height: 99px;
   }
 
-  .add-profile__button:hover .add-profile__list-wrap::after {
+  .add-profile__button:focus .add-profile__button::after,
+  .add-profile__button:hover .add-profile__button::after,
+  .add-profile__button:focus .add-profile__icon,
+  .add-profile__button:hover .add-profile__icon {
     opacity: 0.7;
+  }
+
+  .add-profile__button:active .add-profile__button::after,
+  .add-profile__button:active .add-profile__icon {
+    opacity: 0.3;
   }
 }
 

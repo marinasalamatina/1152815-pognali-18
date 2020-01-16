@@ -38,31 +38,29 @@
     background-color: @color-feedbackyellow;
   }
 
-
-  .address__paragraph::after {
+  .address__marker-icon {
     position: absolute;
-    left: -28px;
-    top: 8px;
+    left: -29px;
+    top: 10px;
 
-    content: "";
+    fill: @color-yellow;
+    z-index: 1;
 
-    background-image: url("../img/contacts-location.svg");
-    background-repeat: no-repeat;
-    background-size: 14px;
     width: 14px;
     height: 22px;
   }
 
-
   .address__wrapper {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 
     border: 3px solid @color-blue;
     border-radius: 10px;
 
-    margin-top: 32px;
+    margin-top: 33px;
     margin-bottom: 15px;
-    padding: 17px 8%;
+    padding: 18px 8%;
   }
 
 
@@ -74,7 +72,8 @@
   .address__icon {
     fill: @color-cyan;
 
-    margin-left: 21px;
+    margin: auto 0;
+    margin-left: auto;
   }
 
   .address__wrapper:focus,
@@ -139,11 +138,19 @@
 
 
   .address__paragraph::before {
-    left: -90px;
+    left: -85px;
     top: -20px;
 
     width: 66px;
     height: 66px;
+  }
+
+  .address__marker-icon {
+    left: -63px;
+    top: 0px;
+
+    width: 21px;
+    height: 32px;
   }
 
 
@@ -163,14 +170,14 @@
     border: 3px solid @color-blue;
     border-radius: 15px;
 
-    padding: 25px 32px;
+    padding: 31px 32px;
     margin: 5px auto;
-    margin-top: 35px;
+    margin-top: 36px;
   }
 
 
   .address__way {
-    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-cyan);
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 15px; 700; normal; @color-cyan);
   }
 
   .address-iframe {
@@ -181,6 +188,10 @@
 
 @media (min-width: 1440px) {
   .address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 1440px;
     min-height: 645px;
   }
@@ -194,15 +205,24 @@
   .address__paragraph {
     width: 37%;
 
-    margin-left: auto;
+    margin-left: 25.2%;
   }
 
   .address__paragraph::before {
-    left: -120px;
+    left: -99px;
     top: -30px;
 
     width: 90px;
     height: 90px;
+  }
+
+
+  .address__marker-icon {
+    left: -67px;
+    top: -3px;
+
+    width: 28px;
+    height: 43px;
   }
 
 
@@ -219,9 +239,9 @@
   .address__wrapper {
     width: 23.8%;
 
-    padding: 24px 32px;
+    padding: 30px 28px;
     margin-top: 5px;
-    margin-left: 100px;
+    margin-left: auto;
     margin-right: 92px;
   }
 

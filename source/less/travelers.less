@@ -39,7 +39,7 @@
   .travelers__paragraph--bold {
     .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-white);
 
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 47px;
   }
 
@@ -51,6 +51,7 @@
     border-radius: 10px;
 
     margin-top: 11px;
+    margin-bottom: 15px;
   }
 
 
@@ -61,7 +62,7 @@
     background-repeat: no-repeat;
     background-size: 270px 270px;
 
-    padding: 15px;
+    padding: 17px;
   }
 
 
@@ -77,22 +78,44 @@
 
 
   .travelers__level {
-    text-align: center;
+    position: relative;
 
-    .boxset(60px; 60px);
+    display: flex;
+    flex-direction: column;
+
+    .boxset(61px; 61px);
     background-color: @color-levelgrey;
 
     border-radius: 50%;
+    padding-top: 8px;
+  }
+
+  .travelers__level_firsova {
+    background-image: url("../img/status_firsova.png");
+    background-position: top -8px left -13px;
+    background-repeat: no-repeat;
+  }
+
+  .travelers__level_demin {
+    background-image: url("../img/status_demin.png");
+    background-position: top 0px left 0px;
+    background-repeat: no-repeat;
   }
 
 
   .travelers__level--whitebold {
     .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-white);
+    margin: 0 auto;
   }
 
 
   .travelers__level--whiteregular {
     .ffbasic("bloggersans-light", sans-serif; 14px; 14px; 400; normal; @color-white);
+
+    border-top: 1px solid @color-white;
+
+    margin: 0 auto;
+    padding-top: 3px;
   }
 
 
@@ -312,6 +335,7 @@
   .travelers__icon {
     fill: @color-cyan;
 
+    margin: auto 0;
     margin-left: auto;
   }
 
@@ -345,8 +369,8 @@
     width: 100%;
     border-radius: 0 0 60px 60px;
 
-    padding: 33px 70px;
-    padding-bottom: 7px;
+    padding: 36px 70px;
+    padding-bottom: 20px;
   }
 
 
@@ -354,7 +378,7 @@
     .ffbasic("bloggersans-bold", sans-serif; 45px; 45px; 700; normal; @color-darkorange);
 
     padding: 65px 0;
-    padding-bottom: 34px;
+    padding-bottom: 37px;
   }
 
 
@@ -440,13 +464,12 @@
 
 
   .travelers__wrapper {
-    width: 100%;
+    width: 99%;
 
     border-radius: 25px;
 
-    padding: 28px 4%;
-    padding-bottom: 33px;
-    margin: 79px auto;
+    padding: 28px 5.7%;
+    margin: 68px auto;
   }
 
 
@@ -490,9 +513,9 @@
 
 
   .travelers__paragraph {
-    width: 95%;
+    width: 100%;
 
-    padding-top: 38px;
+    padding-top: 20px;
   }
 
 
@@ -514,6 +537,9 @@
   .travelers__item {
     width: 285px;
     min-height: 483px;
+
+    margin: 0;
+    margin-top: 20px;
   }
 
   .travelers__firsova-wrap,
