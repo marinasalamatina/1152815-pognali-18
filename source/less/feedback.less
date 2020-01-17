@@ -66,22 +66,25 @@
   .feedback__phone-icon {
     width: 18px;
     height: 18px;
-  }
 
-  .feedback__mail-icon {
-    width: 18px;
-    height: 13px;
-  }
-
-
-  .feedback__phone-icon,
-  .feedback__mail-icon {
     position: absolute;
     left: 14px;
     top: 3px;
 
     fill: @color-yellow;
   }
+
+  .feedback__mail-icon {
+    width: 18px;
+    height: 13px;
+
+    position: absolute;
+    left: 14px;
+    top: 3px;
+
+    fill: @color-yellow;
+  }
+
 
   .feedback--yellow {
     .ffbasic("bloggersans-bold", sans-serif; 16px; 22px; 700; normal; @color-yellow);
@@ -93,7 +96,8 @@
   .feedback__phone--yellow::before,
   .feedback__mail--yellow::before {
     position: absolute;
-    left: 0px;
+
+    left: 0;
     top: -12px;
 
     content: "";
@@ -158,26 +162,24 @@
   .feedback__phone-icon {
     width: 27px;
     height: 27px;
+
+    left: 66px;
+    top: 0;
   }
 
   .feedback__mail-icon {
     width: 27px;
     height: 20px;
-  }
 
-  .feedback__phone-icon {
-    left: 66px;
-    top: 0px;
-  }
-
-  .feedback__mail-icon {
     left: 66px;
     top: 5px;
   }
 
+
   .feedback__mail--yellow {
     margin-top: 37px;
   }
+
 
   .feedback__phone--yellow::before,
   .feedback__mail--yellow::before {
@@ -241,23 +243,20 @@
     left: -117px;
     top: -30px;
   }
+
   .feedback__phone-icon {
     width: 36px;
     height: 36px;
-  }
 
-  .feedback__mail-icon {
-    width: 36px;
-    height: 26px;
-  }
-
-  .feedback__phone-icon {
     left: -92px;
     top: -2px;
   }
 
   .feedback__mail-icon {
+    width: 36px;
+    height: 26px;
+
     left: -92px;
-    top: 0px;
+    top: 0;
   }
 }

@@ -16,7 +16,7 @@
 
 
   .main-nav__wrapper {
-    display: none;
+    display: block;
     position: absolute;
     background-color: @color-white;
 
@@ -36,7 +36,7 @@
 
 
   .user-list {
-    margin: 50px 0;
+    margin: 60px 0;
   }
 
 
@@ -109,8 +109,11 @@
   .main-nav__icon {
     fill: @color-yellow;
 
-    margin: auto 0;
     margin: auto;
+  }
+
+  .main-nav__desktopicon {
+    display: none;
   }
 
   .main-nav__mobile-icon {
@@ -146,6 +149,24 @@
     margin-top: 35px;
   }
 
+  .nav-social__icon {
+    fill: @color-headersocial;
+  }
+
+  .nav-social__facebook {
+    width: 11px;
+    height: 21px;
+  }
+
+  .nav-social__vk {
+    width: 23px;
+    height: 12px;
+  }
+
+  .nav-social__instagram {
+    width: 18px;
+    height: 18px;
+  }
 
   .nav-social__item:not(:last-child) {
     margin-right: 25px;
@@ -244,7 +265,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 975px;
+    width: 100%;
     min-height: 50px;
     background-color: @color-navy;
   }
@@ -292,47 +313,60 @@
   .main-nav__img-wrap {
     width: 50px;
     height: 50px;
-
-
-    &:active {
-      .main-nav__img {
-        opacity: 0.3;
-      }
-    }
   }
 
 
-  .main-nav__imgmobile-wrap {
-    background-color: @color-darkorange;
-
-    &:hover,
-    &:hover {
-      background-color: @color-generallinkhover;
-    }
-  }
-
-
-  .main-nav__imgdesktop-wrap {
-    background-color: @color-darkyellow;
-
-
-    &:hover {
-      background-color: @color-darkorange;
-    }
-  }
-
-
-  .main-nav__img-mobile {
+  .main-nav__icon {
     display: none;
   }
 
-
-  .main-nav__img-desktop {
+  .main-nav__desktopicon {
     display: block;
+
+    fill: @color-navy;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-nav__maildesktop-icon {
+    width: 18px;
+    height: 14px;
 
     margin: auto;
   }
 
+  .main-nav__mobiledesktop-icon {
+    width: 18px;
+    height: 18px;
+
+    margin: auto;
+  }
+
+  .main-nav__phone-wrap {
+    background-color: @color-darkorange;
+
+    &:hover {
+      background-color: @color-generallinkhover;
+    }
+
+
+    &:active .main-nav__desktopicon {
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav__mail-wrap {
+    background-color: @color-darkyellow;
+
+    &:hover {
+      background-color: @color-darkorange;
+    }
+
+    &:active .main-nav__desktopicon {
+      opacity: 0.3;
+    }
+  }
 
   .main-nav__link {
     padding: 0;
@@ -361,5 +395,6 @@
     border-radius: 25px;
 
     padding: 15px 17px;
+    margin-right: 0;
   }
 }
