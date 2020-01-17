@@ -108,14 +108,13 @@
     margin: 0 5px;
 
 
-
     &:hover,
     &:focus {
       color: @color-addprofile-focus;
     }
 
 
-    &:active{
+    &:active {
       color: @color-addprofile-active;
     }
   }
@@ -175,30 +174,16 @@
   }
 
 
-  .add-profile__button::after {
-    position: absolute;
-    left: -93px;
-    bottom: -105px;
-
-    content: "";
-
-    width: 66px;
-    height: 66px;
-    border-radius: 50%;
-    background-color: @color-lightblue;
-
-    cursor: pointer;
-  }
-
-
   .add-profile__icon {
+    display: block;
+
     position: absolute;
     left: -65px;
     top: 17px;
 
     width: 17px;
     height: 21px;
-    fill:  @color-blue;
+    fill: @color-blue;
 
     z-index: 1;
   }

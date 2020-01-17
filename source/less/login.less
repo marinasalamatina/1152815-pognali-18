@@ -60,13 +60,12 @@
   .login__icon {
     fill: @color-cyan;
 
-    margin: auto 0;
     margin: auto;
   }
 
 
   .login__button:active .login__button--text,
-  .login__button:active .login__icon  {
+  .login__button:active .login__icon {
     color: @color-datesbuttonactive;
     fill: @color-datesbuttonactive;
   }
@@ -142,11 +141,15 @@
 
     width: 324px;
 
-    justify-content: space-between;
-
     right: 5.4%;
     top: 0;
 
-    padding: 0 37px;
+    padding: 0 35px;
+  }
+
+  .login__button--text {
+    display: block;
+
+    margin-right: 35%;
   }
 }
