@@ -534,7 +534,7 @@
     border-radius: 60px;
 
     padding: 82px 160px;
-    padding-bottom: 92px;
+    padding-bottom: 54px;
     margin-bottom: 45px;
   }
 
@@ -550,6 +550,7 @@
   }
 
   .country__section {
+    display: block;
     position: absolute;
 
     top: 110px;
@@ -607,16 +608,76 @@
   }
 
   .country__labels-wrap {
+    width: 91%;
+
     padding-top: 63px;
     padding-bottom: 38px;
   }
 
+  .country__labels-wrap::before {
+    top: 270px;
+    left: 70.8%;
+
+    height: 400px;
+  }
+
+  .country__label-wrap {
+    width: 100%;
+  }
+
+  .country__label-wrap::before {
+    display: none;
+  }
+
+  .country__label-close {
+    display: none;
+  }
+
+  .country__label--double::before {
+    left: 84.3%;
+  }
+
+  .country__label--single::before {
+    left: 105%;
+  }
+
+  .country__label--double::after {
+    left: 75.6%;
+  }
+
+  .country__label--single::after {
+    left: 94.3%;
+  }
+
+  .country__label--plus::before {
+    left: 93.7%;
+  }
+
+  .country__label--plus::after {
+    left: 93.7%;
+  }
+
+  .country__label--grey-wrap::before {
+    left: 84.3%;
+  }
+
   .country__input {
-    width: 73%;
+    width: 100%;
+  }
+
+  .country__label--plus,
+  .country__label--single {
+    width: 80.3%;
+  }
+
+  .country__flag {
+    background-position: left 78% top 45%;
   }
 
   .country__button-wrap {
-    margin-top: 0;
+    width: 110%;
+
+    margin-top: 38px;
     margin-bottom: 10px;
   }
 
@@ -624,5 +685,24 @@
     width: 28.5%;
 
     padding: 29px;
+  }
+  .country__button--white {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-navy);
+    text-transform: none;
+
+    width: 40%;
+
+    .buttonstyle(none; @color-white);
+
+    margin-top: 0;
+  }
+
+  .country__button--white {
+    margin-left: auto;
+    margin-right: 0;
   }
 }

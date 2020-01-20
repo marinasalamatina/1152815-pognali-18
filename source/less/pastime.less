@@ -5,8 +5,7 @@
 
     border-radius: 10px;
 
-    padding: 10px 25px;
-    padding-bottom: 10px;
+    padding: 10px 23px;
     margin-top: 10px;
   }
 
@@ -18,7 +17,7 @@
     width: 100%;
 
     .ffbasic("bloggersans-bold", sans-serif; 20px; 20px; 700; normal; @color-cyan);
-    margin: 13px 0;
+    margin: 12px 0;
   }
 
   .pastime__title-number {
@@ -33,11 +32,13 @@
     width: 100%;
 
     .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
 
   .pastime__subtitle {
+    position: relative;
+
     .ffbasic("bloggersans-medium", sans-serif; 18px; 18px; 500; normal; @color-cyan);
     margin: 7px;
     margin-left: 12px;
@@ -45,6 +46,17 @@
 
   .pastime__label-wrap {
     position: relative;
+  }
+
+  .pastime__label_first::before {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
   }
 
   .pastime__input {
@@ -280,6 +292,7 @@
   }
 
   .pastime__section {
+    display: block;
     position: absolute;
 
     top: 109px;
