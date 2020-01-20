@@ -23,8 +23,12 @@
     margin: 13px 0;
   }
 
-  .dates__country-number {
+  .country__title-number {
     width: 100%;
+  }
+
+  .country__section {
+    display: none;
   }
 
   .country__paragraph {
@@ -32,10 +36,101 @@
 
     .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
 
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 22px;
+    margin-top: 15px;
   }
 
+  .country__label {
+    position: relative;
+
+    display: flex;
+  }
+
+  .country__label--double::before {
+    content: "";
+
+    position: absolute;
+    top: 16px;
+    left: 74%;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: @color-cyan;
+    z-index: 1;
+  }
+
+  .country__label--double::after {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    left: 65%;
+
+    width: 10px;
+    height: 10px;
+    border: 1px solid @color-formtick;
+    border-top-color: transparent;
+    border-right-color: transparent;
+
+    transform: rotate(-45deg);
+  }
+
+  .country__label--single::before {
+    content: "";
+
+    position: absolute;
+    top: 16px;
+    left: 74%;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid @color-formtick;
+    z-index: 1;
+  }
+
+  .country__label--single::after {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    left: 88%;
+
+    width: 10px;
+    height: 10px;
+    border: 1px solid @color-formtick;
+    border-top-color: transparent;
+    border-right-color: transparent;
+
+    transform: rotate(-45deg);
+  }
+
+  .country__label--plus::before {
+    content: "";
+
+    position: absolute;
+    top: 19px;
+    left: 87.3%;
+
+    width: 13px;
+    height: 2px;
+    background-color: @color-formtick;
+
+    transform: rotate(-90deg);
+  }
+
+  .country__label--plus::after {
+    content: "";
+
+    position: absolute;
+    top: 19px;
+    left: 87.3%;
+
+    width: 13px;
+    height: 2px;
+    background-color: @color-formtick;
+  }
 
   .country__input {
     .ffbasic("bloggersans-medium", sans-serif; 14px; 18px; 500; normal; @color-cyan);
@@ -52,12 +147,13 @@
     cursor: pointer;
 
     padding-left: 10px;
+    padding-right: 30px;
     margin-bottom: 22.5px;
 
 
     &:focus,
     &:hover {
-      border-color: @color-dateshover;
+      border-color: @color-formtick;
     }
 
     &:active {
@@ -92,6 +188,90 @@
     color: @color-middleblue;
   }
 
+  .country__flag {
+    width: 34%;
+    height: 42px;
+
+    border: 1px solid @color-borderbox;
+    border-radius: 5px;
+
+    background-repeat: no-repeat;
+    background-size: 35px auto;
+    background-position: left 45% top 45%;
+  }
+
+
+  .country__label-wrap {
+    position: relative;
+  }
+
+  .country__label-wrap::before {
+    content: "";
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: @color-grey;
+
+    z-index: 1;
+
+    cursor: pointer;
+  }
+
+  .country__label-wrap::after {
+    content: "";
+
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+    background-image: url("../img/small-arrow.svg");
+    width: 5px;
+    height: 10px;
+  }
+
+  .country__label-close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    width: 10px;
+    height: 10px;
+    fill: @color-formtick;
+    z-index: 1;
+
+    cursor: pointer;
+  }
+
+  .country__label--grey-wrap {
+    position: relative;
+  }
+
+  .country__label--grey-wrap::before {
+    content: "";
+
+    position: absolute;
+    top: 16px;
+    left: 74%;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid @color-formtick;
+    z-index: 1;
+  }
+
+  .country__flag-first {
+    background-image: url("../img/Bosnia-and-Herzegovina.png");
+  }
+
+  .country__flag-second {
+    background-image: url("../img/Czech-Republic.png");
+  }
 
   .country__button--yellow {
     .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
@@ -115,7 +295,7 @@
 
 
     &:active {
-      color: @color-datesbuttonactive;
+      color: @color-darkyellow;
     }
   }
 
@@ -155,14 +335,14 @@
     border-radius: 35px;
 
     padding: 33px 42px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     margin-top: 40px;
   }
 
   .country__title {
     .ffbasic("bloggersans-bold", sans-serif; 36px; 36px; 700; normal; @color-cyan);
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .country__paragraph {
@@ -196,6 +376,110 @@
     color: @color-white;
   }
 
+  .country__flag {
+    width: 25%;
+    height: 70px;
+
+    border: none;
+
+    background-size: 70px auto;
+    background-position: left 85% top 60%;
+  }
+
+  .country__labels-wrap::before {
+    content: "";
+    position: absolute;
+    top: 235px;
+    left: 70.9%;
+    width: 1px;
+    height: 399px;
+    border-right: 1px solid @color-countrylabel;
+    z-index: 1;
+  }
+
+
+  .country__label--double::before {
+    top: 27px;
+    left: 72.7%;
+
+    width: 16px;
+    height: 16px;
+  }
+
+  .country__label--single::before {
+    top: 27px;
+    left: 72.7%;
+
+    width: 16px;
+    height: 16px;
+    background-color: @color-white;
+  }
+
+  .country__label--grey-wrap::before {
+    top: 27px;
+    left: 72.7%;
+
+    width: 16px;
+    height: 16px;
+    background-color: @color-grey;
+  }
+
+  .country__label--double::after,
+  .country__label--single::after {
+    top: 27px;
+    left: 61.5%;
+
+    width: 12px;
+    height: 12px;
+  }
+
+  .country__label--plus::before {
+    content: "";
+
+    position: absolute;
+    top: 34px;
+    left: 61%;
+
+    width: 18px;
+    height: 2px;
+    background-color: @color-formtick;
+
+    transform: rotate(-90deg);
+  }
+
+  .country__label--plus::after {
+    content: "";
+
+    position: absolute;
+    top: 34px;
+    left: 61%;
+
+    width: 18px;
+    height: 2px;
+    background-color: @color-formtick;
+  }
+
+  .country__label-wrap::before {
+    top: 15px;
+    right: -12px;
+
+    width: 40px;
+    height: 40px;
+    background-color: @color-white;
+  }
+
+  .country__label-wrap::after {
+    display: none;
+  }
+
+  .country__label-close {
+    top: 26px;
+    right: 0px;
+
+    width: 18px;
+    height: 18px;
+  }
+
   .country__button-wrap {
     width: 100%;
     display: flex;
@@ -203,7 +487,8 @@
 
     justify-content: space-between;
     padding: 0;
-    margin-bottom: 25px;
+    margin-top: 31px;
+    margin-bottom: 10px;
   }
 
   .country__button--yellow {
@@ -241,6 +526,7 @@
 
 @media (min-width: 1438px) {
   .country {
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -248,7 +534,7 @@
     border-radius: 60px;
 
     padding: 82px 160px;
-    padding-bottom: 95px;
+    padding-bottom: 92px;
     margin-bottom: 45px;
   }
 
@@ -263,10 +549,61 @@
     margin-right: 5px;
   }
 
+  .country__section {
+    position: absolute;
+
+    top: 110px;
+    left: 70.59%;
+  }
+
+  .country__item {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 30px;
+  }
+
+  .country__slider-text {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 14px; 500; normal; @color-slidetext);
+    text-transform: uppercase;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .country__slider-input {
+    display: none;
+  }
+
+  .country__slider-label {
+    position: relative;
+
+    padding-left: 45px;
+  }
+
+  .country__slider-input + .country__slider-label::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 5px;
+    height: 5px;
+    background-color: @color-slideinputchecked;
+
+    border-radius: 50%;
+  }
+
+  .country__slider-input:checked + .country__slider-label::before {
+    background-color: @color-cyan;
+  }
+
   .country__paragraph {
     width: 55%;
 
-    margin-bottom: 57px;
+    margin-bottom: 55px;
   }
 
   .country__labels-wrap {

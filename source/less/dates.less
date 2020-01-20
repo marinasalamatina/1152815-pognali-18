@@ -1,5 +1,6 @@
 @media (min-width: 320px) {
   .dates {
+    position: relative;
     background-color: @color-white;
     width: 100%;
 
@@ -29,7 +30,7 @@
 
     .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
 
-    margin-top: 20px;
+    margin-top: 16px;
   }
 
   .dates__subtitle {
@@ -40,7 +41,7 @@
 
     padding: 0;
     margin: 0;
-    margin-top: 27px;
+    margin-top: 26px;
   }
 
   .dates__label {
@@ -126,9 +127,11 @@
 
   .dates__input-child:checked + label::after {
     content: "";
+
     position: absolute;
     bottom: 5px;
     left: 8px;
+
     width: 9px;
     height: 9px;
     background-image: url("../img/tick.svg");
@@ -243,6 +246,54 @@
       color: @color-datesbuttonactive;
     }
   }
+
+  .dates__section {
+    position: absolute;
+    top: -38px;
+    left: 76%;
+  }
+
+  .dates__slider {
+    display: flex;
+  }
+
+  .dates__item {
+    display: flex;
+    flex-direction: column;
+
+    width: 10%;
+  }
+
+  .dates__slider-input {
+    display: none;
+  }
+
+  .dates__slider-text {
+    display: none;
+  }
+
+  .dates__slider-input + .dates__slider-label {
+    position: relative;
+    padding: 0;
+    padding-left: 70px;
+  }
+
+  .dates__slider-input + .dates__slider-label::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    width: 5px;
+    height: 5px;
+    background-color: @color-slideinputchecked;
+
+    border-radius: 50%;
+  }
+
+  .dates__slider-input:checked + .dates__slider-label::before {
+    background-color: @color-cyan;
+  }
 }
 
 @media (min-width: 768px) {
@@ -255,7 +306,7 @@
     border-radius: 25px;
 
     padding: 33px 42px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   .dates__title {
@@ -264,6 +315,18 @@
     margin-bottom: 17px;
 
     order: -4;
+  }
+
+  .dates__section {
+    position: absolute;
+    top: -72px;
+    left: 88%;
+  }
+
+  .dates__slider-input + .dates__slider-label {
+    position: relative;
+    padding: 0;
+    padding-left: 115px;
   }
 
   .dates__paragraph {
@@ -340,7 +403,7 @@
   .dates__table-wrap {
     width: 100%;
 
-    padding-top: 58px;
+    padding-top: 57px;
   }
 
   .dates__caption {
@@ -381,7 +444,7 @@
   }
 }
 
-@media (min-width: 1438px) {
+@media (min-width: 1440px) {
   .dates {
     flex-direction: row;
     flex-wrap: wrap;
@@ -405,6 +468,50 @@
     margin-right: 5px;
   }
 
+  .dates__section {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    top: 111px;
+    left: 70.59%;
+  }
+
+  .dates__slider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dates__item {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 30px;
+  }
+
+  .dates__slider-input {
+    display: none;
+  }
+
+  .dates__slider-text {
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 14px; 500; normal; @color-slidetext);
+    text-transform: uppercase;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .dates__slider-input + .dates__slider-label {
+    padding-left: 45px;
+  }
+
+  .dates__slider-input + .dates__slider-label::before {
+    top: 5px;
+  }
+
   .dates__paragraph-wrap {
     order: -4;
 
@@ -412,7 +519,7 @@
     border-bottom: 1px solid @color-borderbox;
 
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 
   .dates__paragraph {
@@ -509,7 +616,7 @@
     width: 28.5%;
 
     margin: 24px 0;
-    margin-top: 58px;
+    margin-top: 56px;
     padding: 25px 35px;
   }
 }

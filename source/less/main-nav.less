@@ -16,11 +16,12 @@
 
 
   .main-nav__wrapper {
-    display: block;
+    display: none;
     position: absolute;
     background-color: @color-white;
 
-    padding: 30px 25px;
+    padding: 26px 25px;
+    padding-bottom: 33px;
   }
 
 
@@ -36,7 +37,7 @@
 
 
   .user-list {
-    margin: 60px 0;
+    margin: 62px 0;
   }
 
 
@@ -84,6 +85,7 @@
     flex-direction: column;
 
     .liststyle();
+    margin-bottom: 9px;
   }
 
 
@@ -145,8 +147,8 @@
 
     .liststyle();
 
-    margin: 20px auto;
-    margin-top: 35px;
+    margin: 0 auto;
+    margin-top: 34px;
   }
 
   .nav-social__icon {
@@ -280,11 +282,6 @@
   }
 
 
-  .site-list__item {
-    padding: 15px;
-  }
-
-
   .site-list__item:first-child {
     padding-left: 0;
   }
@@ -292,6 +289,20 @@
 
   .site-list__link {
     .ffbasic("bloggersans-medium", sans-serif; 20px; 30px; 500; normal; @color-white);
+  }
+
+  .site-list__item {
+    padding: 15px;
+
+
+    &:focus .site-list__link,
+    &:hover .site-list__link {
+      color: @color-yellow;
+    }
+
+    &:active .site-list__link {
+      color: @color-main-navactive;
+    }
   }
 
 

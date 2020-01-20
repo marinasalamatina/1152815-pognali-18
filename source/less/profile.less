@@ -23,16 +23,29 @@
 
 
   .profile__level {
+    position: relative;
     width: 95px;
     height: 93px;
 
     margin: 0;
     margin-left: 5px;
     margin-right: auto;
-    padding: 17px 0;
+    padding: 18px 0;
 
     display: flex;
     flex-direction: column;
+  }
+
+  .profile__level::before {
+    position: absolute;
+    top: -11px;
+    left: -4px;
+
+    content: "";
+
+    background-image: url("../img/status__profile.png");
+    width: 105px;
+    height: 111px;
   }
 
 
@@ -84,18 +97,16 @@
 
     padding: 10px 25px;
     margin: 35px 0;
-    margin-top: 17px;
+    margin-top: 18px;
 
 
     &:hover {
       background-color: @color-fotoswaphover;
     }
 
-    &:active {
-      .profile__fotoswap--none,
-      .profile__fotoswap_text {
-        opacity: 0.3;
-      }
+    &:active .profile__fotoswap--none,
+    &:active .profile__fotoswap_text {
+      opacity: 0.3;
     }
   }
 
@@ -123,6 +134,11 @@
 
     margin: 0;
     padding: 0;
+  }
+
+  .profile__transport-name {
+    margin: 0 auto;
+    margin-top: -25px;
   }
 
 
@@ -158,14 +174,17 @@
   }
 
   .profile__transport-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     border: 1px solid @color-borderbox;
     border-radius: 10px;
 
     text-align: center;
 
-    padding: 10px 0;
-    padding-bottom: 13px;
+    padding: 16px 0;
+    padding-bottom: 6px;
     margin: 19px auto;
     margin-bottom: 10px;
 
@@ -181,8 +200,108 @@
   }
 
 
-  .profile__transport--img:not(:last-child) {
-    margin-right: 10px;
+  .profile__icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 6px auto;
+  }
+
+  .profile__icon-wrap {
+    width: 32px;
+    height: 32px;
+    background-color: @color-white;
+    border-radius: 50%;
+
+    display: flex;
+
+    position: relative;
+  }
+
+  .profile-info__transport--img {
+    margin: auto;
+  }
+
+
+  .profile-info__transport--light {
+    fill: @color-transport-icon-grey;
+  }
+
+
+  .profile-info__transport--blue {
+    fill: @color-cyan;
+  }
+
+  .profile-info__plane {
+    width: 14px;
+    height: 16px;
+  }
+
+  .profile-info__bus {
+    width: 13px;
+    height: 16px;
+  }
+
+  .profile-info__byke {
+    width: 19px;
+    height: 17px;
+  }
+
+  .profile-info__run {
+    width: 15px;
+    height: 17px;
+  }
+
+  .profile__tiltup {
+    display: none;
+    top: 45px;
+  }
+
+  .profile__avia-tiltup {
+    left: -60px;
+  }
+
+  .profile__bus-tiltup {
+    left: -65px;
+  }
+
+  .profile__byke-tiltup {
+    left: -50px;
+  }
+
+  .profile__run-tiltup {
+    left: -40px;
+  }
+
+  .profile__tiltup::before {
+    display: block;
+
+    position: absolute;
+    content: "";
+    left: 40%;
+    top: -20px;
+
+    border: 10px solid transparent;
+    border-bottom: 10px solid @color-dateschosen;
+  }
+
+  .profile__flag-wrap:focus .profile__tiltup,
+  .profile__flag-wrap:hover .profile__tiltup,
+  .profile__icon-wrap:focus .profile__tiltup,
+  .profile__icon-wrap:hover .profile__tiltup {
+    display: block;
+    position: absolute;
+
+    background-color: @color-dateschosen;
+
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 20px; 500; normal; @color-white);
+
+    padding: 20px;
+  }
+
+  .profile__icon-wrap:focus .profile__tiltup::before,
+  .profile__icon-wrap:hover .profile__tiltup::before {
+    display: block;
   }
 }
 
@@ -199,8 +318,6 @@
   .profile__header-wrap {
     width: 100%;
 
-    order: -2;
-
     padding: 0;
   }
 
@@ -215,10 +332,15 @@
     width: 85px;
   }
 
+  .profile__level::before {
+    left: -8px;
+    top: -12px;
+  }
+
   .profile__hashtag-wrap {
     position: relative;
 
-    margin-top: 40px;
+    margin-top: 38px;
     padding: 0;
   }
 
@@ -234,13 +356,37 @@
 
     width: 50%;
 
-    padding: 37px 0;
-    padding-bottom: 28px;
-    margin-top: -94px;
+    padding: 20px 0;
+    padding-bottom: 18px;
+    margin: 0 auto;
+    margin-bottom: -93px;
   }
 
-  .profile__transport--img:not(:last-child) {
-    margin-right: 28px;
+  .profile__icon-wrap {
+    width: 43px;
+    height: 43px;
+
+    margin-right: 8px;
+  }
+
+  .profile-info__plane {
+    width: 19px;
+    height: 21px;
+  }
+
+  .profile-info__bus {
+    width: 17px;
+    height: 21px;
+  }
+
+  .profile-info__byke {
+    width: 24px;
+    height: 21px;
+  }
+
+  .profile-info__run {
+    width: 20px;
+    height: 21px;
   }
 
   .profile-name {
@@ -251,8 +397,8 @@
   .profile__transport-name {
     position: absolute;
 
+    bottom: -10px;
     left: 27%;
-    bottom: -25px;
   }
 
   .profile__hashtag-name {
@@ -270,7 +416,7 @@
     border-radius: 10px;
 
     margin: 38px auto;
-    margin-top: 43px;
+    margin-top: 53px;
     margin-bottom: 13px;
   }
 }
@@ -285,7 +431,7 @@
 
     width: 1440px;
 
-    padding: 75px 125px;
+    padding: 72px 125px;
     padding-bottom: 118px;
     padding-right: 58px;
   }
@@ -300,14 +446,19 @@
     width: 15.1%;
 
     right: 98px;
-    top: -264px;
+    top: -262px;
   }
 
   .profile__level {
     position: absolute;
 
     right: 337px;
-    top: -220px;
+    top: -217px;
+  }
+
+  .profile__level::before {
+    left: -8px;
+    top: -14px;
   }
 
   .profile__level--blue {
@@ -325,11 +476,15 @@
 
   .profile__transport-wrap {
     width: 30.5%;
+    height: 92px;
     order: 1;
 
-    padding: 37px 0;
-    padding-bottom: 0;
-    margin-top: 0;
+    padding: 16px 0;
+    margin-top: 3px;
+    margin-right: 3px;
+  }
+
+  .profile__icon-wrap {
     margin-right: 0;
   }
 
@@ -345,7 +500,7 @@
     display: flex;
     position: absolute;
     right: 96px;
-    top: -75px;
+    top: -72px;
 
     width: 15.3%;
     background-color: @color-profile--foto;
