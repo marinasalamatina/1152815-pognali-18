@@ -5,7 +5,8 @@
 
     border-radius: 10px;
 
-    padding: 10px 23px;
+    padding: 11px 23px;
+    padding-bottom: 6px;
     margin-top: 10px;
   }
 
@@ -32,7 +33,7 @@
     width: 100%;
 
     .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
 
@@ -50,13 +51,52 @@
 
   .pastime__label_first::before {
     position: absolute;
-    top: 8px;
-    left: 20px;
+    top: 0;
+    left: 83.5%;
 
     content: "";
-    width: 5px;
-    height: 5px;
+    width: 35px;
+    height: 24px;
+    background-image: url(../img/Bosnia-and-Herzegovina.png);
+    background-size: 35px 24px;
+    background-repeat: no-repeat;
+  }
+
+  .pastime__label_first::after {
+    position: absolute;
+    top: 10px;
+    left: -5%;
+
+    content: "";
+    width: 13px;
+    height: 285px;
+    border: 2px solid @color-cyan;
+    border-right-color: transparent;
+  }
+
+  .pastime__label_second::before {
+    position: absolute;
+    top: 0;
+    left: 83.5%;
+
+    content: "";
+    width: 35px;
+    height: 24px;
+    background-image: url(../img/Czech-Republic.png);
+    background-size: 59px 24px;
+    background-repeat: no-repeat;
+  }
+
+  .pastime__subtitle::before {
+    position: absolute;
+    top: 8px;
+    left: -6%;
+
+    content: "";
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
+    background-color: @color-cyan;
   }
 
   .pastime__input {
@@ -126,7 +166,7 @@
 
     border-radius: 20px;
 
-    margin: 2px 0;
+    margin: 1px 0;
     padding: 5px 0;
 
 
@@ -153,7 +193,7 @@
 
     border-radius: 20px;
 
-    margin-top: 5px;
+    margin-top: 6px;
 
     &:focus,
     &:hover {
@@ -177,7 +217,7 @@
     border-radius: 25px;
 
     padding: 33px 42px;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
     margin-top: 50px;
   }
 
@@ -193,19 +233,69 @@
     width: 100.4%;
 
     .ffbasic("bloggersans-medium", sans-serif; 20px; 24px; 500; normal; @color-darkgrey);
+    border-bottom: 1px solid @color-borderbox;
+
+    padding-bottom: 35px;
+    margin-bottom: 0;
   }
 
   .pastime__subtitle {
     .ffbasic("bloggersans-bold", sans-serif; 30px; 18px; 700; normal; @color-cyan);
+
     margin: 0;
   }
 
-  .pastime__label_first {
-    border-top: 1px solid @color-borderbox;
+  .pastime__label-wrap {
+    margin-top: 42px;
+    margin-bottom: 10px;
+  }
 
-    margin-top: 10px;
-    margin-bottom: 25px;
+  .pastime__label_first {
     padding-top: 40px;
+  }
+
+  .pastime__label_first::before {
+    top: -13px;
+    left: 81%;
+
+    width: 70px;
+    height: 47px;
+
+    background-size: 70px 47px;
+  }
+
+  .pastime__label_first::after {
+    position: absolute;
+    top: 10px;
+    left: 98.7%;
+
+    content: "";
+    width: 0;
+    height: 265px;
+    border: none;
+    border-right: 3px solid @color-cyan;
+  }
+
+  .pastime__label_second::before {
+    top: -13px;
+    left: 81%;
+
+    width: 70px;
+    height: 47px;
+
+    background-size: 70px 47px;
+  }
+
+  .pastime__subtitle::before {
+    position: absolute;
+    top: 2px;
+    left: 97.6%;
+
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: @color-cyan;
   }
 
   .pastime__input {
@@ -216,19 +306,19 @@
 
     padding: 15px;
     margin: 45px 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .pastime__input--dark {
     .ffbasic("bloggersans-medium", sans-serif; 20px; 24px; 500; normal; @color-darkgrey);
 
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   .pastime__required {
     width: 93.5%;
 
-    bottom: 30px;
+    bottom: 5px;
   }
 
   .pastime__button-wrap {
@@ -344,13 +434,20 @@
   }
 
   .pastime__paragraph {
-    width: 55%;
+    width: 100%;
 
-    margin-bottom: 45px;
+    margin-bottom: 44px;
+    padding-right: 45%;
+    padding-bottom: 55px;
   }
 
   .pastime__label-wrap {
-    padding-top: 82px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .pastime__subtitle {
+    padding-bottom: 0;
   }
 
   .pastime__input {
@@ -362,9 +459,19 @@
     width: 72.9%;
   }
 
+  .pastime__label_first::after {
+    top: 10px;
+    left: 77.3%;
+  }
+
+  .pastime__subtitle::before {
+    top: 2px;
+    left: 76.7%;
+  }
+
   .pastime__button-wrap {
     margin-top: 8px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .pastime__button--yellow {
