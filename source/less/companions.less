@@ -100,6 +100,15 @@
     width: 110px;
 
     .ffbasic("bloggersans-bold", sans-serif; 20px; 22px; 700; normal; @color-cyan);
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .companions__name::before {
@@ -209,12 +218,17 @@
     opacity: 0.15;
   }
 
+  .companions__level-paragraph {
+    display: none;
+  }
+
   .companions__level {
     position: absolute;
     top: 3px;
     right: 20px;
 
     display: flex;
+    flex-direction: column;
 
     background-repeat: no-repeat;
     background-position: top 0px left 0px;
@@ -375,6 +389,12 @@
     margin: 0;
   }
 
+  .companions__name::before {
+    position: absolute;
+    top: 44px;
+    right: 46.2%;
+  }
+
   .companions__popular {
     position: absolute;
 
@@ -396,7 +416,7 @@
 
 
   .companions__nation-wrap {
-    width: 688px;
+    width: 180%;
     min-height: 78px;
     order: 2;
 
@@ -452,13 +472,15 @@
 
   .companions__tablet-icon {
     position: absolute;
-    top: 35px;
-    right: 35px;
+    top: 32px;
+    right: 20px;
 
     border: none;
 
     display: flex;
     flex-direction: column;
+
+    padding-top: 5px;
   }
 
 
@@ -472,12 +494,12 @@
     display: flex;
     flex-direction: column;
 
-    margin: 4px;
-    margin-bottom: 10px;
+    margin: 0;
   }
 
   .companions__transport--img-wrap {
     background-color: transparent;
+    margin-left: 15px;
   }
 
   .companions__transport--img {
@@ -487,14 +509,21 @@
     margin-bottom: 10px;
   }
 
+  .companions__level-paragraph {
+    display: block;
+  }
+
   .companions__level {
     position: static;
+    flex-direction: column;
 
-    width: 58px;
-    height: 58px;
-    background-color: red;
+    width: 65px;
+    height: 65px;
 
     margin: 0;
+    margin-top: 5px;
+    margin-right: 3px;
+    padding: 15px;
   }
 
   .companions__level-demin {
@@ -503,20 +532,34 @@
 
   .companions__level-firsova {
     background-image: url("../img/status_firsova.png");
-    background-position: top -6px left -9px;
+    background-position: top -9px left -15px;
     background-size: 120%;
   }
 
   .companions__level-smolov {
     background-image: url("../img/status_smolov.png");
     background-position: top -2px right 1px;
-    background-size: 60%;
+    background-size: 50%;
   }
 
   .companions__level-rogovaya {
     background-image: url("../img/status_rogovaya.png");
     background-position: top -2px right 1px;
     background-size: 140%;
+  }
+
+  .companions__level--blue {
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 18px; 700; normal; @color-cyan);
+
+    margin: 0 auto;
+  }
+
+  .companions__level-paragraph {
+    .ffbasic("bloggersans-medium", sans-serif; 14px; 14px; 500; normal; @color-cataloglevel);
+    border-top: 1px solid @color-borderlevel;
+    text-align: center;
+
+    margin: 3px auto;
   }
 
   .companions__level--grey {
@@ -587,11 +630,19 @@
     border-radius: 10px 0 0 10px;
   }
 
+  .companions__img-wrap::before {
+    position: absolute;
+    top: 189px;
+    left: 172%;
+
+    z-index: 1;
+  }
 
   .companions__info-wrap {
-    width: 555px;
+    width: 70%;
 
     padding: 40px 55px;
+    padding-right: 0;
   }
 
 
@@ -607,6 +658,7 @@
     border: none;
 
     margin: 0;
+    margin-right: 111px;
     padding: 0;
   }
 
@@ -615,9 +667,21 @@
     margin-top: 5px;
   }
 
+  .companions__name::before {
+    top: 58px;
+    right: 93.8%;
+
+    width: 7px;
+    height: 7px;
+  }
+
+  .companions__popular {
+    bottom: 21%;
+    left: 39.5%;
+  }
 
   .companions__nation--img-wrap {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
 
@@ -636,32 +700,35 @@
 
 
   .companions__tablet-icon {
-    width: 26.5%;
+    width: 47.5%;
 
     position: static;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-self: flex-end;
 
-    margin-top: 45px;
+
+    margin-top: 21px;
     margin-left: auto;
-    padding-top: 0;
+    padding-right: 7px;
   }
 
 
   .companions__transport {
-    display: flex;
     flex-direction: row;
 
-    margin-top: 0;
+    margin-top: 20px;
+    margin-left: 15px;
   }
 
+  .companions__transport--img-wrap {
+    margin-left: 0;
+  }
 
   .companions__transport--img {
     width: 19px;
     height: 21px;
+
+    margin: 0;
   }
 
 
@@ -671,25 +738,19 @@
 
     padding: 10px 0;
 
-    margin-top: -85px;
+    margin-top: -60px;
     margin-bottom: 0;
   }
 
-
   .companions__level {
-    margin-top: -5px;
-    margin-left: 57px;
-  }
-
-
-  .companions__level--blue {
-    padding-left: 9px;
+    margin: auto;
+    padding: 15px auto;
   }
 
   .companions__more {
     width: 71.3%;
 
-    margin: 63px 0;
+    margin: 64px 0;
     margin-bottom: 68px;
   }
 }

@@ -520,7 +520,7 @@
 
     position: absolute;
     right: 60px;
-    top: 150px;
+    top: 140px;
 
     padding: 20px 45px;
     padding-bottom: 30px;
@@ -545,7 +545,7 @@
     display: flex;
     flex-direction: column;
 
-    padding-bottom: 4px;
+    padding-bottom: 0px;
   }
 
 
@@ -553,7 +553,7 @@
     width: 100%;
     display: flex;
 
-    padding-bottom: 10px;
+    padding-bottom: 13px;
   }
 
 
@@ -581,18 +581,13 @@
   }
 
 
-  .sidebar__transport {
-    margin: 30px 0;
-  }
-
-
   .sidebar__transport-list {
     .liststyle();
     width: 100%;
 
     display: flex;
 
-    margin: 10px 0;
+    margin: 0;
     margin-bottom: 22px;
   }
 
@@ -634,7 +629,7 @@
 
 
   .sidebar__level--input {
-    .ffbasic("bloggersans-medium", sans-serif; 15px; 15px; 500; normal; @color-cyan);
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-cyan);
     text-align: center;
 
     width: 50%;
@@ -643,7 +638,7 @@
     border: 1px solid @color-borderbox;
     border-radius: 5px;
 
-    margin: 12px 0;
+    margin: 7px 0;
     margin-bottom: 17px;
   }
 
@@ -662,9 +657,38 @@
   .sidebar__level {
     border-bottom: 2px solid @color-border-sidebar;
 
-    padding-bottom: 20px;
+    padding-bottom: 22px;
   }
 
+  .sidebar__level::before {
+    right: 5px;
+    bottom: -2px;
+
+    width: 125px;
+  }
+
+  .sidebar__level::after {
+    height: 20px;
+
+    left: 44%;
+    top: 20px;
+  }
+
+  .sidebar__level--label::before {
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+  }
+
+  .sidebar__level--label::after {
+    left: 31%;
+    bottom: -7px;
+  }
+
+  .sidebar__item--level::before {
+    left: 44%;
+    top: 72px;
+  }
 
   .sidebar__button {
     .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
