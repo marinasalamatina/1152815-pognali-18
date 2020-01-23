@@ -31,6 +31,7 @@
     .ffbasic("bloggersans-medium", sans-serif; 16px; 22px; 500; normal; @color-darkgrey);
 
     margin-top: 17px;
+    margin-bottom: 30px;
   }
 
   .dates__subtitle {
@@ -41,7 +42,7 @@
 
     padding: 0;
     margin: 0;
-    margin-top: 28px;
+    margin-bottom: 20px;
   }
 
   .dates__label {
@@ -67,6 +68,10 @@
     border: 1px solid @color-borderbox;
     border-radius: 5px;
 
+    margin-bottom: 20px;
+
+
+
 
     &:hover {
       border-color: @color-dateshover;
@@ -78,8 +83,49 @@
     }
   }
 
+  .dates__label::before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 13px;
+
+    width: 14px;
+    height: 2px;
+    background-color: @color-formtick;
+
+    z-index: 1;
+  }
+
+  .dates__label::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 14px;
+
+    width: 14px;
+    height: 2px;
+    background-color: @color-formtick;
+
+    z-index: 1;
+  }
+
+  .dates__subtitle::before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    right: 14px;
+
+    width: 15px;
+    height: 2px;
+    background-color: @color-formtick;
+
+    z-index: 1;
+    transform: rotate(-90deg);
+  }
+
   .dates__child-wrapper {
     margin: 22px 0;
+    margin-top: 0;
   }
 
   .dates__label-child {
@@ -151,6 +197,8 @@
 
 
   .dates__caption {
+    position: relative;
+
     .ffbasic("bloggersans-bold", sans-serif; 20px; 22px; 700; normal; @color-cyan);
 
     border-top: 1px solid @color-borderbox;
@@ -158,6 +206,38 @@
 
     padding: 10px 0;
     margin-bottom: 11px;
+  }
+
+  .dates__caption::before {
+    content: "";
+
+    position: absolute;
+    top: 16px;
+    right: 1%;
+
+    width: 11px;
+    height: 11px;
+    border: 1px solid @color-formtick;
+    border-left-color: transparent;
+    border-top-color: transparent;
+
+    transform: rotate(-45deg);
+  }
+
+  .dates__caption::after {
+    content: "";
+
+    position: absolute;
+    top: 16px;
+    left: 1%;
+
+    width: 11px;
+    height: 11px;
+    border: 1px solid @color-formtick;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+
+    transform: rotate(-45deg);
   }
 
   .dates__weekday {
@@ -333,6 +413,7 @@
     width: 100%;
 
     .ffbasic("bloggersans-medium", sans-serif; 20px; 24px; 500; normal; @color-darkgrey);
+    margin-bottom: 20px;
   }
 
   .dates__paragraph-wrap {
@@ -347,12 +428,33 @@
     border-top: 1px solid @color-borderbox;
 
     padding-top: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 4px;
     margin-top: 20px;
   }
 
   .dates__label-first {
     order: -2;
+  }
+
+  .dates__label::before {
+    width: 20px;
+
+    top: 123px;
+    left: 26px;
+  }
+
+  .dates__label::after {
+    width: 20px;
+
+    top: 123px;
+    right: 26px;
+  }
+
+  .dates__subtitle::before {
+    width: 21px;
+
+    top: 123px;
+    right: 25px;
   }
 
   .dates__unit {
@@ -366,12 +468,13 @@
     height: 70px;
 
     .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-cyan);
+    margin-bottom: 0;
   }
 
   .dates__child-wrapper {
     order: -1;
 
-    margin-top: 30px;
+    margin-top: 31px;
     margin-bottom: 15px;
   }
 
@@ -403,11 +506,29 @@
   .dates__table-wrap {
     width: 100%;
 
-    padding-top: 57px;
+    padding-top: 59px;
   }
 
   .dates__caption {
     .ffbasic("bloggersans-bold", sans-serif; 36px; 67px; 700; normal; @color-cyan);
+  }
+
+  .dates__caption::before {
+    top: 32px;
+    right: 23px;
+
+    width: 25px;
+    height: 25px;
+    border-width: 2px;
+  }
+
+  .dates__caption::after {
+    top: 32px;
+    left: 23px;
+
+    width: 25px;
+    height: 25px;
+    border-width: 2px;
   }
 
   .dates__weekday {
@@ -534,12 +655,29 @@
     flex-direction: row;
   }
 
+  .dates__label::before {
+    top: 45%;
+    left: 49.5%;
+  }
+
+  .dates__label::after{
+    top: 45%;
+    right: 21.2%;
+  }
+
+  .dates__subtitle::before {
+    top: 45%;
+    right: 21.2%;
+  }
+
   .dates__label-first {
     order: -3;
   }
 
   .dates__label-second {
     order: -1;
+
+    margin-top: 15px;
   }
 
   .dates__subtitle {
@@ -551,9 +689,12 @@
     padding-top: 5px;
   }
 
+  .dates__subtitle-second {
+    padding-top: 0;
+  }
+
   .dates__input {
     width: 37.6%;
-    margin-top: 15px;
   }
 
   .dates__input-first {
@@ -591,6 +732,14 @@
     margin: 0;
     margin-top: 0;
     padding: 0;
+  }
+
+  .dates__caption::before {
+    right: 0.5%;
+  }
+
+  .dates__caption::after {
+    left: 0.5%;
   }
 
   .dates__weekday {
