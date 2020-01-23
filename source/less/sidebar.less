@@ -436,6 +436,8 @@
     height: 0;
     content: "";
     border-bottom: 2px solid @color-cyan;
+
+    z-index: 1;
   }
 
   .sidebar__level::after {
@@ -461,6 +463,8 @@
     height: 12px;
     border-radius: 50%;
     background-color: @color-cyan;
+
+    z-index: 1;
   }
 
   .sidebar__level--label::after {
@@ -487,6 +491,18 @@
     height: 0;
     border-bottom: 1px solid @color-borderbox;
     z-index: 1;
+  }
+
+  .sidebar__item--level::after {
+    position: absolute;
+    left: 20.1%;
+    top: 34px;
+
+    content: "";
+
+    width: 276px;
+    height: 0;
+    border-bottom: 2px solid @color-border-sidebar;
   }
 
   .sidebar__button {
@@ -569,7 +585,6 @@
 
   .sidebar__unit {
     width: 100%;
-    border-top: 1px solid @color-border-sidebar;
 
     .ffbasic("bloggersans-bold", sans-serif; 16px; 18px; 700; normal; @color-cyan);
     text-transform: uppercase;

@@ -199,6 +199,7 @@
   }
 
   .companions__transport--img-wrap {
+    position: relative;
     display: flex;
     width: 31px;
     height: 31px;
@@ -209,13 +210,69 @@
     margin-right: 3px;
   }
 
-  .companions__transport--img {
+  .companions-info__transport--img {
     margin: auto;
   }
 
+  .companions-info__transport--light {
+    fill: @color-transport-icon-grey;
+  }
 
-  .companions__transport--greyimg {
-    opacity: 0.15;
+
+  .companions-info__transport--blue {
+    fill: @color-cyan;
+  }
+
+  .companions__tiltup {
+    display: none;
+    top: 38px;
+
+    z-index: 1;
+  }
+
+  .companions__avia-tiltup {
+    left: -60px;
+  }
+
+  .companions__bus-tiltup {
+    left: -65px;
+  }
+
+  .companions__byke-tiltup {
+    left: -50px;
+  }
+
+  .companions__run-tiltup {
+    left: -40px;
+  }
+
+  .companions__tiltup::before {
+    display: block;
+
+    position: absolute;
+    content: "";
+    left: 40%;
+    top: -20px;
+
+    border: 10px solid transparent;
+    border-bottom: 10px solid @color-dateschosen;
+  }
+
+  .companions__transport--img-wrap:focus .companions__tiltup,
+  .companions__transport--img-wrap:hover .companions__tiltup {
+    display: block;
+    position: absolute;
+
+    background-color: @color-dateschosen;
+
+    .ffbasic("bloggersans-medium", sans-serif; 20px; 20px; 500; normal; @color-white);
+
+    padding: 20px;
+  }
+
+  .companions__transport--img-wrap:focus .companions__tiltup::before,
+  .companions__transport--img-wrap .companions__tiltup::before {
+    display: block;
   }
 
   .companions__level-paragraph {
@@ -472,8 +529,8 @@
 
   .companions__tablet-icon {
     position: absolute;
-    top: 32px;
-    right: 20px;
+    top: 28px;
+    right: 24px;
 
     border: none;
 
@@ -495,53 +552,69 @@
     flex-direction: column;
 
     margin: 0;
+    margin-right: 7px;
+  }
+
+  .companions-info__transport--avia {
+    width: 19px;
+    height: 21px;
+  }
+
+  .companions-info__transport--bus {
+    width: 17px;
+    height: 21px;
+  }
+
+  .companions-info__transport--byke {
+    width: 24px;
+    height: 21px;
+  }
+
+  .companions-info__transport--run {
+    width: 20px;
+    height: 21px;
   }
 
   .companions__transport--img-wrap {
     background-color: transparent;
-    margin-left: 15px;
-  }
-
-  .companions__transport--img {
-    width: 17px;
-    height: 21px;
-
-    margin-bottom: 10px;
+    margin: auto;
   }
 
   .companions__level {
     position: static;
     flex-direction: column;
 
-    width: 65px;
-    height: 65px;
+    width: 58px;
+    height: 64px;
 
     margin: 0;
-    margin-top: 5px;
-    margin-right: 3px;
-    padding: 15px;
+    margin-top: 10px;
+    margin-right: 2px;
+    padding: 14px;
   }
 
   .companions__level-demin {
     background-image: url("../img/status_demin.png");
+    background-position: top 0 left -1px;
+    background-size: 103%;
   }
 
   .companions__level-firsova {
     background-image: url("../img/status_firsova.png");
-    background-position: top -9px left -15px;
-    background-size: 120%;
+    background-position: top -8px left -14px;
+    background-size: 126%;
   }
 
   .companions__level-smolov {
     background-image: url("../img/status_smolov.png");
-    background-position: top -2px right 1px;
-    background-size: 50%;
+    background-position: top -1px right -1px;
+    background-size: 48%;
   }
 
   .companions__level-rogovaya {
     background-image: url("../img/status_rogovaya.png");
-    background-position: top -2px right 1px;
-    background-size: 140%;
+    background-position: top -2px right 0px;
+    background-size: 153%;
   }
 
   .companions__level--blue {
@@ -721,14 +794,6 @@
   .companions__transport--img-wrap {
     margin-left: 0;
   }
-
-  .companions__transport--img {
-    width: 19px;
-    height: 21px;
-
-    margin: 0;
-  }
-
 
   .companions__link-wrap {
     width: 150px;

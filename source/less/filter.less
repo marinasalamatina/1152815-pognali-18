@@ -31,6 +31,26 @@
 
   .filter__button-show {
     display: none;
+
+    .buttonstyle();
+  }
+
+  .filter__button-show:focus .filter__button-text,
+  .filter__button-show:hover .filter__button-text {
+    color: @color-filterhover;
+  }
+
+  .filter__button-show:active .filter__button-text {
+    color: @color-middleblue;
+  }
+
+  .filter__button-show:focus .filter__toggle--img,
+  .filter__button-show:hover .filter__toggle--img {
+    opacity: 0.6;
+  }
+
+  .filter__button-show:hover .filter__toggle--img{
+    opacity: 0.3;
   }
 
 
@@ -50,11 +70,19 @@
     cursor: pointer;
   }
 
-
-  .filter__close--text {
+  .filter__button-text {
     display: none;
   }
 
+  .filter__toggle-close:focus .filter__toggle--img,
+  .filter__toggle-close:hover .filter__toggle--img {
+    opacity: 0.6;
+  }
+
+
+  .filter__toggle-close:active .filter__toggle--img  {
+   opacity: 0.3;
+  }
 
   .filter__toggle--img {
     margin: auto;
@@ -113,8 +141,20 @@
     text-transform: uppercase;
 
     margin-right: 15px;
+
+    &:focus,
+    &:hover {
+      color: @color-filterhover;
+    }
+
+    &:active {
+      color: @color-blue;
+    }
   }
 
+  .filter__country-item--dark {
+    color: @color-blue;
+  }
 
   .filter__toggle-show {
     display: flex;
@@ -131,12 +171,22 @@
   }
 
 
-  .filter__close--text {
+  .filter__button-text {
     display: block;
     .ffbasic("bloggersans-bold", sans-serif; 20px; 24px; 700; normal; @color-blue);
     text-transform: uppercase;
 
     margin-right: 70px;
+  }
+
+  .filter__toggle-close:focus .filter__button-text,
+  .filter__toggle-close:hover .filter__button-text {
+    color: @color-filterhover;
+  }
+
+
+  .filter__toggle-close:active .filter__button-text {
+    color: @color-middleblue;
   }
 }
 
@@ -199,7 +249,7 @@
   }
 
 
-  .filter__close--text {
+  .filter__button-text {
     margin-right: 80px;
   }
 
