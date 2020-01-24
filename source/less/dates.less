@@ -79,6 +79,10 @@
     }
   }
 
+  .dates__input-control {
+    display: flex;
+  }
+
   .dates__input--minus {
     position: absolute;
     top: -5px;
@@ -88,8 +92,6 @@
     height: 30px;
 
     cursor: pointer;
-
-    padding: 0 8px;
   }
 
   .dates__input--plus {
@@ -97,25 +99,37 @@
     top: -5px;
     right: 5px;
 
-    display: flex;
     justify-content: flex-end;
 
     width: 60px;
     height: 30px;
 
-    fill: @color-headersocial;
-
     cursor: pointer;
-
-    padding: 8px;
   }
 
-  .dates__input--minus:focus,
-  .dates__input--minus:hover {
+  .dates__input-icon {
+    fill: @color-headersocial;
+
+    margin: auto 8px;
+    cursor: pointer;
+  }
+
+  .dates__input-icon--minus {
+    width: 14px;
+    height: 2px;
+  }
+
+  .dates__input-icon--plus {
+    width: 14px;
+    height: 14px;
+  }
+
+  .dates__input-control:focus .dates__input-icon,
+  .dates__input-control:hover .dates__input-icon {
     fill: @color-datespsevdo-hover;
   }
 
-  .dates__input--icon:active {
+  .dates__input-control:active .dates__input-icon{
     fill: @color-borderlevel;
   }
 
@@ -204,36 +218,47 @@
     margin-bottom: 11px;
   }
 
-  .dates__caption::before {
-    content: "";
+  .dates__caption--month {
+    display: flex;
+
+    cursor: pointer;
+    padding: 5px;
 
     position: absolute;
-    top: 16px;
-    right: 1%;
+    top: 6px;
 
-    width: 11px;
-    height: 11px;
-    border: 1px solid @color-formtick;
-    border-left-color: transparent;
-    border-top-color: transparent;
-
-    transform: rotate(-45deg);
+    width: 50px;
+    height: 30px;
   }
 
-  .dates__caption::after {
-    content: "";
+  .dates__caption--month-right {
+    justify-content: flex-end;
 
-    position: absolute;
-    top: 16px;
+    right: 1%;
+  }
+
+  .dates__caption--month-left {
     left: 1%;
+  }
 
-    width: 11px;
-    height: 11px;
-    border: 1px solid @color-formtick;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
+  .dates__caption-icon {
+    position: absolute;
 
-    transform: rotate(-45deg);
+    width: 9px;
+    height: 18px;
+
+    fill: @color-formtick;
+
+    margin: auto 0;
+  }
+
+  .dates__caption--month:focus .dates__caption-icon,
+  .dates__caption--month:hover .dates__caption-icon {
+    fill: @color-captionmonth;
+  }
+
+  .dates__caption--month:active .dates__caption-icon {
+    fill: @color-formplansline;
   }
 
   .dates__weekday {
@@ -432,20 +457,6 @@
     order: -2;
   }
 
-  .dates__label::before {
-    width: 20px;
-
-    top: 123px;
-    left: 26px;
-  }
-
-  .dates__label::after {
-    width: 20px;
-
-    top: 123px;
-    right: 26px;
-  }
-
   .dates__subtitle::before {
     width: 21px;
 
@@ -466,6 +477,33 @@
     .ffbasic("bloggersans-medium", sans-serif; 20px; 18px; 500; normal; @color-cyan);
     margin-bottom: 0;
   }
+
+  .dates__input--minus {
+    top: 97px;
+    left: 5px;
+
+    width: 80px;
+    height: 50px;
+  }
+
+  .dates__input--plus {
+    top: 97px;
+    right: 5px;
+
+    width: 80px;
+    height: 50px;
+  }
+
+  .dates__input-icon--minus {
+    width: 20px;
+    height: 2px;
+  }
+
+  .dates__input-icon--plus {
+    width: 20px;
+    height: 20px;
+  }
+
 
   .dates__child-wrapper {
     order: -1;
@@ -509,23 +547,21 @@
     .ffbasic("bloggersans-bold", sans-serif; 36px; 67px; 700; normal; @color-cyan);
   }
 
-  .dates__caption::before {
-    top: 32px;
-    right: 23px;
+  .dates__caption--month {
+    padding: 20px;
 
-    width: 25px;
-    height: 25px;
-    border-width: 2px;
+    top: 6px;
+
+    width: 120px;
+    height: 75px;
   }
 
-  .dates__caption::after {
-    top: 32px;
-    left: 23px;
 
-    width: 25px;
-    height: 25px;
-    border-width: 2px;
+  .dates__caption-icon {
+    width: 19px;
+    height: 34px;
   }
+
 
   .dates__weekday {
     font-size: 18px;
@@ -695,6 +731,22 @@
 
   .dates__input-first {
     margin-top: 0;
+  }
+
+  .dates__input--minus {
+    top: 10px;
+    left: 225px;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  .dates__input--plus {
+    top: 10px;
+    right: 90px;
+
+    width: 50px;
+    height: 50px;
   }
 
   .dates__unit {

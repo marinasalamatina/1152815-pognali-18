@@ -91,6 +91,7 @@
   }
 
   .country__label--single::after {
+    display: block;
     content: "";
 
     position: absolute;
@@ -180,7 +181,7 @@
 
   .country__input--grey:focus,
   .country__input--grey:hover {
-    background-color: @color-profile--foto;
+    background-color: @color-middlegrey;
   }
 
 
@@ -205,23 +206,37 @@
     position: relative;
   }
 
-  .country__label-wrap::before {
-    content: "";
+  .country__input-button {
+    .buttonstyle();
 
     position: absolute;
     top: -10px;
     right: -10px;
+
+    display: flex;
 
     width: 21px;
     height: 21px;
     border-radius: 50%;
     background-color: @color-grey;
 
-    z-index: 1;
-
     cursor: pointer;
   }
 
+  .country__label-close {
+    width: 9px;
+    height: 9px;
+    fill: @color-formtick;
+
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .country__choose-wrap {
+    position: relative;
+  }
+
+  .country__choose-wrap::after,
   .country__label-wrap::after {
     content: "";
 
@@ -234,17 +249,39 @@
     height: 10px;
   }
 
-  .country__label-close {
-    position: absolute;
-    top: -5px;
-    right: -5px;
+  .country__closebutton-wrap {
+    display: none;
+  }
 
-    width: 10px;
-    height: 10px;
-    fill: @color-formtick;
-    z-index: 1;
+  .country__iconclose-button {
+    .buttonstyle();
+    position: absolute;
+    top: 6px;
+    right: 6px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
 
     cursor: pointer;
+  }
+
+  .country__dropdown-close {
+    width: 9px;
+    height: 9px;
+    fill: @color-dropdownhover;
+
+    margin: auto;
+  }
+
+  .country__iconclose-button:focus .country__dropdown-close,
+  .country__iconclose-button:hover .country__dropdown-close {
+    fill: @color-white;
+  }
+
+  .country__iconclose-button:active .country__dropdown-close {
+    fill: @color-white;
   }
 
   .country__label--grey-wrap {
@@ -263,6 +300,22 @@
     border-radius: 50%;
     border: 1px solid @color-formtick;
     z-index: 1;
+  }
+
+  .country__label--grey:focus .country__input--grey,
+  .country__label--grey:hover .country__input--grey {
+    background-color: @color-middlegrey;
+  }
+
+  .country__label--grey:active .country__input--grey {
+    background-color: @color-middleblue;
+  }
+
+  .country__label--plus:focus .country__label--plus::before,
+  .country__label--plus:hover .country__label--plus::before,
+  .country__label--plus:focus .country__label--plus::after,
+  .country__label--plus:hover .country__label--plus::after {
+    opacity: 0.6;
   }
 
   .country__flag-first {
@@ -407,13 +460,13 @@
     height: 16px;
   }
 
-  .country__label--single::before {
-    top: 27px;
-    left: 72.7%;
-
-    width: 16px;
-    height: 16px;
+  .country__input-button {
     background-color: @color-white;
+  }
+
+  .country__label-close {
+    width: 18px;
+    height: 18px;
   }
 
   .country__label--grey-wrap::before {
@@ -433,6 +486,17 @@
     width: 12px;
     height: 12px;
   }
+
+  .country__label--single::before {
+    top: 27px;
+    left: 72.7%;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: @color-white;
+  }
+
 
   .country__label--plus::before {
     content: "";
@@ -469,6 +533,7 @@
     background-color: @color-white;
   }
 
+  .country__choose-wrap::after,
   .country__label-wrap::after {
     display: none;
   }
@@ -477,6 +542,19 @@
     top: 26px;
     right: 0;
 
+    width: 18px;
+    height: 18px;
+  }
+
+  .country__iconclose-button {
+    top: 10px;
+    right: 175px;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  .country__dropdown-close {
     width: 18px;
     height: 18px;
   }
@@ -632,6 +710,11 @@
 
   .country__label-close {
     display: none;
+  }
+
+  .country__iconclose-button {
+    top: 10px;
+    right: 10px;
   }
 
   .country__label--double::before {
