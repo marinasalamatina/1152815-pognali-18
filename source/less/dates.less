@@ -79,44 +79,44 @@
     }
   }
 
-  .dates__label::before {
-    content: "";
+  .dates__input--minus {
     position: absolute;
-    top: 44px;
-    left: 13px;
+    top: -5px;
+    left: 5px;
 
-    width: 14px;
-    height: 2px;
-    background-color: @color-formtick;
+    width: 60px;
+    height: 30px;
 
-    z-index: 1;
+    cursor: pointer;
+
+    padding: 0 8px;
   }
 
-  .dates__label::after {
-    content: "";
+  .dates__input--plus {
     position: absolute;
-    top: 8px;
-    right: 14px;
+    top: -5px;
+    right: 5px;
 
-    width: 14px;
-    height: 2px;
-    background-color: @color-formtick;
+    display: flex;
+    justify-content: flex-end;
 
-    z-index: 1;
+    width: 60px;
+    height: 30px;
+
+    fill: @color-headersocial;
+
+    cursor: pointer;
+
+    padding: 8px;
   }
 
-  .dates__subtitle::before {
-    content: "";
-    position: absolute;
-    top: 44px;
-    right: 14px;
+  .dates__input--minus:focus,
+  .dates__input--minus:hover {
+    fill: @color-datespsevdo-hover;
+  }
 
-    width: 15px;
-    height: 2px;
-    background-color: @color-formtick;
-
-    z-index: 1;
-    transform: rotate(-90deg);
+  .dates__input--icon:active {
+    fill: @color-borderlevel;
   }
 
   .dates__child-wrapper {

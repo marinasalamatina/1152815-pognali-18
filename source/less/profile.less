@@ -232,6 +232,28 @@
     fill: @color-cyan;
   }
 
+  .profile__icon-wrap:focus .profile-info__transport--light,
+  .profile__icon-wrap:hover .profile-info__transport--light {
+    fill: @color-borderbox;
+  }
+
+  .profile__icon-wrap:focus .profile-info__transport--blue,
+  .profile__icon-wrap:hover .profile-info__transport--blue {
+    fill: @color-trans-bluehover;
+  }
+
+  .profile__icon-wrap:active .profile-info__transport--light {
+    fill: @color-lightblue;
+  }
+
+  .profile__icon-wrap:active .profile-info__transport--blue {
+    fill: @color-middleblue;
+  }
+
+  .profile__icon-wrap:active {
+    background-color: @color-lightblue;
+  }
+
   .profile-info__plane {
     width: 14px;
     height: 16px;
@@ -387,6 +409,31 @@
   .profile-info__run {
     width: 20px;
     height: 21px;
+  }
+
+  .profile__tiltup {
+    top: 53px;
+  }
+
+  .profile__avia-tiltup {
+    left: -55px;
+  }
+
+  .profile__bus-tiltup {
+    left: -63px;
+  }
+
+  .profile__byke-tiltup {
+    left: -46px;
+  }
+
+  .profile__run-tiltup {
+    left: -37px;
+  }
+
+  .profile__tiltup::before {
+    left: 40%;
+    top: -20px;
   }
 
   .profile-name {
