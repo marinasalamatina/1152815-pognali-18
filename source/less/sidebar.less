@@ -60,14 +60,55 @@
     text-transform: uppercase;
 
     display: flex;
+    justify-content: space-between;
 
     padding: 11px 0;
     margin: 0;
+
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      color: @color-sidebariconhover;;
+    }
+
+    &:active {
+    color: @color-heartneactive;
+    }
   }
 
-  .sidebar__icon {
-    width: 58px;
-    height: 54px;
+  .sidebar__dropdown-button {
+    .buttonstyle();
+
+    display: flex;
+
+    width: 120px;
+    height: 18px;
+
+    cursor: pointer;
+  }
+
+  .sidebar__dropdown-icon {
+    width: 8px;
+    height: 4px;
+
+    fill: @color-blue;
+
+    margin: auto 0;
+    margin-left: auto;
+  }
+
+  .sidebar__dropdown-icon--rotate {
+    transform: rotate(180deg);
+  }
+
+  .sidebar__dropdown-button:focus .sidebar__dropdown-icon,
+  .sidebar__dropdown-button:hover .sidebar__dropdown-icon {
+    fill: @color-sidebariconhover;
+  }
+
+  .sidebar__dropdown-button:active .sidebar__dropdown-icon {
+    fill: @color-heartneactive;
   }
 
   .sidebar__transport-list {
@@ -84,10 +125,18 @@
 
     .boxsetcolor(32px, 32px, @color-white);
     border-radius: 50%;
+
+    cursor: pointer;
   }
 
-  .sidebar__transport--img {
+
+  .sidebar__transport-icon {
     margin: auto;
+    fill: @color-blue;
+  }
+
+  .sidebar__transport-icon--grey {
+    fill: @color-transport-icon-grey;
   }
 
   .sidebar__input {
@@ -136,12 +185,25 @@
     padding-bottom: 5px;
   }
 
+  .sidebar__cell:focus .sidebar__label::before,
+  .sidebar__cell:hover .sidebar__label::before {
+    opacity: 0.6;
+  }
+
+  .sidebar__cell:active .sidebar__label::before {
+    opacity: 0.3;
+  }
+
+  .sidebar__cell:active .sidebar__label::after {
+    opacity: 0.2;
+  }
+
 
   .sidebar__level--input {
     .ffbasic("bloggersans-medium", sans-serif; 15px; 15px; 500; normal; @color-cyan);
     text-align: center;
 
-    width: 50.3%;
+    width: 49.8%;
     height: 34px;
 
     border: 1px solid @color-borderbox;
@@ -149,11 +211,20 @@
 
     margin: 0;
     margin-bottom: 5px;
+
+    &:focus,
+    &:hover {
+      border-color: @color-dateshover;
+    }
+
+    &:active {
+      border-color: @color-navy;
+    }
   }
 
 
   .sidebar__level--input-left {
-    margin-right: -6px;
+    margin-right: -4px;
     border-radius: 5px 0 0 5px;
   }
 
@@ -201,7 +272,7 @@
   .sidebar__level--label::before {
     position: absolute;
     right: 0;
-    bottom: -7px;
+    bottom: -6px;
 
     content: "";
 
@@ -209,12 +280,28 @@
     height: 10px;
     border-radius: 50%;
     background-color: @color-cyan;
+
+    cursor: pointer;
+
+    z-index: 2;
+
+    &:focus,
+    &:hover {
+      background-color: red;
+      width: 18px;
+      height: 18px;
+    }
+
+    &:active {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .sidebar__level--label::after {
     position: absolute;
     left: 31%;
-    bottom: -7px;
+    bottom: -6px;
 
     content: "";
 
@@ -222,6 +309,21 @@
     height: 10px;
     border-radius: 50%;
     background-color: @color-cyan;
+    z-index: 3;
+
+    cursor: pointer;
+  }
+
+  .sidebar__level--label::after:focus,
+  .sidebar__level--label::after:hover {
+    background-color: red;
+    width: 18px;
+    height: 18px;
+  }
+
+  .sidebar__level--label::after:active {
+    width: 20px;
+    height: 20px;
   }
 
   .sidebar__item--level::before {
@@ -252,6 +354,11 @@
     border-radius: 20px;
 
     margin: 17px 0;
+
+    &:active {
+      background-color: @color-border-sidebar;
+      color: @color-sidebarbutton;
+    }
   }
 }
 
@@ -376,11 +483,11 @@
     padding-left: 0;
   }
 
-  .sidebar__input + .sidebar__label {
+  .sidebar__input+.sidebar__label {
     padding-left: 34px;
   }
 
-  .sidebar__input + .sidebar__label::before {
+  .sidebar__input+.sidebar__label::before {
     content: "";
     top: -2px;
     left: 0;
@@ -389,7 +496,7 @@
     height: 25px;
   }
 
-  .sidebar__input:checked + label::after {
+  .sidebar__input:checked+label::after {
     top: 4px;
     left: 6px;
     width: 12px;

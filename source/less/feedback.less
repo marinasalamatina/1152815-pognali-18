@@ -48,6 +48,15 @@
     text-decoration: underline;
 
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: @color-darkorange;
+    }
+
+    &:active{
+      color: @color-feedbackactive;
+    }
   }
 
   .feedback__phone--yellow {
@@ -91,6 +100,8 @@
     text-transform: uppercase;
 
     margin-left: 60px;
+
+    cursor: pointer;
   }
 
   .feedback__phone--yellow::before,
@@ -109,8 +120,29 @@
   }
 
   .feedback__mail--yellow {
+    .linkstyle();
     display: block;
     margin-top: 24px;
+  }
+
+  .feedback__phone:focus .feedback__phone-icon,
+  .feedback__phone:hover .feedback__phone-icon,
+  .feedback__mail:focus .feedback__mail-icon,
+  .feedback__mail:hover .feedback__mail-icon,
+  .feedback__phone:focus .feedback--yellow,
+  .feedback__phone:hover .feedback--yellow,
+  .feedback__mail:focus .feedback--yellow,
+  .feedback__mail:hover .feedback--yellow {
+    fill: @color-darkyellow;
+    color: @color-darkyellow;
+  }
+
+  .feedback__phone:active .feedback__phone-icon,
+  .feedback__mail:active .feedback__mail-icon,
+  .feedback__phone:active .feedback--yellow,
+  .feedback__mail:active .feedback--yellow {
+    fill: @color-iconactive;
+    color: @color-iconactive;
   }
 }
 

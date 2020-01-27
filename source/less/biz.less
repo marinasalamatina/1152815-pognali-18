@@ -1,13 +1,24 @@
 @media (min-width: 320px) {
   .biz-wrap {
     display: none;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -135px;
+    margin-top: -221px;
+
+    z-index: 1;
   }
 
   .biz {
     display: flex;
     flex-direction: column;
 
-    width: 84%;
+    width: 270px;
+    height: 442px;
     background-color: @color-white;
 
     border-radius: 25px;
@@ -64,13 +75,26 @@
     cursor: pointer;
 
     margin: 0 auto;
+
+    &:focus,
+    &:hover {
+      background-color: @color-grey;
+    }
+
+    &:active {
+      color: @color-bizactive;
+    }
   }
 }
 
 
 @media (min-width: 768px) {
   .biz {
-    width: 90%;
+    width: 688px;
+    height: 530px;
+
+    margin-top: -265px;
+    margin-left: -344px;
   }
 
 

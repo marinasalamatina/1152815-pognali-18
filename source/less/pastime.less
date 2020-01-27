@@ -156,7 +156,7 @@
   }
 
   .pastime__button--yellow {
-    .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
+    .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-cyan);
     text-transform: uppercase;
 
     .buttonstyle(none; @color-yellow);
@@ -181,6 +181,33 @@
     }
   }
 
+  .pastime__icon {
+    display: none;
+
+    width: 10px;
+    height: 14px;
+
+    fill: @color-cyan;
+
+    margin: auto 0;
+    margin-left: auto;
+  }
+
+  .pastime__button--yellow:active .pastime__icon {
+    fill: @color-datesbuttonactive;
+  }
+
+  .pastime__icon-back {
+    display: none;
+
+    width: 10px;
+    height: 14px;
+
+    fill: @color-cyan;
+
+    margin: auto 15px;
+    margin-right: auto;
+  }
 
   .pastime__button--white {
     .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
@@ -195,12 +222,14 @@
 
     margin-top: 6px;
 
+    &:focus .country__icon-back,
     &:focus,
+    &:hover .country__icon-back,
     &:hover {
       opacity: 0.7;
     }
 
-
+    &:active .country__icon-back,
     &:active {
       opacity: 0.3;
     }
@@ -335,7 +364,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-navy);
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-cyan);
     text-transform: none;
 
     width: 54%;
@@ -343,12 +372,20 @@
     padding: 28px;
   }
 
+  .pastime__icon {
+    display: block;
+  }
+
+  .pastime__icon-back {
+    display: block;
+  }
+
   .pastime__button--white {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
 
-    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-navy);
+    .ffbasic("bloggersans-bold", sans-serif; 24px; 24px; 700; normal; @color-cyan);
     text-transform: none;
 
     width: 40%;
@@ -478,5 +515,10 @@
     width: 28.5%;
 
     padding: 29px;
+  }
+
+  .pastime__icon-back {
+    margin: auto 160px;
+    margin-right: auto;
   }
 }

@@ -11,29 +11,6 @@
     position: relative;
   }
 
-  .companions__img-wrap::before {
-    position: absolute;
-    top: 38px;
-    left: 25%;
-
-    content: "";
-
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: @color-grey;
-    background-image: url("../img/heart.svg");
-    background-repeat: no-repeat;
-    background-size: 13px 11px;
-    background-position: top 51% left 55%;
-  }
-
-  .companions__img-wrap--active::before {
-    background-color: @color-catalogheart;
-    background-image: url("../img/heart-active.svg");
-  }
-
-
   .companions__img--mobile {
     border-radius: 50%;
 
@@ -111,30 +88,73 @@
     }
   }
 
-  .companions__name::before {
+  .companions__heart-button {
+    .buttonstyle();
     position: absolute;
-    top: 12px;
-    right: -30%;
+    bottom: 7px;
+    left: 25%;
 
-    content: "";
-    width: 5px;
-    height: 5px;
+    display: flex;
+
+    width: 31px;
+    height: 31px;
     border-radius: 50%;
 
-    background-color: @color-trvalers--orange;
+    background-color: @color-grey;
+
+    cursor: pointer;
 
     &:focus,
     &:hover {
-      opacity: 0.7;
+      background-color: @color-lightblue;
     }
 
     &:active {
-      opacity: 0.3;
+      background-color: @color-lightblue;
     }
   }
 
+  .companions__heart-icon {
+    width: 13px;
+    height: 11px;
+
+    fill: @color-heartneactive;
+
+    margin: auto;
+  }
+
+  .companions__heart-button:focus .companions__heart-icon,
+  .companions__heart-button:hover .companions__heart-icon {
+    fill: @color-heartneactivehover;
+  }
+
+  .companions__heart-button:active .companions__heart-icon {
+    fill: @color-heartneactiveactive;
+  }
+
+  .companions__heartactive-button {
+    background-color: @color-catalogheart;
+
+    &:focus,
+    &:hover {
+      background-color: @color-hearthover;
+    }
+  }
+
+  .companions__heartactive-icon {
+    fill: @color-travelers--orange;
+  }
+
+  .companions__heartactive-button:hover .companions__heartactive-icon {
+    fill: @color-travelers--orange;
+  }
+
+  .companions__heartactive-button:active .companions__heartactive-icon {
+    fill: @color-heartactive;
+  }
+
   .companions__name--green::before {
-    background-color: @color-trvalers--green;
+    background-color: @color-travelers--green;
   }
 
   .companions__popular {
@@ -335,6 +355,11 @@
 
     padding: 5px;
     margin: 5px auto;
+
+    &:focus,
+    &:hover {
+      background-color: @color-darkyellow;
+    }
   }
 
 
@@ -342,7 +367,11 @@
     .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
     .linkstyle();
 
-    .boxsetcolor(230px; 40px; @color-yellow);
+    .boxset(230px; 40px);
+  }
+
+  .companions__link-wrap:active .companions__link {
+    color: @color-textactive;
   }
 
 
@@ -447,13 +476,18 @@
     padding-top: 2px;
   }
 
-  .companions__name::before {
-    position: absolute;
-    top: 44px;
-    right: 40.2%;
+  .companions__heart-button {
+    bottom: 110px;
+    left: 181%;
 
-    width: 6px;
-    height: 6px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+  }
+
+  .companions__heart-icon {
+    width: 20px;
+    height: 17px;
   }
 
   .companions__popular {
@@ -742,12 +776,12 @@
     margin-top: 5px;
   }
 
-  .companions__name::before {
-    top: 58px;
-    right: 93.8%;
+  .companions__heart-button {
+    bottom: 45px;
+    left: 173%;
 
-    width: 7px;
-    height: 7px;
+    width: 50px;
+    height: 50px;
   }
 
   .companions__popular {

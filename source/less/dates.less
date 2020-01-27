@@ -322,7 +322,7 @@
   }
 
   .dates__button--yellow {
-    .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-navy);
+    .ffbasic("bloggersans-bold", sans-serif; 17px; 30px; 700; normal; @color-cyan);
     text-transform: uppercase;
 
     .buttonstyle(none; @color-yellow);
@@ -346,6 +346,22 @@
     &:active {
       color: @color-datesbuttonactive;
     }
+  }
+
+  .dates__icon {
+    display: none;
+
+    width: 10px;
+    height: 14px;
+
+    fill: @color-cyan;
+
+    margin: auto 0;
+    margin-left: auto;
+  }
+
+  .dates__button--yellow:active .dates__icon {
+    fill: @color-datesbuttonactive;
   }
 
   .dates__section {
@@ -594,6 +610,10 @@
     margin: 47px 0;
     margin-bottom: 30px;
     padding: 26px 35px;
+  }
+
+  .dates__icon {
+    display: block;
   }
 }
 
