@@ -59,33 +59,36 @@
     .ffbasic("bloggersans-bold", sans-serif; 16px; 18px; 700; normal; @color-cyan);
     text-transform: uppercase;
 
-    display: flex;
-    justify-content: space-between;
-
     padding: 11px 0;
     margin: 0;
 
     cursor: pointer;
-
-    &:focus,
-    &:hover {
-      color: @color-sidebariconhover;;
-    }
-
-    &:active {
-    color: @color-heartneactive;
-    }
   }
 
   .sidebar__dropdown-button {
+    display: flex;
+    justify-content: space-between;
+
     .buttonstyle();
 
     display: flex;
 
-    width: 120px;
-    height: 18px;
+    width: 100%;
 
     cursor: pointer;
+
+    padding: 0;
+  }
+
+  .sidebar__dropdown-icon-wrap {
+    margin-left: auto;
+  }
+
+  .sidebar__dropdown-text {
+    .ffbasic("bloggersans-bold", sans-serif; 16px; 18px; 700; normal; @color-cyan);
+    text-transform: uppercase;
+
+    margin-right: auto;
   }
 
   .sidebar__dropdown-icon {
@@ -95,11 +98,19 @@
     fill: @color-blue;
 
     margin: auto 0;
-    margin-left: auto;
   }
 
   .sidebar__dropdown-icon--rotate {
     transform: rotate(180deg);
+  }
+
+  .sidebar__dropdown-button:focus .sidebar__dropdown-text,
+  .sidebar__dropdown-button:hover .sidebar__dropdown-text {
+    color:  @color-sidebariconhover;
+  }
+
+  .sidebar__dropdown-button:active .sidebar__dropdown-text {
+    color:  @color-heartneactive;
   }
 
   .sidebar__dropdown-button:focus .sidebar__dropdown-icon,
@@ -425,6 +436,9 @@
     padding-bottom: 0;
   }
 
+  .sidebar__dropdown-icon-wrap {
+    display: none;
+  }
 
   .sidebar__line {
     text-align: left;
@@ -600,17 +614,6 @@
     z-index: 1;
   }
 
-  .sidebar__item--level::after {
-    position: absolute;
-    left: 20.1%;
-    top: 34px;
-
-    content: "";
-
-    width: 276px;
-    height: 0;
-    border-bottom: 2px solid @color-border-sidebar;
-  }
 
   .sidebar__button {
     .ffbasic("bloggersans-bold", sans-serif; 20px; 30px; 700; normal; @color-navy);
@@ -702,6 +705,9 @@
     margin: 0;
   }
 
+  .sidebar__dropdown-icon-wrap {
+    display: block;
+  }
 
   .sidebar__transport-list {
     .liststyle();
