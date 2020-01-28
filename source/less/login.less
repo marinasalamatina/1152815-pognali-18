@@ -35,6 +35,7 @@
     }
 
     &:required {
+      color: @color-red;
       background-color: @color-required;
     }
   }
@@ -50,10 +51,6 @@
 
   .login__wrap:active .login__input::placeholder {
     color: @color-white;
-  }
-
-  .login__input:required {
-    color: @color-red;
   }
 
   .login__button {

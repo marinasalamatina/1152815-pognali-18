@@ -24,6 +24,9 @@
 
   .pagination__item--control {
     display: flex;
+
+    .linkstyle();
+    min-height: 50px;
   }
 
 
@@ -66,13 +69,6 @@
     width: 129px;
   }
 
-
-  .pagination__item--control {
-    .linkstyle();
-
-    min-height: 35px;
-  }
-
   .pagination__icon {
     width: 10px;
     height: 20px;
@@ -87,7 +83,7 @@
     opacity: 0.6;
   }
 
-  .pagination__item:active   .pagination__icon {
+  .pagination__item:active .pagination__icon {
     opacity: 0.3;
   }
 }
@@ -147,11 +143,10 @@
     display: flex;
   }
 
-  .pagination__item--control {
-    display: flex;
-  }
 
   .pagination__item--control {
+    display: flex;
+
     width: 40px;
     height: 50px;
     border: none;

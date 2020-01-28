@@ -71,8 +71,6 @@
 
     .buttonstyle();
 
-    display: flex;
-
     width: 100%;
 
     cursor: pointer;
@@ -106,11 +104,11 @@
 
   .sidebar__dropdown-button:focus .sidebar__dropdown-text,
   .sidebar__dropdown-button:hover .sidebar__dropdown-text {
-    color:  @color-sidebariconhover;
+    color: @color-sidebariconhover;
   }
 
   .sidebar__dropdown-button:active .sidebar__dropdown-text {
-    color:  @color-heartneactive;
+    color: @color-heartneactive;
   }
 
   .sidebar__dropdown-button:focus .sidebar__dropdown-icon,
@@ -214,7 +212,7 @@
     .ffbasic("bloggersans-medium", sans-serif; 15px; 15px; 500; normal; @color-cyan);
     text-align: center;
 
-    width: 49.8%;
+    width: 50.1%;
     height: 34px;
 
     border: 1px solid @color-borderbox;
@@ -235,7 +233,7 @@
 
 
   .sidebar__level--input-left {
-    margin-right: -4px;
+    margin-right: -5px;
     border-radius: 5px 0 0 5px;
   }
 
@@ -298,7 +296,6 @@
 
     &:focus,
     &:hover {
-      background-color: red;
       width: 18px;
       height: 18px;
     }
@@ -327,7 +324,6 @@
 
   .sidebar__level--label::after:focus,
   .sidebar__level--label::after:hover {
-    background-color: red;
     width: 18px;
     height: 18px;
   }
@@ -497,11 +493,11 @@
     padding-left: 0;
   }
 
-  .sidebar__input+.sidebar__label {
+  .sidebar__input + .sidebar__label {
     padding-left: 34px;
   }
 
-  .sidebar__input+.sidebar__label::before {
+  .sidebar__input + .sidebar__label::before {
     content: "";
     top: -2px;
     left: 0;
@@ -510,7 +506,7 @@
     height: 25px;
   }
 
-  .sidebar__input:checked+label::after {
+  .sidebar__input:checked + label::after {
     top: 4px;
     left: 6px;
     width: 12px;
@@ -522,6 +518,22 @@
     padding: 0;
 
     border: none;
+  }
+
+  .sidebar__dropdown-level {
+    position: relative;
+  }
+
+  .sidebar__dropdown-level::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 210%;
+
+    width: 280px;
+    height: 0;
+
+    border-bottom: 2px solid @color-border-sidebar;
   }
 
   .sidebar__level--input {
@@ -704,6 +716,11 @@
     padding: 10px 0;
     margin: 0;
   }
+
+  .sidebar__dropdown-level::before {
+    display: none;
+  }
+
 
   .sidebar__dropdown-icon-wrap {
     display: block;
